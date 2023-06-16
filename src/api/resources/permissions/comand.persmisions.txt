@@ -1,0 +1,24 @@
+// loadPermissions.ts
+import { sequelize } from './db';
+import { Permission } from './models/Permission';
+
+const permissions = ['Create', 'Read', 'Write', 'Delete', 'Deny'];
+
+async function loadPermissions() {
+  try {
+    await sequelize.sync({ force: true }); // Drops and recreates the table (optional)
+
+    for (const permissionName of permissions) {
+      await Permission.create({ name: permissionName });
+      console.log(`Permission '${permissionName}' created.`);
+    }
+
+    console.log('Permissions loaded successfully.');
+  } catch (error) {
+    console.error('Error loading permissions:', error);
+  } finally {
+    await sequelize.close();
+  }
+}
+
+loadPermissions();

@@ -3,17 +3,18 @@ import {
   Model,
   Column,
   DataType,
-  Unique
+  Unique,
+  ForeignKey,
+  BelongsTo,
 } from "sequelize-typescript";
+import { Role } from "./role.model";
+
 
 @Table({
   timestamps: true,
   paranoid: true,
   modelName: "User",
 })
-// @DefaultScope(() => ({
-//   attributes: { exclude: ["password"] },
-// }))
 export class User extends Model {
   @Column({
     type: DataType.STRING,
@@ -66,7 +67,10 @@ export class User extends Model {
   @Column(DataType.DATE)
   deletedAt?: Date;
 
-//   static associate(models: any) {
-//     // Define associations here
-//   }
+  @ForeignKey(() => Role)
+  @Column(DataType.INTEGER)
+  roleId!: number; // Column to store the roleId
+
+  @BelongsTo(() => Role)
+  role!: Role; // Define the association with the Role model
 }

@@ -11,6 +11,8 @@ import connectionDB from "./connection/connection"
 import cors from 'cors';
 import usersRouter from './api/resources/users/users.route';
 import authRouter from './api/resources/auth/auth.route';
+import rolesRouter from './api/resources/roles/roles.route';
+import permissionsRouter from './api/resources/permissions/permissions.route';
 
 const app = express();
 
@@ -35,6 +37,9 @@ connectionDB()
 
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
+app.use('/roles', rolesRouter);
+app.use('/permissions', permissionsRouter);
+
 
 app.use(procesarErrores);
 

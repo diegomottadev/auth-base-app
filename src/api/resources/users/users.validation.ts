@@ -6,6 +6,7 @@ const blueprintUser = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().email().required(),
   password: Joi.string().min(5).max(100).required(),
+  roleId: Joi.number().required(),
  // firstName: Joi.string().required(),
  // lastName: Joi.string().required(),
  // phoneNumber: Joi.string().required()
