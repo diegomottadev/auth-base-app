@@ -2,6 +2,12 @@ import Joi from '@hapi/joi';
 import log from '../utils/logger';
 import { Request, Response, NextFunction } from 'express';
 
+/*
+
+  This code defines a blueprint or schema for validating role data. 
+
+*/
+
 const blueprintRol = Joi.object({
   name: Joi.string().required(),
 });
@@ -14,7 +20,7 @@ export const validationRole = (req: Request, res: Response, next: NextFunction) 
     let errorDeValidacion = resultado.error.details.map(error => {
       return `[${error.message}]`;
     });
-    log.warn(`El rol no pasó la validación: ${JSON.stringify(req.body)} - ${errorDeValidacion}`);
+    log.warn(`The role data did not pass validation: : ${JSON.stringify(req.body)} - ${errorDeValidacion}`);
     res.status(400).send(`${errorDeValidacion}`);
   }
 };

@@ -2,6 +2,15 @@ import { Role } from "../../../models/role.model"
 import { Op } from 'sequelize';
 import { RoleNotExist } from './roles.error';
 import { Permission } from "../../../models/permissio.model";
+
+
+/*
+
+This function creates a new role with the provided name. 
+It returns a Promise that resolves to the created role object.
+
+*/
+
 export const create = async (role: { name: string }): Promise<Role> => {
   const roleCreated = await Role.create({
     name: role.name,
@@ -9,6 +18,13 @@ export const create = async (role: { name: string }): Promise<Role> => {
 
   return roleCreated;
 };
+
+/*
+
+ This function retrieves all roles from the database, including their associated permissions. 
+ It returns a Promise that resolves to an array of role objects.
+
+*/
 
 export const all = (): Promise<Role[]> => {
   return Role.findAll({ 
@@ -19,12 +35,29 @@ export const all = (): Promise<Role[]> => {
   });
 };
 
+/*
+
+This function finds a role based on the provided ID or name. 
+If an ID or name is provided, it searches for the role using that parameter. 
+If neither is provided, it throws an error. 
+It returns a Promise that resolves to the found role object or null if no role is found.
+
+*/
+
 export const find = (id: number | null = null, name: string | null = null): Promise<Role | null> => {
   if (id) return Role.findOne({ where: { id: parseInt(id.toString()) } });
   if (name) return Role.findOne({ where: { name: name } });
 
   throw new Error('No especifico un parametro para buscar el rol');
 };
+
+
+/*
+
+ This function checks if a role with the provided name already exists in the database.
+ It returns a Promise that resolves to a boolean value indicating whether the role exists or not.
+
+*/
 
 export const roleExist = ({ name }: { name: string }): Promise<boolean> => {
   return new Promise<boolean>((resolve, reject) => {
@@ -39,6 +72,13 @@ export const roleExist = ({ name }: { name: string }): Promise<boolean> => {
       });
   });
 };
+
+/*
+
+ This function updates the name of a role with the provided ID. 
+ It returns a Promise that resolves to the updated role object or null if no role is found with the given ID.
+
+*/
 
 export const edit = (id: number, role: { name: string }): Promise<Role | null> => {
   return new Promise<Role | null>((resolve, reject) => {
@@ -62,6 +102,14 @@ export const edit = (id: number, role: { name: string }): Promise<Role | null> =
   });
 };
 
+/*
+
+ This function deletes a role with the provided ID. 
+ It first checks if the role has associated permissions, and if so, it throws an error indicating that the role cannot be deleted. 
+ If the role doesn't have any associated permissions, it deletes the role from the database and returns the deleted role object.
+
+*/
+
 export const destroy = async (id: number, roleToDelete: Role): Promise<Role> => {
   const hasPermissions = await roleToDelete.$count("permissions");
 
@@ -78,6 +126,16 @@ export const destroy = async (id: number, roleToDelete: Role): Promise<Role> => 
   return roleToDelete;
 };
 
+/*
+
+This function assigns permissions to a role. 
+It takes an array of permission IDs and a role ID. 
+It retrieves the role from the database and checks if it exists. 
+If the provided permission IDs are not empty, it retrieves the corresponding permission objects and assigns them to the role. 
+If no permission IDs are provided, it removes all existing permissions from the role. 
+It returns a Promise that resolves to the updated role object or null if the role doesn't exist
+
+*/
 
 export const createRolePermission = async  (permissionIds: number[], roleId: number): Promise<Role  | null> => {
   
@@ -117,6 +175,15 @@ export const createRolePermission = async  (permissionIds: number[], roleId: num
 
 };
 
+
+/*
+
+ This function is similar to createRolePermission but is used for editing existing role permissions. 
+ It retrieves the role from the database, assigns new permissions or 
+ removes existing permissions based on the provided permission IDs, 
+ and returns the updated role object or null if the role doesn't exist.
+
+*/
 
 export const editRolePermissions = async (permissionIds: number[], roleId: number): Promise<Role | null > => {
     let role: Role | null;

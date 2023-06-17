@@ -2,6 +2,14 @@ import { Request, Response, NextFunction } from 'express';
 import * as userController from './../users/users.controller';
 import { User } from '../../../models/user.model';
 
+/*
+
+This function checkUserRolePermission defines a middleware function checkUserRolePermission that checks if the authenticated 
+user has a specific role and permission. 
+It takes a permission parameter and returns a middleware function to be used in Express routes
+
+*/
+
 export const checkUserRolePermission = (permission: string) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     try {
