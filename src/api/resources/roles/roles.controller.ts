@@ -12,7 +12,7 @@ It returns a Promise that resolves to the created role object.
 */
 
 export const create = async (role: { name: string }): Promise<Role> => {
-  const roleCreated = await Role.create({
+  const roleCreated = await Role.create({ include: [Permission],
     name: role.name,
   });
 
@@ -45,8 +45,8 @@ It returns a Promise that resolves to the found role object or null if no role i
 */
 
 export const find = (id: number | null = null, name: string | null = null): Promise<Role | null> => {
-  if (id) return Role.findOne({ where: { id: parseInt(id.toString()) } });
-  if (name) return Role.findOne({ where: { name: name } });
+  if (id) return Role.findOne({  include: [Permission],where: { id: parseInt(id.toString()) } });
+  if (name) return Role.findOne({  include: [Permission],where: { name: name } });
 
   throw new Error('No especifico un parametro para buscar el rol');
 };
@@ -62,6 +62,7 @@ export const find = (id: number | null = null, name: string | null = null): Prom
 export const roleExist = ({ name }: { name: string }): Promise<boolean> => {
   return new Promise<boolean>((resolve, reject) => {
     Role.findAll({
+      include: [Permission],
       where: { name: name },
     })
       .then((roles) => {
@@ -137,8 +138,7 @@ It returns a Promise that resolves to the updated role object or null if the rol
 
 */
 
-export const createRolePermission = async  (permissionIds: number[], roleId: number): Promise<Role  | null> => {
-  
+export const createRolePermission = async (permissionIds: number[], roleId: number): Promise<Role | null> => {
   let role: Role | null;
 
   role = await Role.findByPk(roleId, {
@@ -149,31 +149,61 @@ export const createRolePermission = async  (permissionIds: number[], roleId: num
     throw new RoleNotExist();
   }
 
-  // Assign new permissions to the role
-  if (permissionIds && permissionIds.length > 0) {
-    const permissions = await Permission.findAll({
-      where: { id: permissionIds },
-    });
+  // Find existing permission IDs assigned to the role
+  const existingPermissionIds = role.permissions.map((permission) => permission.id);
 
-    await role.$set("permissions", permissions);
+  // Filter out the permission IDs that are already assigned to the role
+  const newPermissionIds = permissionIds.filter((permissionId) => !existingPermissionIds.includes(permissionId));
 
-    // Refresh the role to include the updated permissions
-    role = await Role.findByPk(roleId, {
-      include: [Permission],
-    });
-  } else {
-    // If no permissions are provided, remove all existing permissions from the role
-    await role.$set("permissions", []);
+  // Assign new permission IDs to the role
+  await role.$add("permissions", newPermissionIds);
 
-    // Refresh the role to reflect the removed permissions
-    role = await Role.findByPk(roleId, {
-      include: [Permission],
-    });
-  }
+  // Refresh the role to include the updated permissions
+  role = await Role.findByPk(roleId, {
+    include: [Permission],
+  });
 
   return role;
-
 };
+
+
+// export const createRolePermission = async  (permissionIds: number[], roleId: number): Promise<Role  | null> => {
+  
+//   let role: Role | null;
+
+//   role = await Role.findByPk(roleId, {
+//     include: [Permission],
+//   });
+
+//   if (!role) {
+//     throw new RoleNotExist();
+//   }
+
+//   // Assign new permissions to the role
+//   if (permissionIds && permissionIds.length > 0) {
+//     const permissions = await Permission.findAll({
+//       where: { id: permissionIds },
+//     });
+
+//     await role.$set("permissions", permissions);
+
+//     // Refresh the role to include the updated permissions
+//     role = await Role.findByPk(roleId, {
+//       include: [Permission],
+//     });
+//   } else {
+//     // If no permissions are provided, remove all existing permissions from the role
+//     await role.$set("permissions", []);
+
+//     // Refresh the role to reflect the removed permissions
+//     role = await Role.findByPk(roleId, {
+//       include: [Permission],
+//     });
+//   }
+
+//   return role;
+
+// };
 
 
 /*

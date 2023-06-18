@@ -47,7 +47,7 @@ const assignPermissionsToRoles = async () => {
     }
   }
 
-  if (createGuestRole) {
+  if (createGuestRole ) {
     for (const permissionName of guestPermissions) {
       try {
         const permission = await findPermission(null, permissionName);
@@ -73,8 +73,8 @@ const assignPermissionsToRoles = async () => {
 // Create roles and assign permissions if the database exists
 export const initializeDatabase = async () => {
   try {
-    //await createRoles();
-    //await loadPermissions();
+    await createRoles();
+    await loadPermissions();
     await assignPermissionsToRoles();
   } catch (error) {
     console.log(`Error loading permissions: ${error}`);

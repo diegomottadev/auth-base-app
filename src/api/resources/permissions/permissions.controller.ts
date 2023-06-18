@@ -45,8 +45,13 @@ export const loadPermissions = (): Promise<void> => {
   return new Promise<void>(async (resolve, reject) => {
     try {
       for (const permissionName of permissions) {
-        await Permission.create({ name: permissionName });
-        console.log(`Permission '${permissionName}' created.`);
+        const existingPermission = await Permission.findOne({ where: { name: permissionName } });
+        if (!existingPermission) {
+          await Permission.create({ name: permissionName });
+          console.log(`Permission '${permissionName}' created.`);
+        } else {
+          console.log(`Permission '${permissionName}' already exists. Skipping creation.`);
+        }
       }
 
       console.log('Permissions loaded successfully.');
