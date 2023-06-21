@@ -11,7 +11,7 @@ import { Op } from 'sequelize';
 
 */
 
-export const create = async (user: { name: string; email: string; roleId: string }, password: string): Promise<User> => {
+export const create = async (user: { name: string; email: string; roleId: number }, password: string): Promise<User> => {
   const { name, email, roleId } = user;
 
   const userCreated = await User.create({

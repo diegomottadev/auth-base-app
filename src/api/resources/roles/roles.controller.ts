@@ -45,11 +45,22 @@ It returns a Promise that resolves to the found role object or null if no role i
 */
 
 export const find = (id: number | null = null, name: string | null = null): Promise<Role | null> => {
-  if (id) return Role.findOne({  include: [Permission],where: { id: parseInt(id.toString()) } });
-  if (name) return Role.findOne({  include: [Permission],where: { name: name } });
+  if (id) {
+    return Role.findOne({
+      include: [Permission],
+      where: { id: parseInt(id.toString()) }
+    }) as Promise<Role | null>;
+  }
+  if (name) {
+    return Role.findOne({
+      include: [Permission],
+      where: { name: name }
+    }) as Promise<Role | null>;
+  }
 
-  throw new Error('No especifico un parametro para buscar el rol');
+  throw new Error('No se especificó un parámetro para buscar el rol');
 };
+
 
 
 /*
@@ -115,6 +126,11 @@ export const destroy = async (id: number, roleToDelete: Role): Promise<Role> => 
   const hasPermissions = await roleToDelete.$count("permissions");
 
   if (hasPermissions > 0) {
+    /* TODO:
+
+        Create a customized Exception about this error
+    
+    */
     throw new Error("Role cannot be deleted because it has associated permissions.");
   }
 

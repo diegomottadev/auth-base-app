@@ -1,5 +1,8 @@
 import { create as createRole, createRolePermission, find as findRole } from './../../src/api/resources/roles/roles.controller';
+import { create as createUser, find as findUser } from './../../src/api/resources/users/users.controller';
+
 import { loadPermissions, find as findPermission } from './../../src/api/resources/permissions/permissions.controller';
+import bcrypt from 'bcrypt';
 
 // Create roles 'ADMIN', 'User', and 'Guest' if they don't exist
 const createRoles = async () => {
@@ -14,6 +17,18 @@ const createRoles = async () => {
     } else {
       console.log(`Role '${roleName}' already exists. Skipping creation.`);
     }
+  }
+};
+
+const createUserRoot = async () => {
+  const existingUser = await findUser(null, 'Admin');
+  const role = await findRole(null, 'ADMIN');
+  if (!existingUser   && role !== null) {
+    const hash = await bcrypt.hash("admin", 10);
+    const user = await createUser({ name: 'Admin', email: "admin@admin.com", roleId: role.id  },hash);
+    console.log(`User '${user.name}' created.`);
+  } else {
+    console.log(`User or Role for the user  exist.`);
   }
 };
 
@@ -76,6 +91,7 @@ export const initializeDatabase = async () => {
     await createRoles();
     await loadPermissions();
     await assignPermissionsToRoles();
+    await createUserRoot();
   } catch (error) {
     console.log(`Error loading permissions: ${error}`);
   }
