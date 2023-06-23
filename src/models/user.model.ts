@@ -6,8 +6,10 @@ import {
   Unique,
   ForeignKey,
   BelongsTo,
+  HasOne,
 } from "sequelize-typescript";
 import { Role } from "./role.model";
+import { Person } from "./person.model";
 
 
 @Table({
@@ -73,4 +75,7 @@ export class User extends Model {
 
   @BelongsTo(() => Role)
   role!: Role; // Define the association with the Role model
+
+  @HasOne(() => Person)
+  person!: Person; // Define the association with the Person model
 }

@@ -66,6 +66,7 @@ rolesRouter.get('/:id', [jwtAuthenticate,checkUserRolePermission('Read')], proce
       res.status(500).json({ message: 'Error getting the role.' });
     }
   }
+  
 }));
 
 // Update a role by ID

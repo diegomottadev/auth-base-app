@@ -1,4 +1,5 @@
 import { Permission } from "../../../models/permissio.model";
+import { Person } from "../../../models/person.model";
 import { Role } from "../../../models/role.model";
 import { User } from "../../../models/user.model"
 import { Op } from 'sequelize';
@@ -22,6 +23,15 @@ export const create = async (user: { name: string; email: string; roleId: number
     active: true,
   }, {
     include: [Role],
+  })
+
+  await Person.create({
+    firstName: name,
+    lastName: "",
+    telephone: "",
+    dateBurn: null,
+    biography: "",
+    userId: userCreated.id as number,
   });
 
   return userCreated;

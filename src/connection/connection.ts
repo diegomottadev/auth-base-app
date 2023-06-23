@@ -5,6 +5,7 @@ import { Role } from "../models/role.model";
 import { Permission } from "../models/permissio.model";
 import { RolePermission } from "../models/rolePermission.model";
 import log from '../../src/api/resources/utils/logger';
+import { Person } from "../models/person.model";
 
 dotenv.config();
 
@@ -28,7 +29,8 @@ dotenv.config();
         User,
         Role,
         Permission,
-        RolePermission
+        RolePermission,
+        Person
     ]
 })
 
