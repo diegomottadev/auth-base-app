@@ -17,3 +17,9 @@ To run the code on your computer, you'll need to install Node.js and a Node.js p
   3 - Run the application
   
     npm run dev
+    
+# Api documentation
+
+You can visit this link https://documenter.getpostman.com/view/21594008/2s93z873e9 and you can test the endpoints with Postman.
+
+
