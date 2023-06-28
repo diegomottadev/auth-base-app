@@ -1,4 +1,4 @@
-import { Permission } from "../../../models/permissio.model";
+import { Permission } from "../../../models/permission.model";
 import { Person } from "../../../models/person.model";
 import { Role } from "../../../models/role.model";
 import { User } from "../../../models/user.model"
@@ -31,7 +31,7 @@ export const create = async (user: { name: string; email: string; roleId: number
     telephone: "",
     dateBurn: null,
     biography: "",
-    userId: userCreated.id as number,
+    userId: userCreated.id,
   });
 
   return userCreated;

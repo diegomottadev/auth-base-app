@@ -2642,3 +2642,1835 @@ info: 2023-06-23T15:35:30.838Z ::1 - PUT /profile HTTP/1.1 200 345 - 98.953 ms
 info: 2023-06-23T15:38:25.003Z User Admin provided a valid token. Authentication completed
 info: 2023-06-23T15:38:25.041Z User profile with ID [2] has been successfully updated.
 info: 2023-06-23T15:38:25.050Z ::1 - PUT /profile HTTP/1.1 200 1149 - 80.415 ms
+info: 2023-06-23T20:46:01.246Z User Admin provided a valid token. Authentication completed
+info: 2023-06-23T20:46:01.287Z ::1 - GET /profile/me HTTP/1.1 200 1066 - 55.848 ms
+info: 2023-06-23T21:28:26.507Z User undefined successfully completed authentication
+info: 2023-06-23T21:28:26.517Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 208.087 ms
+info: 2023-06-23T21:29:17.059Z User undefined successfully completed authentication
+info: 2023-06-23T21:29:17.069Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 228.414 ms
+info: 2023-06-23T21:29:43.426Z User undefined successfully completed authentication
+info: 2023-06-23T21:29:43.436Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 236.646 ms
+info: 2023-06-23T21:30:50.444Z User undefined successfully completed authentication
+info: 2023-06-23T21:30:50.453Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 199.424 ms
+info: 2023-06-23T21:32:30.347Z User undefined successfully completed authentication
+info: 2023-06-23T21:32:30.368Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 319.691 ms
+info: 2023-06-23T21:35:45.711Z User undefined successfully completed authentication
+info: 2023-06-23T21:35:45.734Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 308.137 ms
+info: 2023-06-23T21:37:46.269Z User undefined successfully completed authentication
+info: 2023-06-23T21:37:46.303Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 321.934 ms
+info: 2023-06-23T21:38:50.316Z User undefined successfully completed authentication
+info: 2023-06-23T21:38:50.346Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 437.354 ms
+info: 2023-06-23T21:39:56.454Z User undefined successfully completed authentication
+info: 2023-06-23T21:39:56.484Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 300.129 ms
+error: 2023-06-26T13:51:11.281Z Error connecting to the database: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+info: 2023-06-26T13:51:42.208Z User undefined successfully completed authentication
+info: 2023-06-26T13:51:42.225Z ::1 - POST /auth/login HTTP/1.1 200 149 - 161.754 ms
+warn: 2023-06-26T13:52:09.404Z The user data did not pass validation: {"name":"diego","password":"admin","email":"diegom@mail.com"} - ["roleId" is required]
+info: 2023-06-26T13:52:09.408Z ::1 - POST /users HTTP/1.1 400 22 - 11.815 ms
+info: 2023-06-26T13:52:22.306Z ::1 - POST /users HTTP/1.1 401 26 - 3.500 ms
+info: 2023-06-26T13:52:43.457Z ::1 - POST /users HTTP/1.1 401 26 - 1.319 ms
+info: 2023-06-26T13:53:10.384Z ::1 - POST /users HTTP/1.1 401 26 - 1.280 ms
+info: 2023-06-26T13:54:31.384Z User undefined successfully completed authentication
+info: 2023-06-26T13:54:31.387Z ::1 - POST /auth/login HTTP/1.1 200 149 - 108.840 ms
+info: 2023-06-26T13:54:45.565Z ::1 - POST /users HTTP/1.1 401 26 - 5.982 ms
+error: 2023-06-26T13:55:36.751Z Error creating the user with email [diegom@mail.com] and name [diego].
+info: 2023-06-26T13:55:36.778Z ::1 - POST /users HTTP/1.1 500 38 - 351.250 ms
+error: 2023-06-26T13:56:47.234Z Error creating the user with email [diegom@mail.com] and name [diego].
+info: 2023-06-26T13:56:47.237Z ::1 - POST /users HTTP/1.1 500 38 - 123.321 ms
+info: 2023-06-26T13:57:33.578Z ::1 - POST /users HTTP/1.1 500 990 - 268.454 ms
+error: 2023-06-26T14:00:22.730Z Error creating the user with email [diegom@mail.com] and name [diego].
+info: 2023-06-26T14:00:22.743Z ::1 - POST /users HTTP/1.1 500 38 - 244.353 ms
+info: 2023-06-26T14:01:50.891Z User with ID [7] has been successfully created.
+info: 2023-06-26T14:01:50.902Z ::1 - POST /users HTTP/1.1 201 73 - 157.420 ms
+info: 2023-06-26T14:02:08.893Z ::1 - POST /users HTTP/1.1 401 26 - 30.201 ms
+info: 2023-06-26T14:02:12.615Z ::1 - POST /users HTTP/1.1 401 26 - 4.641 ms
+error: 2023-06-26T14:02:50.002Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/helpers/checkRolePermision.helper.ts(19,44): error TS1005: ',' expected.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/helpers/checkRolePermision.helper.ts(19,44): error TS1005: ',' expected.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\src\api\resources\helpers\checkRolePermision.helper.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-9246876110635909.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-9246876110635909.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-9246876110635909.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12) {"date":"Mon Jun 26 2023 11:02:49 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":349960},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":416819,"external":1900979,"heapTotal":55644160,"heapUsed":26394280,"rss":77213696},"pid":23064,"uid":null,"version":"v14.18.0"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/helpers/checkRolePermision.helper.ts(19,44): error TS1005: ',' expected.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\src\\api\\resources\\helpers\\checkRolePermision.helper.ts:1:7)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js:69:33)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\src\\api\\resources\\helpers\\checkRolePermision.helper.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false}]}
+info: 2023-06-26T14:02:58.803Z ::1 - POST /users HTTP/1.1 401 26 - 30.423 ms
+info: 2023-06-26T14:03:59.887Z ::1 - POST /users HTTP/1.1 401 26 - 29.908 ms
+info: 2023-06-26T14:04:12.866Z ::1 - POST /users HTTP/1.1 401 26 - 31.596 ms
+info: 2023-06-26T14:06:16.984Z ::1 - POST /users HTTP/1.1 401 49 - 48.661 ms
+error: 2023-06-26T14:07:45.659Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/helpers/checkRolePermision.helper.ts(14,10): error TS7030: Not all code paths return a value.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/helpers/checkRolePermision.helper.ts(14,10): error TS7030: Not all code paths return a value.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\src\api\resources\helpers\checkRolePermision.helper.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-9246876110635909.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-9246876110635909.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-9246876110635909.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12) {"date":"Mon Jun 26 2023 11:07:45 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":350256},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":425032,"external":1909171,"heapTotal":55644160,"heapUsed":26300672,"rss":77078528},"pid":9036,"uid":null,"version":"v14.18.0"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/helpers/checkRolePermision.helper.ts(14,10): error TS7030: Not all code paths return a value.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\src\\api\\resources\\helpers\\checkRolePermision.helper.ts:1:7)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js:69:33)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\src\\api\\resources\\helpers\\checkRolePermision.helper.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-9246876110635909.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false}]}
+info: 2023-06-26T14:08:16.645Z ::1 - POST /users HTTP/1.1 401 26 - 31.736 ms
+info: 2023-06-26T14:08:24.580Z ::1 - POST /users HTTP/1.1 401 26 - 2.938 ms
+info: 2023-06-26T14:12:57.163Z ::1 - POST /users HTTP/1.1 401 26 - 30.076 ms
+info: 2023-06-26T14:12:59.007Z ::1 - POST /users HTTP/1.1 401 26 - 4.572 ms
+info: 2023-06-26T14:13:41.272Z User undefined successfully completed authentication
+info: 2023-06-26T14:13:41.275Z ::1 - POST /auth/login HTTP/1.1 200 149 - 103.988 ms
+info: 2023-06-26T14:13:52.464Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T14:13:52.497Z ::1 - GET /profile/me HTTP/1.1 200 609 - 45.326 ms
+info: 2023-06-26T14:15:07.560Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:15:07.569Z ::1 - POST /users HTTP/1.1 401 - - 37.642 ms
+info: 2023-06-26T14:15:09.385Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:15:09.387Z ::1 - POST /users HTTP/1.1 401 - - 8.179 ms
+info: 2023-06-26T14:15:11.542Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:15:11.544Z ::1 - POST /users HTTP/1.1 401 - - 7.283 ms
+error: 2023-06-26T14:15:21.790Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/users/users.route.ts(20,1): error TS6133: 'validationUser' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/users/users.route.ts(20,1): error TS6133: 'validationUser' is declared but its value is never read.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\src\api\resources\users\users.route.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-7182171525823.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-7182171525823.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-7182171525823.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12) {"date":"Mon Jun 26 2023 11:15:21 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":350712},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":1068813,"external":2569567,"heapTotal":53547008,"heapUsed":28626224,"rss":68571136},"pid":27496,"uid":null,"version":"v14.18.0"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/users/users.route.ts(20,1): error TS6133: 'validationUser' is declared but its value is never read.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\src\\api\\resources\\users\\users.route.ts:1:7)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js:69:33)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\src\\api\\resources\\users\\users.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false}]}
+error: 2023-06-26T14:15:28.526Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/users/users.route.ts(20,1): error TS6133: 'validationUser' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/users/users.route.ts(20,1): error TS6133: 'validationUser' is declared but its value is never read.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\src\api\resources\users\users.route.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-7182171525823.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-7182171525823.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-7182171525823.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\12 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12) {"date":"Mon Jun 26 2023 11:15:28 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":350719},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":1100455,"external":2601209,"heapTotal":53284864,"heapUsed":28596368,"rss":67964928},"pid":1008,"uid":null,"version":"v14.18.0"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/users/users.route.ts(20,1): error TS6133: 'validationUser' is declared but its value is never read.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\src\\api\\resources\\users\\users.route.ts:1:7)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js:69:33)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\src\\api\\resources\\users\\users.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-7182171525823.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\12 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false}]}
+info: 2023-06-26T14:15:47.019Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:15:47.028Z ::1 - POST /users HTTP/1.1 401 - - 34.723 ms
+info: 2023-06-26T14:15:48.308Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:15:48.310Z ::1 - POST /users HTTP/1.1 401 - - 7.886 ms
+info: 2023-06-26T14:16:00.688Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:16:00.691Z ::1 - POST /users HTTP/1.1 401 - - 9.542 ms
+info: 2023-06-26T14:16:40.911Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T14:16:40.943Z ::1 - GET /profile/me HTTP/1.1 200 609 - 41.889 ms
+info: 2023-06-26T14:18:25.057Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:18:25.066Z ::1 - POST /users HTTP/1.1 401 - - 36.711 ms
+info: 2023-06-26T14:18:53.745Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T14:18:53.805Z Role with name [CPao] created successfully.
+info: 2023-06-26T14:18:53.807Z ::1 - POST /roles HTTP/1.1 201 71 - 73.708 ms
+info: 2023-06-26T14:19:22.599Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:19:22.601Z ::1 - POST /users HTTP/1.1 401 - - 7.480 ms
+info: 2023-06-26T14:19:44.927Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T14:19:44.945Z Successfully retrieved all users.
+info: 2023-06-26T14:19:44.948Z ::1 - GET /users HTTP/1.1 200 399 - 27.961 ms
+info: 2023-06-26T14:19:58.958Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:19:58.960Z ::1 - POST /users HTTP/1.1 401 - - 10.158 ms
+info: 2023-06-26T14:20:11.931Z JWT token is not valid. User with ID 2 does not exist
+info: 2023-06-26T14:20:11.933Z ::1 - POST /users HTTP/1.1 401 - - 10.703 ms
+info: 2023-06-26T14:20:41.158Z ::1 - POST /users/3 HTTP/1.1 - - - - ms
+info: 2023-06-26T14:20:41.689Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T14:20:41.810Z User with ID [2] has been successfully created.
+info: 2023-06-26T14:20:41.813Z ::1 - POST /users HTTP/1.1 201 77 - 131.544 ms
+info: 2023-06-26T14:20:44.103Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-26T14:20:44.116Z Email [dieg2o2@mail.com] or name [diego22] already exists.
+info: 2023-06-26T14:20:44.143Z ::1 - POST /users HTTP/1.1 500 596 - 43.675 ms
+info: 2023-06-26T14:20:51.162Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-26T14:20:51.174Z Email [dieg2o2@mail.com] or name [diego22] already exists.
+info: 2023-06-26T14:20:51.177Z ::1 - POST /users HTTP/1.1 500 596 - 19.905 ms
+info: 2023-06-26T14:21:51.158Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-26T14:21:51.172Z Email [dieg2o2@mail.com] or name [diego22] already exists.
+info: 2023-06-26T14:21:51.175Z ::1 - POST /users HTTP/1.1 500 596 - 22.871 ms
+info: 2023-06-26T14:22:44.129Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-26T14:22:44.156Z Email [dieg2o2@mail.com] or name [diego22] already exists.
+warn: 2023-06-26T14:22:44.157Z The email or username or phone number is already associated with an account.: dieg2o2@mail.com | diego22
+info: 2023-06-26T14:22:44.166Z ::1 - POST /users HTTP/1.1 409 90 - 62.443 ms
+info: 2023-06-26T14:36:59.255Z User undefined successfully completed authentication
+info: 2023-06-26T14:36:59.258Z ::1 - POST /auth/login HTTP/1.1 200 149 - 104.742 ms
+info: 2023-06-26T14:37:10.955Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T14:37:10.993Z Role with name [cpo] created successfully.
+info: 2023-06-26T14:37:10.995Z ::1 - POST /roles HTTP/1.1 201 69 - 45.425 ms
+info: 2023-06-26T14:52:45.440Z User undefined successfully completed authentication
+info: 2023-06-26T14:52:45.443Z ::1 - POST /auth/login HTTP/1.1 200 149 - 98.308 ms
+info: 2023-06-26T14:53:59.853Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T14:53:59.893Z Role with name [Guest] created successfully.
+info: 2023-06-26T14:53:59.894Z ::1 - POST /roles HTTP/1.1 201 73 - 50.938 ms
+info: 2023-06-26T14:54:10.870Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-26T14:54:10.892Z Role with name [Guest] already exists.
+info: 2023-06-26T14:54:10.928Z ::1 - POST /roles HTTP/1.1 500 596 - 61.990 ms
+info: 2023-06-26T14:56:44.938Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-26T14:56:44.955Z Role with name [Guest] already exists.
+info: 2023-06-26T14:56:44.959Z ::1 - POST /roles HTTP/1.1 500 596 - 31.361 ms
+info: 2023-06-26T14:57:34.438Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-26T14:57:34.470Z Role with name [Guest] already exists.
+warn: 2023-06-26T14:57:34.471Z Error creating the role [Guest]: There is a role with the same name.
+info: 2023-06-26T14:57:34.482Z ::1 - POST /roles HTTP/1.1 409 49 - 85.324 ms
+info: 2023-06-26T14:57:46.983Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T14:57:47.039Z Role with name [Guest] created successfully.
+info: 2023-06-26T14:57:47.040Z ::1 - POST /roles HTTP/1.1 201 73 - 68.561 ms
+info: 2023-06-26T19:02:08.215Z User undefined successfully completed authentication
+info: 2023-06-26T19:02:08.248Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 360.238 ms
+info: 2023-06-26T19:29:19.177Z User undefined successfully completed authentication
+info: 2023-06-26T19:29:19.211Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 380.677 ms
+info: 2023-06-26T19:32:19.000Z User undefined successfully completed authentication
+info: 2023-06-26T19:32:19.032Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 381.921 ms
+info: 2023-06-26T19:33:38.318Z User undefined successfully completed authentication
+info: 2023-06-26T19:33:38.352Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 376.599 ms
+info: 2023-06-26T19:34:18.158Z User undefined successfully completed authentication
+info: 2023-06-26T19:34:18.186Z ::1 - POST /auth/login HTTP/1.1 200 149 - 166.714 ms
+info: 2023-06-26T19:36:43.509Z User undefined successfully completed authentication
+info: 2023-06-26T19:36:43.541Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 380.057 ms
+info: 2023-06-26T19:43:53.709Z User undefined successfully completed authentication
+info: 2023-06-26T19:43:53.747Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 367.449 ms
+info: 2023-06-26T19:45:38.653Z User undefined successfully completed authentication
+info: 2023-06-26T19:45:38.690Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 392.330 ms
+info: 2023-06-26T19:47:12.691Z User undefined successfully completed authentication
+info: 2023-06-26T19:47:12.727Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 384.178 ms
+info: 2023-06-26T19:48:59.124Z User undefined successfully completed authentication
+info: 2023-06-26T19:48:59.172Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 436.554 ms
+info: 2023-06-26T19:53:03.752Z User undefined successfully completed authentication
+info: 2023-06-26T19:53:03.795Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 391.024 ms
+info: 2023-06-26T19:55:10.902Z User undefined successfully completed authentication
+info: 2023-06-26T19:55:10.934Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 360.471 ms
+info: 2023-06-26T19:56:28.770Z User undefined successfully completed authentication
+info: 2023-06-26T19:56:28.807Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 379.103 ms
+info: 2023-06-26T20:00:08.449Z User undefined successfully completed authentication
+info: 2023-06-26T20:00:08.483Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 370.885 ms
+info: 2023-06-26T20:00:08.582Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:00:08.676Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 110.835 ms
+info: 2023-06-26T20:03:03.823Z User undefined successfully completed authentication
+info: 2023-06-26T20:03:03.878Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 503.246 ms
+info: 2023-06-26T20:03:04.050Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:03:04.177Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 143.670 ms
+info: 2023-06-26T20:04:27.287Z User undefined successfully completed authentication
+info: 2023-06-26T20:04:27.330Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 389.399 ms
+info: 2023-06-26T20:04:27.434Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:04:27.543Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 125.163 ms
+info: 2023-06-26T20:05:36.871Z User undefined successfully completed authentication
+info: 2023-06-26T20:05:36.917Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 418.495 ms
+info: 2023-06-26T20:05:37.047Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:05:37.240Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 211.486 ms
+info: 2023-06-26T20:06:14.344Z User undefined successfully completed authentication
+info: 2023-06-26T20:06:14.378Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 390.228 ms
+info: 2023-06-26T20:06:14.486Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:06:14.581Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 114.572 ms
+info: 2023-06-26T20:07:09.234Z User undefined successfully completed authentication
+info: 2023-06-26T20:07:09.269Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 358.344 ms
+info: 2023-06-26T20:07:09.354Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:07:09.434Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 93.465 ms
+info: 2023-06-26T20:09:01.514Z User undefined successfully completed authentication
+info: 2023-06-26T20:09:01.558Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 528.165 ms
+info: 2023-06-26T20:09:01.699Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:09:01.817Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 149.909 ms
+info: 2023-06-26T20:11:29.531Z User undefined successfully completed authentication
+info: 2023-06-26T20:11:29.562Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 367.527 ms
+info: 2023-06-26T20:11:29.667Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:11:29.755Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 94.617 ms
+error: 2023-06-26T20:16:38.824Z User [admin@admin.com] does not exist. Authentication failed
+info: 2023-06-26T20:16:38.867Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 409 627 - 266.741 ms
+info: 2023-06-26T20:16:38.950Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 2.061 ms
+error: 2023-06-26T20:16:39.010Z Error connecting to the database: Error: ConnectionManager.getConnection was called after the connection manager was closed!
+error: 2023-06-26T20:17:27.009Z User [admin@admin.com] does not exist. Authentication failed
+info: 2023-06-26T20:17:27.051Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 409 627 - 232.233 ms
+info: 2023-06-26T20:17:27.153Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 2.037 ms
+error: 2023-06-26T20:17:27.217Z Error connecting to the database: Error: ConnectionManager.getConnection was called after the connection manager was closed!
+info: 2023-06-26T20:19:07.624Z User undefined successfully completed authentication
+info: 2023-06-26T20:19:07.660Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 376.002 ms
+info: 2023-06-26T20:19:07.749Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:19:07.840Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 102.348 ms
+info: 2023-06-26T20:22:00.652Z User undefined successfully completed authentication
+info: 2023-06-26T20:22:00.684Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 373.596 ms
+info: 2023-06-26T20:22:00.786Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:22:00.870Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 102.016 ms
+warn: 2023-06-26T20:22:00.972Z The user data did not pass validation:  {"email":"user@user.com","password":"user"}
+info: 2023-06-26T20:22:00.997Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 400 60 - 34.338 ms
+info: 2023-06-26T20:22:01.069Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 1.367 ms
+info: 2023-06-26T20:22:01.256Z User undefined successfully completed authentication
+info: 2023-06-26T20:22:01.273Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 123.801 ms
+info: 2023-06-26T20:22:01.315Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T20:22:01.357Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 45.351 ms
+info: 2023-06-26T20:23:07.537Z User undefined successfully completed authentication
+info: 2023-06-26T20:23:07.568Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 397.943 ms
+info: 2023-06-26T20:23:07.666Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:23:07.763Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 100.807 ms
+warn: 2023-06-26T20:23:07.883Z The user data did not pass validation:  {"email":"user@user.com","password":"user"}
+info: 2023-06-26T20:23:07.911Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 400 60 - 37.211 ms
+info: 2023-06-26T20:23:07.983Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 1.519 ms
+info: 2023-06-26T20:23:08.176Z User undefined successfully completed authentication
+info: 2023-06-26T20:23:08.195Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 121.395 ms
+info: 2023-06-26T20:23:08.242Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T20:23:08.298Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 60.105 ms
+info: 2023-06-26T20:24:42.972Z User undefined successfully completed authentication
+info: 2023-06-26T20:24:43.008Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 384.514 ms
+info: 2023-06-26T20:24:43.112Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:24:43.215Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 110.174 ms
+warn: 2023-06-26T20:24:43.332Z The user data did not pass validation:  {"email":"user@user.com","password":"user"}
+info: 2023-06-26T20:24:43.359Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 400 60 - 37.682 ms
+info: 2023-06-26T20:24:43.426Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 1.617 ms
+info: 2023-06-26T20:24:43.626Z User undefined successfully completed authentication
+info: 2023-06-26T20:24:43.643Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 122.796 ms
+info: 2023-06-26T20:24:43.686Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T20:24:43.734Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 51.145 ms
+info: 2023-06-26T20:25:14.356Z User undefined successfully completed authentication
+info: 2023-06-26T20:25:14.388Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 363.433 ms
+info: 2023-06-26T20:25:14.485Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:25:14.577Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 106.855 ms
+warn: 2023-06-26T20:25:14.719Z The user data did not pass validation:  {"email":"user@user.com","password":"user"}
+info: 2023-06-26T20:25:14.757Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 400 60 - 52.596 ms
+info: 2023-06-26T20:25:14.842Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 1.540 ms
+info: 2023-06-26T20:25:15.049Z User undefined successfully completed authentication
+info: 2023-06-26T20:25:15.071Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 131.902 ms
+info: 2023-06-26T20:25:15.132Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T20:25:15.193Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 67.745 ms
+info: 2023-06-26T20:26:26.517Z User undefined successfully completed authentication
+info: 2023-06-26T20:26:26.552Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 379.359 ms
+info: 2023-06-26T20:26:26.652Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:26:26.743Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 104.876 ms
+warn: 2023-06-26T20:26:26.854Z The user data did not pass validation:  {"email":"user@user.com","password":"user"}
+info: 2023-06-26T20:26:26.880Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 400 60 - 36.259 ms
+info: 2023-06-26T20:26:26.949Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 1.482 ms
+info: 2023-06-26T20:26:27.142Z User undefined successfully completed authentication
+info: 2023-06-26T20:26:27.160Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 122.906 ms
+info: 2023-06-26T20:26:27.211Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T20:26:27.258Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 50.178 ms
+info: 2023-06-26T20:40:19.569Z User undefined successfully completed authentication
+info: 2023-06-26T20:40:19.617Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 380.535 ms
+info: 2023-06-26T20:40:19.736Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:40:19.834Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 114.133 ms
+warn: 2023-06-26T20:40:19.967Z The user data did not pass validation:  {"email":"user@user.com","password":"user"}
+info: 2023-06-26T20:40:20.004Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 400 60 - 47.770 ms
+info: 2023-06-26T20:40:20.091Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 1.748 ms
+info: 2023-06-26T20:40:20.304Z User undefined successfully completed authentication
+info: 2023-06-26T20:40:20.324Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 126.509 ms
+info: 2023-06-26T20:40:20.381Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T20:40:20.435Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 57.560 ms
+warn: 2023-06-26T20:40:58.278Z The user data did not pass validation:  {"email":"user","password":"user"}
+info: 2023-06-26T20:40:58.289Z ::1 - POST /auth/login HTTP/1.1 400 60 - 35.943 ms
+info: 2023-06-26T20:41:32.179Z User undefined successfully completed authentication
+info: 2023-06-26T20:41:32.193Z ::1 - POST /auth/login HTTP/1.1 200 149 - 133.426 ms
+info: 2023-06-26T20:45:06.336Z User undefined successfully completed authentication
+info: 2023-06-26T20:45:06.378Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 376.209 ms
+info: 2023-06-26T20:45:06.480Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T20:45:06.551Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 90.785 ms
+info: 2023-06-26T20:45:06.764Z User undefined successfully completed authentication
+info: 2023-06-26T20:45:06.782Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 126.097 ms
+info: 2023-06-26T20:45:06.830Z User user provided a valid token. Authentication completed
+info: 2023-06-26T20:45:06.872Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 46.317 ms
+info: 2023-06-26T20:45:07.026Z User undefined successfully completed authentication
+info: 2023-06-26T20:45:07.043Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 115.213 ms
+info: 2023-06-26T20:45:07.089Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T20:45:07.137Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 53.831 ms
+info: 2023-06-26T21:02:05.285Z User undefined successfully completed authentication
+info: 2023-06-26T21:02:05.325Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 373.178 ms
+info: 2023-06-26T21:02:05.426Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:02:05.499Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 89.190 ms
+info: 2023-06-26T21:02:05.697Z User undefined successfully completed authentication
+info: 2023-06-26T21:02:05.719Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 131.719 ms
+info: 2023-06-26T21:02:05.772Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:02:05.817Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 50.539 ms
+info: 2023-06-26T21:02:05.973Z User undefined successfully completed authentication
+info: 2023-06-26T21:02:05.991Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.008 ms
+info: 2023-06-26T21:02:06.033Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:02:06.079Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 47.691 ms
+info: 2023-06-26T21:09:16.041Z User undefined successfully completed authentication
+info: 2023-06-26T21:09:16.078Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 418.824 ms
+info: 2023-06-26T21:09:16.210Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:09:16.308Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 118.383 ms
+info: 2023-06-26T21:09:16.565Z User undefined successfully completed authentication
+info: 2023-06-26T21:09:16.591Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 165.030 ms
+info: 2023-06-26T21:09:16.647Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:09:16.710Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 64.913 ms
+info: 2023-06-26T21:09:16.876Z User undefined successfully completed authentication
+info: 2023-06-26T21:09:16.900Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 118.972 ms
+info: 2023-06-26T21:09:16.959Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:09:17.003Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 51.979 ms
+info: 2023-06-26T21:12:08.207Z User undefined successfully completed authentication
+info: 2023-06-26T21:12:08.239Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 359.369 ms
+info: 2023-06-26T21:12:08.351Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:12:08.442Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 112.125 ms
+info: 2023-06-26T21:12:08.687Z User undefined successfully completed authentication
+info: 2023-06-26T21:12:08.708Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 149.345 ms
+info: 2023-06-26T21:12:08.767Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:12:08.819Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 57.953 ms
+info: 2023-06-26T21:12:08.972Z User undefined successfully completed authentication
+info: 2023-06-26T21:12:08.999Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 115.788 ms
+info: 2023-06-26T21:12:09.048Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:12:09.096Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 52.332 ms
+info: 2023-06-26T21:12:40.240Z User undefined successfully completed authentication
+info: 2023-06-26T21:12:40.289Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 434.238 ms
+info: 2023-06-26T21:12:40.442Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:12:40.544Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 113.861 ms
+info: 2023-06-26T21:12:40.791Z User undefined successfully completed authentication
+info: 2023-06-26T21:12:40.810Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 154.225 ms
+info: 2023-06-26T21:12:40.898Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:12:40.953Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 63.749 ms
+info: 2023-06-26T21:12:41.163Z User undefined successfully completed authentication
+info: 2023-06-26T21:12:41.189Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 137.615 ms
+info: 2023-06-26T21:12:41.249Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:12:41.306Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 58.810 ms
+info: 2023-06-26T21:18:35.629Z User undefined successfully completed authentication
+info: 2023-06-26T21:18:35.669Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 378.366 ms
+info: 2023-06-26T21:18:35.770Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:18:35.864Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 106.765 ms
+info: 2023-06-26T21:18:36.054Z User undefined successfully completed authentication
+info: 2023-06-26T21:18:36.071Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 124.596 ms
+info: 2023-06-26T21:18:36.115Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:18:36.164Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 54.367 ms
+info: 2023-06-26T21:18:36.306Z User undefined successfully completed authentication
+info: 2023-06-26T21:18:36.322Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.140 ms
+info: 2023-06-26T21:18:36.365Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:18:36.409Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 48.039 ms
+info: 2023-06-26T21:22:00.771Z User undefined successfully completed authentication
+info: 2023-06-26T21:22:00.805Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 445.762 ms
+info: 2023-06-26T21:22:00.910Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:22:01.012Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 109.422 ms
+info: 2023-06-26T21:22:01.231Z User undefined successfully completed authentication
+info: 2023-06-26T21:22:01.254Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 126.976 ms
+info: 2023-06-26T21:22:01.296Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:22:01.344Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 50.676 ms
+info: 2023-06-26T21:22:01.497Z User undefined successfully completed authentication
+info: 2023-06-26T21:22:01.515Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.638 ms
+info: 2023-06-26T21:22:01.561Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:22:01.606Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 49.167 ms
+info: 2023-06-26T21:22:20.422Z User undefined successfully completed authentication
+info: 2023-06-26T21:22:20.453Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 414.921 ms
+info: 2023-06-26T21:22:20.548Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:22:20.641Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 106.195 ms
+info: 2023-06-26T21:22:20.856Z User undefined successfully completed authentication
+info: 2023-06-26T21:22:20.875Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 126.804 ms
+info: 2023-06-26T21:22:20.917Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:22:20.983Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 61.985 ms
+info: 2023-06-26T21:22:21.172Z User undefined successfully completed authentication
+info: 2023-06-26T21:22:21.190Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 115.627 ms
+info: 2023-06-26T21:22:21.228Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:22:21.269Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.944 ms
+info: 2023-06-26T21:24:33.634Z User undefined successfully completed authentication
+info: 2023-06-26T21:24:33.665Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 385.063 ms
+info: 2023-06-26T21:24:33.764Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:24:33.862Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 114.563 ms
+info: 2023-06-26T21:24:34.086Z User undefined successfully completed authentication
+info: 2023-06-26T21:24:34.109Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 126.192 ms
+info: 2023-06-26T21:24:34.167Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:24:34.220Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 57.911 ms
+info: 2023-06-26T21:24:34.384Z User undefined successfully completed authentication
+info: 2023-06-26T21:24:34.409Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.040 ms
+info: 2023-06-26T21:24:34.451Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:24:34.497Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 50.114 ms
+info: 2023-06-26T21:25:18.850Z User undefined successfully completed authentication
+info: 2023-06-26T21:25:18.883Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 371.963 ms
+info: 2023-06-26T21:25:18.988Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:25:19.092Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 98.326 ms
+info: 2023-06-26T21:25:19.321Z User undefined successfully completed authentication
+info: 2023-06-26T21:25:19.345Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 141.380 ms
+info: 2023-06-26T21:25:19.391Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:25:19.436Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 51.745 ms
+info: 2023-06-26T21:25:19.594Z User undefined successfully completed authentication
+info: 2023-06-26T21:25:19.614Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 120.927 ms
+info: 2023-06-26T21:25:19.660Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:25:19.700Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 45.802 ms
+info: 2023-06-26T21:26:02.666Z User undefined successfully completed authentication
+info: 2023-06-26T21:26:02.696Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 360.788 ms
+info: 2023-06-26T21:26:02.789Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:26:02.878Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 96.079 ms
+info: 2023-06-26T21:26:03.086Z User undefined successfully completed authentication
+info: 2023-06-26T21:26:03.105Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 121.059 ms
+info: 2023-06-26T21:26:03.147Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:26:03.192Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 49.429 ms
+info: 2023-06-26T21:26:03.336Z User undefined successfully completed authentication
+info: 2023-06-26T21:26:03.356Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.082 ms
+info: 2023-06-26T21:26:03.397Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:26:03.446Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 49.601 ms
+info: 2023-06-26T21:26:59.318Z User undefined successfully completed authentication
+info: 2023-06-26T21:26:59.358Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 370.872 ms
+info: 2023-06-26T21:26:59.454Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:26:59.543Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 105.880 ms
+info: 2023-06-26T21:26:59.741Z User undefined successfully completed authentication
+info: 2023-06-26T21:26:59.758Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 125.076 ms
+info: 2023-06-26T21:26:59.802Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:26:59.847Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 47.076 ms
+info: 2023-06-26T21:26:59.992Z User undefined successfully completed authentication
+info: 2023-06-26T21:27:00.013Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.059 ms
+info: 2023-06-26T21:27:00.062Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:27:00.113Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 56.816 ms
+info: 2023-06-26T21:29:31.880Z User undefined successfully completed authentication
+info: 2023-06-26T21:29:31.920Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 400.781 ms
+info: 2023-06-26T21:29:32.025Z User Admin provided a valid token. Authentication completed
+info: 2023-06-26T21:29:32.126Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 110.831 ms
+info: 2023-06-26T21:29:32.326Z User undefined successfully completed authentication
+info: 2023-06-26T21:29:32.342Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 128.885 ms
+info: 2023-06-26T21:29:32.387Z User user provided a valid token. Authentication completed
+info: 2023-06-26T21:29:32.435Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 52.510 ms
+info: 2023-06-26T21:29:32.588Z User undefined successfully completed authentication
+info: 2023-06-26T21:29:32.611Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.970 ms
+info: 2023-06-26T21:29:32.655Z User guest provided a valid token. Authentication completed
+info: 2023-06-26T21:29:32.701Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 49.268 ms
+info: 2023-06-28T12:50:11.396Z User undefined successfully completed authentication
+info: 2023-06-28T12:50:11.437Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 399.817 ms
+info: 2023-06-28T12:50:11.525Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T12:50:11.600Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 100.477 ms
+info: 2023-06-28T12:50:11.780Z User undefined successfully completed authentication
+info: 2023-06-28T12:50:11.794Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.561 ms
+info: 2023-06-28T12:50:11.834Z User user provided a valid token. Authentication completed
+info: 2023-06-28T12:50:11.887Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 56.103 ms
+info: 2023-06-28T12:50:12.035Z User undefined successfully completed authentication
+info: 2023-06-28T12:50:12.053Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.569 ms
+info: 2023-06-28T12:50:12.086Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T12:50:12.135Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 47.376 ms
+info: 2023-06-28T12:55:15.542Z User undefined successfully completed authentication
+info: 2023-06-28T12:55:15.576Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 356.049 ms
+info: 2023-06-28T12:55:15.661Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T12:55:15.743Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 93.096 ms
+info: 2023-06-28T12:55:15.935Z User undefined successfully completed authentication
+info: 2023-06-28T12:55:15.950Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.148 ms
+info: 2023-06-28T12:55:15.989Z User user provided a valid token. Authentication completed
+info: 2023-06-28T12:55:16.039Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 53.226 ms
+info: 2023-06-28T12:55:16.174Z User undefined successfully completed authentication
+info: 2023-06-28T12:55:16.190Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.291 ms
+info: 2023-06-28T12:55:16.225Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T12:55:16.260Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.840 ms
+info: 2023-06-28T13:23:11.879Z User undefined successfully completed authentication
+info: 2023-06-28T13:23:11.909Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 330.767 ms
+info: 2023-06-28T13:23:11.984Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T13:23:12.052Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 88.001 ms
+info: 2023-06-28T13:23:12.234Z User undefined successfully completed authentication
+info: 2023-06-28T13:23:12.247Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 121.804 ms
+info: 2023-06-28T13:23:12.283Z User user provided a valid token. Authentication completed
+info: 2023-06-28T13:23:12.320Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.020 ms
+info: 2023-06-28T13:23:12.449Z User undefined successfully completed authentication
+info: 2023-06-28T13:23:12.465Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 98.934 ms
+info: 2023-06-28T13:23:12.495Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T13:23:12.534Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 42.163 ms
+info: 2023-06-28T13:31:30.717Z User undefined successfully completed authentication
+info: 2023-06-28T13:31:30.757Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 332.055 ms
+info: 2023-06-28T13:31:30.852Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T13:31:30.938Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 105.377 ms
+info: 2023-06-28T13:31:31.125Z User undefined successfully completed authentication
+info: 2023-06-28T13:31:31.142Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.081 ms
+info: 2023-06-28T13:31:31.187Z User user provided a valid token. Authentication completed
+info: 2023-06-28T13:31:31.225Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.440 ms
+info: 2023-06-28T13:31:31.368Z User undefined successfully completed authentication
+info: 2023-06-28T13:31:31.385Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.607 ms
+info: 2023-06-28T13:31:31.421Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T13:31:31.469Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 46.329 ms
+info: 2023-06-28T13:34:23.157Z User undefined successfully completed authentication
+info: 2023-06-28T13:34:23.190Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 346.167 ms
+info: 2023-06-28T13:34:23.275Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T13:34:23.352Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 92.109 ms
+info: 2023-06-28T13:34:23.517Z User undefined successfully completed authentication
+info: 2023-06-28T13:34:23.531Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.000 ms
+info: 2023-06-28T13:34:23.565Z User user provided a valid token. Authentication completed
+info: 2023-06-28T13:34:23.599Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 37.281 ms
+info: 2023-06-28T13:34:23.729Z User undefined successfully completed authentication
+info: 2023-06-28T13:34:23.743Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.776 ms
+info: 2023-06-28T13:34:23.776Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T13:34:23.816Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 42.640 ms
+info: 2023-06-28T13:58:29.544Z User undefined successfully completed authentication
+info: 2023-06-28T13:58:29.584Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 406.892 ms
+info: 2023-06-28T13:58:29.683Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T13:58:29.762Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 99.962 ms
+info: 2023-06-28T13:58:29.929Z User undefined successfully completed authentication
+info: 2023-06-28T13:58:29.941Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.988 ms
+info: 2023-06-28T13:58:29.989Z User user provided a valid token. Authentication completed
+info: 2023-06-28T13:58:30.038Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 58.428 ms
+info: 2023-06-28T13:58:30.180Z User undefined successfully completed authentication
+info: 2023-06-28T13:58:30.193Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.970 ms
+info: 2023-06-28T13:58:30.222Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T13:58:30.257Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 36.012 ms
+info: 2023-06-28T14:02:14.791Z User undefined successfully completed authentication
+info: 2023-06-28T14:02:14.817Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 319.579 ms
+info: 2023-06-28T14:02:14.908Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:02:14.998Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 105.076 ms
+info: 2023-06-28T14:02:15.198Z User undefined successfully completed authentication
+info: 2023-06-28T14:02:15.217Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.028 ms
+info: 2023-06-28T14:02:15.254Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:02:15.291Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 43.675 ms
+info: 2023-06-28T14:02:15.424Z User undefined successfully completed authentication
+info: 2023-06-28T14:02:15.442Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.865 ms
+info: 2023-06-28T14:02:15.476Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:02:15.510Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.334 ms
+info: 2023-06-28T14:03:26.177Z User undefined successfully completed authentication
+info: 2023-06-28T14:03:26.206Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 308.763 ms
+info: 2023-06-28T14:03:26.343Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:03:26.433Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 113.423 ms
+info: 2023-06-28T14:03:26.606Z User undefined successfully completed authentication
+info: 2023-06-28T14:03:26.619Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.476 ms
+info: 2023-06-28T14:03:26.657Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:03:26.695Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.578 ms
+info: 2023-06-28T14:03:26.830Z User undefined successfully completed authentication
+info: 2023-06-28T14:03:26.849Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 102.801 ms
+info: 2023-06-28T14:03:26.884Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:03:26.923Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 38.539 ms
+info: 2023-06-28T14:03:44.609Z User undefined successfully completed authentication
+info: 2023-06-28T14:03:44.633Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 302.542 ms
+info: 2023-06-28T14:03:44.718Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:03:44.790Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 89.069 ms
+info: 2023-06-28T14:03:44.958Z User undefined successfully completed authentication
+info: 2023-06-28T14:03:44.991Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 126.991 ms
+info: 2023-06-28T14:03:45.031Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:03:45.067Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 43.243 ms
+info: 2023-06-28T14:03:45.208Z User undefined successfully completed authentication
+info: 2023-06-28T14:03:45.226Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.909 ms
+info: 2023-06-28T14:03:45.266Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:03:45.297Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.412 ms
+info: 2023-06-28T14:12:47.948Z User undefined successfully completed authentication
+info: 2023-06-28T14:12:47.979Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 303.155 ms
+info: 2023-06-28T14:12:48.053Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:12:48.132Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 89.243 ms
+info: 2023-06-28T14:12:48.295Z User undefined successfully completed authentication
+info: 2023-06-28T14:12:48.307Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.443 ms
+info: 2023-06-28T14:12:48.339Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:12:48.371Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 34.270 ms
+info: 2023-06-28T14:12:48.497Z User undefined successfully completed authentication
+info: 2023-06-28T14:12:48.510Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 97.826 ms
+info: 2023-06-28T14:12:48.539Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:12:48.570Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 33.646 ms
+info: 2023-06-28T14:19:26.081Z User undefined successfully completed authentication
+info: 2023-06-28T14:19:26.122Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 374.660 ms
+info: 2023-06-28T14:19:26.222Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:19:26.303Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 98.010 ms
+info: 2023-06-28T14:19:26.500Z User undefined successfully completed authentication
+info: 2023-06-28T14:19:26.517Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 126.974 ms
+info: 2023-06-28T14:19:26.557Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:19:26.600Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 49.157 ms
+info: 2023-06-28T14:19:26.736Z User undefined successfully completed authentication
+info: 2023-06-28T14:19:26.749Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.400 ms
+info: 2023-06-28T14:19:26.781Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:19:26.821Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 42.067 ms
+info: 2023-06-28T14:19:43.757Z User undefined successfully completed authentication
+info: 2023-06-28T14:19:43.781Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 317.386 ms
+info: 2023-06-28T14:19:43.855Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:19:43.931Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 81.028 ms
+info: 2023-06-28T14:19:44.120Z User undefined successfully completed authentication
+info: 2023-06-28T14:19:44.135Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.941 ms
+info: 2023-06-28T14:19:44.172Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:19:44.207Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 34.053 ms
+info: 2023-06-28T14:19:44.340Z User undefined successfully completed authentication
+info: 2023-06-28T14:19:44.353Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.775 ms
+info: 2023-06-28T14:19:44.383Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:19:44.419Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.995 ms
+info: 2023-06-28T14:23:00.733Z User undefined successfully completed authentication
+info: 2023-06-28T14:23:00.767Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 308.295 ms
+info: 2023-06-28T14:23:00.842Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:23:00.908Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 81.524 ms
+info: 2023-06-28T14:23:01.112Z User undefined successfully completed authentication
+info: 2023-06-28T14:23:01.130Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 116.733 ms
+info: 2023-06-28T14:23:01.170Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:23:01.212Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.267 ms
+info: 2023-06-28T14:23:01.341Z User undefined successfully completed authentication
+info: 2023-06-28T14:23:01.359Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.807 ms
+info: 2023-06-28T14:23:01.395Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:23:01.432Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 41.820 ms
+info: 2023-06-28T14:24:30.800Z User undefined successfully completed authentication
+info: 2023-06-28T14:24:30.827Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 294.793 ms
+info: 2023-06-28T14:24:30.906Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:24:30.986Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 91.566 ms
+info: 2023-06-28T14:24:31.176Z User undefined successfully completed authentication
+info: 2023-06-28T14:24:31.192Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 116.807 ms
+info: 2023-06-28T14:24:31.226Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:24:31.267Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 47.595 ms
+info: 2023-06-28T14:24:31.393Z User undefined successfully completed authentication
+info: 2023-06-28T14:24:31.410Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.325 ms
+info: 2023-06-28T14:24:31.440Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:24:31.475Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.449 ms
+info: 2023-06-28T14:25:35.155Z User undefined successfully completed authentication
+info: 2023-06-28T14:25:35.179Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 311.081 ms
+info: 2023-06-28T14:25:35.261Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:25:35.333Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 89.840 ms
+info: 2023-06-28T14:25:35.493Z User undefined successfully completed authentication
+info: 2023-06-28T14:25:35.512Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.399 ms
+info: 2023-06-28T14:25:35.551Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:25:35.587Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 36.893 ms
+info: 2023-06-28T14:25:35.722Z User undefined successfully completed authentication
+info: 2023-06-28T14:25:35.736Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.890 ms
+info: 2023-06-28T14:25:35.772Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:25:35.805Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 40.032 ms
+info: 2023-06-28T14:26:31.686Z User undefined successfully completed authentication
+info: 2023-06-28T14:26:31.717Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 326.790 ms
+info: 2023-06-28T14:26:31.785Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:26:31.875Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 95.030 ms
+info: 2023-06-28T14:26:32.053Z User undefined successfully completed authentication
+info: 2023-06-28T14:26:32.066Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.496 ms
+info: 2023-06-28T14:26:32.098Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:26:32.135Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.572 ms
+info: 2023-06-28T14:26:32.263Z User undefined successfully completed authentication
+info: 2023-06-28T14:26:32.278Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 98.908 ms
+info: 2023-06-28T14:26:32.316Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:26:32.351Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.482 ms
+info: 2023-06-28T14:27:51.446Z User undefined successfully completed authentication
+info: 2023-06-28T14:27:51.476Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 294.161 ms
+info: 2023-06-28T14:27:51.547Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:27:51.615Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 80.802 ms
+info: 2023-06-28T14:27:51.781Z User undefined successfully completed authentication
+info: 2023-06-28T14:27:51.795Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.542 ms
+info: 2023-06-28T14:27:51.826Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:27:51.863Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.421 ms
+info: 2023-06-28T14:27:51.991Z User undefined successfully completed authentication
+info: 2023-06-28T14:27:52.004Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 96.080 ms
+info: 2023-06-28T14:27:52.034Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:27:52.068Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.782 ms
+info: 2023-06-28T14:29:16.588Z User undefined successfully completed authentication
+info: 2023-06-28T14:29:16.612Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 308.849 ms
+info: 2023-06-28T14:29:16.685Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:29:16.762Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 87.716 ms
+info: 2023-06-28T14:29:16.933Z User undefined successfully completed authentication
+info: 2023-06-28T14:29:16.952Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.295 ms
+info: 2023-06-28T14:29:16.986Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:29:17.022Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 38.633 ms
+info: 2023-06-28T14:29:17.145Z User undefined successfully completed authentication
+info: 2023-06-28T14:29:17.159Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 96.081 ms
+info: 2023-06-28T14:29:17.193Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:29:17.223Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 33.424 ms
+info: 2023-06-28T14:29:59.949Z User undefined successfully completed authentication
+info: 2023-06-28T14:29:59.979Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 308.779 ms
+info: 2023-06-28T14:30:00.062Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:30:00.136Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 83.789 ms
+info: 2023-06-28T14:30:00.296Z User undefined successfully completed authentication
+info: 2023-06-28T14:30:00.309Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.406 ms
+info: 2023-06-28T14:30:00.339Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:30:00.382Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 43.462 ms
+info: 2023-06-28T14:30:00.518Z User undefined successfully completed authentication
+info: 2023-06-28T14:30:00.532Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.821 ms
+info: 2023-06-28T14:30:00.562Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:30:00.599Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 38.079 ms
+info: 2023-06-28T14:30:49.561Z User undefined successfully completed authentication
+info: 2023-06-28T14:30:49.586Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 304.358 ms
+info: 2023-06-28T14:30:49.659Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:30:49.731Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.674 ms
+info: 2023-06-28T14:30:49.892Z User undefined successfully completed authentication
+info: 2023-06-28T14:30:49.907Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.250 ms
+info: 2023-06-28T14:30:49.937Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:30:49.971Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 34.571 ms
+info: 2023-06-28T14:30:50.102Z User undefined successfully completed authentication
+info: 2023-06-28T14:30:50.114Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 97.586 ms
+info: 2023-06-28T14:30:50.148Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:30:50.177Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 33.138 ms
+info: 2023-06-28T14:31:57.382Z User undefined successfully completed authentication
+info: 2023-06-28T14:31:57.411Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 314.409 ms
+info: 2023-06-28T14:31:57.492Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:31:57.570Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 87.553 ms
+info: 2023-06-28T14:31:57.733Z User undefined successfully completed authentication
+info: 2023-06-28T14:31:57.746Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 102.741 ms
+info: 2023-06-28T14:31:57.776Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:31:57.815Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 38.532 ms
+info: 2023-06-28T14:31:57.955Z User undefined successfully completed authentication
+info: 2023-06-28T14:31:57.973Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.282 ms
+info: 2023-06-28T14:31:58.005Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:31:58.039Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.908 ms
+info: 2023-06-28T14:33:17.868Z User undefined successfully completed authentication
+info: 2023-06-28T14:33:17.891Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 291.435 ms
+info: 2023-06-28T14:33:17.974Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:33:18.048Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 86.695 ms
+info: 2023-06-28T14:33:18.202Z User undefined successfully completed authentication
+info: 2023-06-28T14:33:18.217Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.068 ms
+info: 2023-06-28T14:33:18.250Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:33:18.280Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 34.365 ms
+info: 2023-06-28T14:33:18.407Z User undefined successfully completed authentication
+info: 2023-06-28T14:33:18.420Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.742 ms
+info: 2023-06-28T14:33:18.455Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:33:18.490Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 36.745 ms
+info: 2023-06-28T14:34:11.021Z User undefined successfully completed authentication
+info: 2023-06-28T14:34:11.051Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 306.188 ms
+info: 2023-06-28T14:34:11.130Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:34:11.212Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 92.986 ms
+info: 2023-06-28T14:34:11.377Z User undefined successfully completed authentication
+info: 2023-06-28T14:34:11.393Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.001 ms
+info: 2023-06-28T14:34:11.422Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:34:11.456Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 35.947 ms
+info: 2023-06-28T14:34:11.587Z User undefined successfully completed authentication
+info: 2023-06-28T14:34:11.602Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.696 ms
+info: 2023-06-28T14:34:11.631Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:34:11.666Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.672 ms
+info: 2023-06-28T14:41:29.325Z User undefined successfully completed authentication
+info: 2023-06-28T14:41:29.354Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 323.426 ms
+info: 2023-06-28T14:41:29.446Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:41:29.519Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 93.273 ms
+info: 2023-06-28T14:41:29.688Z User undefined successfully completed authentication
+info: 2023-06-28T14:41:29.702Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.613 ms
+info: 2023-06-28T14:41:29.741Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:41:29.775Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 36.999 ms
+info: 2023-06-28T14:41:29.907Z User undefined successfully completed authentication
+info: 2023-06-28T14:41:29.923Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.442 ms
+info: 2023-06-28T14:41:29.957Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:41:29.996Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 41.714 ms
+info: 2023-06-28T14:52:25.712Z User undefined successfully completed authentication
+info: 2023-06-28T14:52:25.739Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 301.008 ms
+info: 2023-06-28T14:52:25.815Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:52:25.881Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 77.173 ms
+info: 2023-06-28T14:52:26.040Z User undefined successfully completed authentication
+info: 2023-06-28T14:52:26.057Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.166 ms
+info: 2023-06-28T14:52:26.086Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:52:26.127Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.596 ms
+info: 2023-06-28T14:52:26.255Z User undefined successfully completed authentication
+info: 2023-06-28T14:52:26.267Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 97.423 ms
+info: 2023-06-28T14:52:26.300Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:52:26.333Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.900 ms
+info: 2023-06-28T14:53:09.066Z User undefined successfully completed authentication
+info: 2023-06-28T14:53:09.094Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 296.688 ms
+info: 2023-06-28T14:53:09.173Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:53:09.240Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 77.399 ms
+info: 2023-06-28T14:53:09.399Z User undefined successfully completed authentication
+info: 2023-06-28T14:53:09.426Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 122.102 ms
+info: 2023-06-28T14:53:09.462Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:53:09.499Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 36.143 ms
+info: 2023-06-28T14:53:09.631Z User undefined successfully completed authentication
+info: 2023-06-28T14:53:09.645Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.362 ms
+info: 2023-06-28T14:53:09.679Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:53:09.710Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 32.769 ms
+info: 2023-06-28T14:57:01.637Z User undefined successfully completed authentication
+info: 2023-06-28T14:57:01.649Z ::1 - POST /auth/login HTTP/1.1 200 149 - 121.647 ms
+info: 2023-06-28T14:57:10.197Z User undefined successfully completed authentication
+info: 2023-06-28T14:57:10.200Z ::1 - POST /auth/login HTTP/1.1 200 149 - 80.413 ms
+info: 2023-06-28T14:57:25.106Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:57:25.132Z ::1 - GET /roles HTTP/1.1 200 1584 - 42.771 ms
+info: 2023-06-28T14:58:44.783Z User undefined successfully completed authentication
+info: 2023-06-28T14:58:44.816Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 331.792 ms
+info: 2023-06-28T14:58:44.895Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T14:58:44.972Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 91.536 ms
+info: 2023-06-28T14:58:45.136Z User undefined successfully completed authentication
+info: 2023-06-28T14:58:45.151Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.147 ms
+info: 2023-06-28T14:58:45.184Z User user provided a valid token. Authentication completed
+info: 2023-06-28T14:58:45.221Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.756 ms
+info: 2023-06-28T14:58:45.357Z User undefined successfully completed authentication
+info: 2023-06-28T14:58:45.370Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.489 ms
+info: 2023-06-28T14:58:45.402Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T14:58:45.438Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.237 ms
+info: 2023-06-28T15:04:23.554Z User undefined successfully completed authentication
+info: 2023-06-28T15:04:23.585Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 321.077 ms
+info: 2023-06-28T15:04:23.716Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:04:23.818Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 135.449 ms
+info: 2023-06-28T15:04:23.987Z User undefined successfully completed authentication
+info: 2023-06-28T15:04:24.000Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.530 ms
+info: 2023-06-28T15:04:24.032Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:04:24.069Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 42.423 ms
+info: 2023-06-28T15:04:24.191Z User undefined successfully completed authentication
+info: 2023-06-28T15:04:24.208Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 96.621 ms
+info: 2023-06-28T15:04:24.242Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:04:24.273Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 34.839 ms
+info: 2023-06-28T15:06:08.772Z User undefined successfully completed authentication
+info: 2023-06-28T15:06:08.802Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 331.005 ms
+info: 2023-06-28T15:06:08.877Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:06:08.948Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 82.726 ms
+info: 2023-06-28T15:06:09.112Z User undefined successfully completed authentication
+info: 2023-06-28T15:06:09.126Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.831 ms
+info: 2023-06-28T15:06:09.161Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:06:09.198Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.254 ms
+info: 2023-06-28T15:06:09.326Z User undefined successfully completed authentication
+info: 2023-06-28T15:06:09.341Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.641 ms
+info: 2023-06-28T15:06:09.373Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:06:09.406Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.944 ms
+info: 2023-06-28T15:07:50.741Z User undefined successfully completed authentication
+info: 2023-06-28T15:07:50.770Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 377.347 ms
+info: 2023-06-28T15:07:50.847Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:07:50.917Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 88.520 ms
+info: 2023-06-28T15:07:51.103Z User undefined successfully completed authentication
+info: 2023-06-28T15:07:51.123Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 127.078 ms
+info: 2023-06-28T15:07:51.158Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:07:51.190Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 34.974 ms
+info: 2023-06-28T15:07:51.320Z User undefined successfully completed authentication
+info: 2023-06-28T15:07:51.336Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.856 ms
+info: 2023-06-28T15:07:51.367Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:07:51.405Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 40.323 ms
+info: 2023-06-28T15:08:43.427Z User undefined successfully completed authentication
+info: 2023-06-28T15:08:43.464Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 342.645 ms
+info: 2023-06-28T15:08:43.583Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:08:43.723Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 160.344 ms
+info: 2023-06-28T15:08:43.893Z User undefined successfully completed authentication
+info: 2023-06-28T15:08:43.910Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 121.182 ms
+info: 2023-06-28T15:08:43.956Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:08:43.990Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.047 ms
+info: 2023-06-28T15:08:44.122Z User undefined successfully completed authentication
+info: 2023-06-28T15:08:44.138Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.168 ms
+info: 2023-06-28T15:08:44.173Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:08:44.216Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 42.705 ms
+info: 2023-06-28T15:14:07.779Z User undefined successfully completed authentication
+info: 2023-06-28T15:14:07.802Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 298.039 ms
+info: 2023-06-28T15:14:07.878Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:14:07.941Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 80.838 ms
+info: 2023-06-28T15:14:08.095Z User undefined successfully completed authentication
+info: 2023-06-28T15:14:08.112Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.779 ms
+info: 2023-06-28T15:14:08.148Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:14:08.182Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 36.951 ms
+info: 2023-06-28T15:14:08.323Z User undefined successfully completed authentication
+info: 2023-06-28T15:14:08.336Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.161 ms
+info: 2023-06-28T15:14:08.367Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:14:08.408Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.549 ms
+info: 2023-06-28T15:15:47.345Z User undefined successfully completed authentication
+info: 2023-06-28T15:15:47.371Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 304.358 ms
+info: 2023-06-28T15:15:47.450Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:15:47.517Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 78.144 ms
+info: 2023-06-28T15:15:47.688Z User undefined successfully completed authentication
+info: 2023-06-28T15:15:47.707Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 116.399 ms
+info: 2023-06-28T15:15:47.750Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:15:47.798Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 50.675 ms
+info: 2023-06-28T15:15:47.942Z User undefined successfully completed authentication
+info: 2023-06-28T15:15:47.955Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.825 ms
+info: 2023-06-28T15:15:47.992Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:15:48.027Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.262 ms
+info: 2023-06-28T15:17:24.397Z User undefined successfully completed authentication
+info: 2023-06-28T15:17:24.425Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 303.565 ms
+info: 2023-06-28T15:17:24.504Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:17:24.595Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 94.050 ms
+info: 2023-06-28T15:17:24.774Z User undefined successfully completed authentication
+info: 2023-06-28T15:17:24.795Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.064 ms
+info: 2023-06-28T15:17:24.830Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:17:24.863Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 37.353 ms
+info: 2023-06-28T15:17:24.994Z User undefined successfully completed authentication
+info: 2023-06-28T15:17:25.007Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.663 ms
+info: 2023-06-28T15:17:25.045Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:17:25.077Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 36.232 ms
+info: 2023-06-28T15:18:33.939Z User undefined successfully completed authentication
+info: 2023-06-28T15:18:33.963Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 297.303 ms
+info: 2023-06-28T15:18:34.049Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:18:34.124Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.871 ms
+info: 2023-06-28T15:18:34.283Z User undefined successfully completed authentication
+info: 2023-06-28T15:18:34.297Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.186 ms
+info: 2023-06-28T15:18:34.329Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:18:34.365Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.994 ms
+info: 2023-06-28T15:18:34.486Z User undefined successfully completed authentication
+info: 2023-06-28T15:18:34.503Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.226 ms
+info: 2023-06-28T15:18:34.533Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:18:34.572Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.974 ms
+info: 2023-06-28T15:24:43.976Z User undefined successfully completed authentication
+info: 2023-06-28T15:24:44.008Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 329.853 ms
+info: 2023-06-28T15:24:44.081Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:24:44.154Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.670 ms
+info: 2023-06-28T15:24:44.332Z User undefined successfully completed authentication
+info: 2023-06-28T15:24:44.345Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.510 ms
+info: 2023-06-28T15:24:44.381Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:24:44.414Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 36.582 ms
+info: 2023-06-28T15:24:44.546Z User undefined successfully completed authentication
+info: 2023-06-28T15:24:44.563Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.365 ms
+info: 2023-06-28T15:24:44.602Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:24:44.639Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 42.180 ms
+info: 2023-06-28T15:26:21.169Z User undefined successfully completed authentication
+info: 2023-06-28T15:26:21.197Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 329.651 ms
+info: 2023-06-28T15:26:21.280Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:26:21.344Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 88.014 ms
+info: 2023-06-28T15:26:21.511Z User undefined successfully completed authentication
+info: 2023-06-28T15:26:21.526Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.856 ms
+info: 2023-06-28T15:26:21.562Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:26:21.606Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 46.249 ms
+info: 2023-06-28T15:26:21.755Z User undefined successfully completed authentication
+info: 2023-06-28T15:26:21.769Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.693 ms
+info: 2023-06-28T15:26:21.810Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:26:21.851Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 45.876 ms
+info: 2023-06-28T15:26:59.792Z User undefined successfully completed authentication
+info: 2023-06-28T15:26:59.818Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 294.157 ms
+info: 2023-06-28T15:26:59.892Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:26:59.953Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 74.846 ms
+info: 2023-06-28T15:27:00.105Z User undefined successfully completed authentication
+info: 2023-06-28T15:27:00.121Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.005 ms
+info: 2023-06-28T15:27:00.158Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:27:00.190Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 38.892 ms
+info: 2023-06-28T15:27:00.326Z User undefined successfully completed authentication
+info: 2023-06-28T15:27:00.340Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.552 ms
+info: 2023-06-28T15:27:00.377Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:27:00.413Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 42.133 ms
+info: 2023-06-28T15:28:41.730Z User undefined successfully completed authentication
+info: 2023-06-28T15:28:41.758Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 326.935 ms
+info: 2023-06-28T15:28:41.843Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:28:41.895Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 65.775 ms
+info: 2023-06-28T15:28:42.065Z User undefined successfully completed authentication
+info: 2023-06-28T15:28:42.079Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.124 ms
+info: 2023-06-28T15:28:42.119Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:28:42.149Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 35.246 ms
+info: 2023-06-28T15:28:42.282Z User undefined successfully completed authentication
+info: 2023-06-28T15:28:42.295Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 102.209 ms
+info: 2023-06-28T15:28:42.330Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:28:42.367Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.184 ms
+info: 2023-06-28T15:30:22.115Z User undefined successfully completed authentication
+info: 2023-06-28T15:30:22.149Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 323.449 ms
+info: 2023-06-28T15:30:22.223Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:30:22.288Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 84.457 ms
+info: 2023-06-28T15:30:22.454Z User undefined successfully completed authentication
+info: 2023-06-28T15:30:22.466Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.317 ms
+info: 2023-06-28T15:30:22.502Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:30:22.541Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.135 ms
+info: 2023-06-28T15:30:22.671Z User undefined successfully completed authentication
+info: 2023-06-28T15:30:22.685Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.752 ms
+info: 2023-06-28T15:30:22.718Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:30:22.754Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 34.903 ms
+info: 2023-06-28T15:30:57.264Z User undefined successfully completed authentication
+info: 2023-06-28T15:30:57.301Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 363.586 ms
+info: 2023-06-28T15:30:57.379Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:30:57.450Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 91.910 ms
+info: 2023-06-28T15:30:57.644Z User undefined successfully completed authentication
+info: 2023-06-28T15:30:57.666Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 132.482 ms
+info: 2023-06-28T15:30:57.707Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:30:57.743Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.985 ms
+info: 2023-06-28T15:30:57.878Z User undefined successfully completed authentication
+info: 2023-06-28T15:30:57.892Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 102.735 ms
+info: 2023-06-28T15:30:57.926Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:30:57.963Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.582 ms
+info: 2023-06-28T15:34:21.571Z User undefined successfully completed authentication
+info: 2023-06-28T15:34:21.597Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 370.658 ms
+info: 2023-06-28T15:34:21.697Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:34:21.786Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 97.428 ms
+info: 2023-06-28T15:34:21.980Z User undefined successfully completed authentication
+info: 2023-06-28T15:34:21.999Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 123.674 ms
+info: 2023-06-28T15:34:22.034Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:34:22.072Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.348 ms
+info: 2023-06-28T15:34:22.205Z User undefined successfully completed authentication
+info: 2023-06-28T15:34:22.224Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.958 ms
+info: 2023-06-28T15:34:22.275Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:34:22.323Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 54.267 ms
+info: 2023-06-28T15:38:07.771Z User undefined successfully completed authentication
+info: 2023-06-28T15:38:07.799Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 317.642 ms
+info: 2023-06-28T15:38:07.887Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:38:07.961Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 84.397 ms
+info: 2023-06-28T15:38:08.121Z User undefined successfully completed authentication
+info: 2023-06-28T15:38:08.138Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.155 ms
+info: 2023-06-28T15:38:08.179Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:38:08.216Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.567 ms
+info: 2023-06-28T15:38:08.350Z User undefined successfully completed authentication
+info: 2023-06-28T15:38:08.367Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.995 ms
+info: 2023-06-28T15:38:08.409Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:38:08.446Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.071 ms
+info: 2023-06-28T15:39:31.824Z User undefined successfully completed authentication
+info: 2023-06-28T15:39:31.874Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 440.528 ms
+info: 2023-06-28T15:39:31.985Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:39:32.065Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 96.596 ms
+info: 2023-06-28T15:39:32.239Z User undefined successfully completed authentication
+info: 2023-06-28T15:39:32.254Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.663 ms
+info: 2023-06-28T15:39:32.289Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:39:32.325Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 38.876 ms
+info: 2023-06-28T15:39:32.464Z User undefined successfully completed authentication
+info: 2023-06-28T15:39:32.480Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.723 ms
+info: 2023-06-28T15:39:32.519Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:39:32.557Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.881 ms
+info: 2023-06-28T15:42:02.488Z User undefined successfully completed authentication
+info: 2023-06-28T15:42:02.520Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 340.031 ms
+info: 2023-06-28T15:42:02.597Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:42:02.674Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 88.139 ms
+info: 2023-06-28T15:42:02.847Z User undefined successfully completed authentication
+info: 2023-06-28T15:42:02.867Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 123.049 ms
+info: 2023-06-28T15:42:02.920Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:42:03.001Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 84.657 ms
+info: 2023-06-28T15:42:03.139Z User undefined successfully completed authentication
+info: 2023-06-28T15:42:03.155Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.791 ms
+info: 2023-06-28T15:42:03.194Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:42:03.238Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 46.445 ms
+info: 2023-06-28T15:44:52.053Z User undefined successfully completed authentication
+info: 2023-06-28T15:44:52.084Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 326.355 ms
+info: 2023-06-28T15:44:52.173Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:44:52.255Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 102.663 ms
+info: 2023-06-28T15:44:52.424Z User undefined successfully completed authentication
+info: 2023-06-28T15:44:52.446Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.842 ms
+info: 2023-06-28T15:44:52.484Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:44:52.527Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 47.407 ms
+info: 2023-06-28T15:44:52.659Z User undefined successfully completed authentication
+info: 2023-06-28T15:44:52.678Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.992 ms
+info: 2023-06-28T15:44:52.716Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:44:52.761Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 45.399 ms
+info: 2023-06-28T15:45:26.384Z User undefined successfully completed authentication
+info: 2023-06-28T15:45:26.418Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 317.128 ms
+info: 2023-06-28T15:45:26.496Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:45:26.577Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 95.563 ms
+info: 2023-06-28T15:45:26.759Z User undefined successfully completed authentication
+info: 2023-06-28T15:45:26.773Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.376 ms
+info: 2023-06-28T15:45:26.811Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:45:26.849Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 43.665 ms
+info: 2023-06-28T15:45:26.969Z User undefined successfully completed authentication
+info: 2023-06-28T15:45:26.981Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.482 ms
+info: 2023-06-28T15:45:27.014Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:45:27.055Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 41.765 ms
+info: 2023-06-28T15:48:32.642Z User undefined successfully completed authentication
+info: 2023-06-28T15:48:32.677Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 312.853 ms
+info: 2023-06-28T15:48:32.787Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:48:32.879Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 111.346 ms
+info: 2023-06-28T15:48:33.106Z User undefined successfully completed authentication
+info: 2023-06-28T15:48:33.123Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 155.378 ms
+info: 2023-06-28T15:48:33.171Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:48:33.214Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.236 ms
+info: 2023-06-28T15:48:33.349Z User undefined successfully completed authentication
+info: 2023-06-28T15:48:33.372Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.636 ms
+info: 2023-06-28T15:48:33.410Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:48:33.448Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.723 ms
+info: 2023-06-28T15:51:21.641Z User undefined successfully completed authentication
+info: 2023-06-28T15:51:21.674Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 311.015 ms
+info: 2023-06-28T15:51:21.748Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:51:21.820Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 84.656 ms
+info: 2023-06-28T15:51:21.984Z User undefined successfully completed authentication
+info: 2023-06-28T15:51:22.000Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.988 ms
+info: 2023-06-28T15:51:22.035Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:51:22.068Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.625 ms
+info: 2023-06-28T15:51:22.195Z User undefined successfully completed authentication
+info: 2023-06-28T15:51:22.208Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 97.059 ms
+info: 2023-06-28T15:51:22.242Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:51:22.279Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 36.517 ms
+info: 2023-06-28T15:53:59.816Z User undefined successfully completed authentication
+info: 2023-06-28T15:53:59.849Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 302.226 ms
+info: 2023-06-28T15:53:59.939Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:54:00.009Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 91.797 ms
+info: 2023-06-28T15:54:00.191Z User undefined successfully completed authentication
+info: 2023-06-28T15:54:00.206Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 122.127 ms
+info: 2023-06-28T15:54:00.245Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:54:00.283Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.424 ms
+info: 2023-06-28T15:54:00.411Z User undefined successfully completed authentication
+info: 2023-06-28T15:54:00.425Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.846 ms
+info: 2023-06-28T15:54:00.453Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:54:00.488Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.019 ms
+info: 2023-06-28T15:55:42.434Z User undefined successfully completed authentication
+info: 2023-06-28T15:55:42.477Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 305.069 ms
+info: 2023-06-28T15:55:42.541Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T15:55:42.609Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 78.522 ms
+info: 2023-06-28T15:55:42.774Z User undefined successfully completed authentication
+info: 2023-06-28T15:55:42.791Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.082 ms
+info: 2023-06-28T15:55:42.826Z User user provided a valid token. Authentication completed
+info: 2023-06-28T15:55:42.863Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.643 ms
+info: 2023-06-28T15:55:42.997Z User undefined successfully completed authentication
+info: 2023-06-28T15:55:43.008Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.375 ms
+info: 2023-06-28T15:55:43.038Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T15:55:43.071Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 34.712 ms
+info: 2023-06-28T16:00:27.749Z User undefined successfully completed authentication
+info: 2023-06-28T16:00:27.792Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 365.454 ms
+info: 2023-06-28T16:00:27.882Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:00:27.964Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 99.232 ms
+info: 2023-06-28T16:00:28.153Z User undefined successfully completed authentication
+info: 2023-06-28T16:00:28.176Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 123.647 ms
+info: 2023-06-28T16:00:28.225Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:00:28.272Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 49.382 ms
+info: 2023-06-28T16:00:28.414Z User undefined successfully completed authentication
+info: 2023-06-28T16:00:28.431Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.226 ms
+info: 2023-06-28T16:00:28.474Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:00:28.527Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 56.373 ms
+info: 2023-06-28T16:01:05.018Z User undefined successfully completed authentication
+info: 2023-06-28T16:01:05.042Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 320.416 ms
+info: 2023-06-28T16:01:05.126Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:01:05.201Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.082 ms
+info: 2023-06-28T16:01:05.391Z User undefined successfully completed authentication
+info: 2023-06-28T16:01:05.403Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.015 ms
+info: 2023-06-28T16:01:05.442Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:01:05.481Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 44.090 ms
+info: 2023-06-28T16:01:05.623Z User undefined successfully completed authentication
+info: 2023-06-28T16:01:05.639Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.540 ms
+info: 2023-06-28T16:01:05.680Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:01:05.720Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.233 ms
+info: 2023-06-28T16:02:42.875Z User undefined successfully completed authentication
+info: 2023-06-28T16:02:42.903Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 308.907 ms
+info: 2023-06-28T16:02:42.970Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:02:43.034Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 69.217 ms
+info: 2023-06-28T16:02:43.192Z User undefined successfully completed authentication
+info: 2023-06-28T16:02:43.205Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.533 ms
+info: 2023-06-28T16:02:43.235Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:02:43.269Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 37.146 ms
+info: 2023-06-28T16:02:43.401Z User undefined successfully completed authentication
+info: 2023-06-28T16:02:43.419Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.829 ms
+info: 2023-06-28T16:02:43.450Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:02:43.480Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 33.584 ms
+info: 2023-06-28T16:06:25.618Z User undefined successfully completed authentication
+info: 2023-06-28T16:06:25.659Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 316.940 ms
+info: 2023-06-28T16:06:25.744Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:06:25.811Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 78.337 ms
+info: 2023-06-28T16:06:25.966Z User undefined successfully completed authentication
+info: 2023-06-28T16:06:25.984Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.385 ms
+info: 2023-06-28T16:06:26.015Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:06:26.049Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 36.543 ms
+info: 2023-06-28T16:06:26.187Z User undefined successfully completed authentication
+info: 2023-06-28T16:06:26.205Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.857 ms
+info: 2023-06-28T16:06:26.244Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:06:26.273Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 33.904 ms
+info: 2023-06-28T16:14:58.681Z User undefined successfully completed authentication
+info: 2023-06-28T16:14:58.710Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 367.694 ms
+info: 2023-06-28T16:14:58.792Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:14:58.869Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 82.883 ms
+info: 2023-06-28T16:14:59.067Z User undefined successfully completed authentication
+info: 2023-06-28T16:14:59.085Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 116.478 ms
+info: 2023-06-28T16:14:59.133Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:14:59.191Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 60.754 ms
+info: 2023-06-28T16:14:59.352Z User undefined successfully completed authentication
+info: 2023-06-28T16:14:59.371Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.752 ms
+info: 2023-06-28T16:14:59.415Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:14:59.466Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 47.396 ms
+info: 2023-06-28T16:15:51.355Z User undefined successfully completed authentication
+info: 2023-06-28T16:15:51.390Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 335.033 ms
+info: 2023-06-28T16:15:51.464Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:15:51.534Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.987 ms
+info: 2023-06-28T16:15:51.695Z User undefined successfully completed authentication
+info: 2023-06-28T16:15:51.708Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.508 ms
+info: 2023-06-28T16:15:51.744Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:15:51.776Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 37.671 ms
+info: 2023-06-28T16:15:51.899Z User undefined successfully completed authentication
+info: 2023-06-28T16:15:51.912Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.035 ms
+info: 2023-06-28T16:15:51.949Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:15:51.985Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 41.924 ms
+info: 2023-06-28T16:16:46.347Z User undefined successfully completed authentication
+info: 2023-06-28T16:16:46.379Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 316.519 ms
+info: 2023-06-28T16:16:46.501Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:16:46.627Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 155.350 ms
+info: 2023-06-28T16:16:46.790Z User undefined successfully completed authentication
+info: 2023-06-28T16:16:46.806Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.032 ms
+info: 2023-06-28T16:16:46.838Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:16:46.872Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 37.246 ms
+info: 2023-06-28T16:16:47.001Z User undefined successfully completed authentication
+info: 2023-06-28T16:16:47.018Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.330 ms
+info: 2023-06-28T16:16:47.060Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:16:47.101Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.251 ms
+info: 2023-06-28T16:20:02.256Z User undefined successfully completed authentication
+info: 2023-06-28T16:20:02.283Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 308.785 ms
+info: 2023-06-28T16:20:02.357Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:20:02.423Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 77.274 ms
+info: 2023-06-28T16:20:02.584Z User undefined successfully completed authentication
+info: 2023-06-28T16:20:02.600Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.571 ms
+info: 2023-06-28T16:20:02.640Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:20:02.671Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.343 ms
+info: 2023-06-28T16:20:02.801Z User undefined successfully completed authentication
+info: 2023-06-28T16:20:02.814Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.181 ms
+info: 2023-06-28T16:20:02.845Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:20:02.876Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 32.801 ms
+info: 2023-06-28T16:21:18.146Z User undefined successfully completed authentication
+info: 2023-06-28T16:21:18.170Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 297.188 ms
+info: 2023-06-28T16:21:18.245Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:21:18.306Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 75.009 ms
+info: 2023-06-28T16:21:18.462Z User undefined successfully completed authentication
+info: 2023-06-28T16:21:18.475Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.256 ms
+info: 2023-06-28T16:21:18.515Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:21:18.556Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.825 ms
+info: 2023-06-28T16:21:18.685Z User undefined successfully completed authentication
+info: 2023-06-28T16:21:18.700Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.897 ms
+info: 2023-06-28T16:21:18.733Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:21:18.768Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 40.907 ms
+info: 2023-06-28T16:21:56.140Z User undefined successfully completed authentication
+info: 2023-06-28T16:21:56.169Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 330.382 ms
+info: 2023-06-28T16:21:56.251Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:21:56.321Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 81.361 ms
+info: 2023-06-28T16:21:56.483Z User undefined successfully completed authentication
+info: 2023-06-28T16:21:56.500Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.541 ms
+info: 2023-06-28T16:21:56.535Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:21:56.573Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 42.319 ms
+info: 2023-06-28T16:21:56.711Z User undefined successfully completed authentication
+info: 2023-06-28T16:21:56.729Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.451 ms
+info: 2023-06-28T16:21:56.764Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:21:56.797Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 33.452 ms
+info: 2023-06-28T16:23:06.352Z User undefined successfully completed authentication
+info: 2023-06-28T16:23:06.385Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 299.202 ms
+info: 2023-06-28T16:23:06.458Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:23:06.511Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 70.446 ms
+info: 2023-06-28T16:23:06.667Z User undefined successfully completed authentication
+info: 2023-06-28T16:23:06.680Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.370 ms
+info: 2023-06-28T16:23:06.716Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:23:06.750Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 42.282 ms
+info: 2023-06-28T16:23:06.880Z User undefined successfully completed authentication
+info: 2023-06-28T16:23:06.893Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.985 ms
+info: 2023-06-28T16:23:06.931Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:23:06.963Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.546 ms
+info: 2023-06-28T16:23:56.807Z User undefined successfully completed authentication
+info: 2023-06-28T16:23:56.833Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 304.862 ms
+info: 2023-06-28T16:23:56.912Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:23:56.983Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 80.639 ms
+info: 2023-06-28T16:23:57.163Z User undefined successfully completed authentication
+info: 2023-06-28T16:23:57.178Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.327 ms
+info: 2023-06-28T16:23:57.217Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:23:57.260Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 43.802 ms
+info: 2023-06-28T16:23:57.403Z User undefined successfully completed authentication
+info: 2023-06-28T16:23:57.425Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.749 ms
+info: 2023-06-28T16:23:57.475Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:23:57.513Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 46.013 ms
+info: 2023-06-28T16:24:14.828Z User undefined successfully completed authentication
+info: 2023-06-28T16:24:14.861Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 319.041 ms
+info: 2023-06-28T16:24:14.935Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:24:15.013Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 94.221 ms
+info: 2023-06-28T16:24:15.185Z User undefined successfully completed authentication
+info: 2023-06-28T16:24:15.199Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.707 ms
+info: 2023-06-28T16:24:15.230Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:24:15.264Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 36.446 ms
+info: 2023-06-28T16:24:15.390Z User undefined successfully completed authentication
+info: 2023-06-28T16:24:15.402Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.049 ms
+info: 2023-06-28T16:24:15.440Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:24:15.474Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.445 ms
+info: 2023-06-28T16:24:54.966Z User undefined successfully completed authentication
+info: 2023-06-28T16:24:55.007Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 331.896 ms
+info: 2023-06-28T16:24:55.104Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:24:55.168Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 78.416 ms
+info: 2023-06-28T16:24:55.339Z User undefined successfully completed authentication
+info: 2023-06-28T16:24:55.357Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 118.297 ms
+info: 2023-06-28T16:24:55.404Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:24:55.450Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 55.455 ms
+info: 2023-06-28T16:24:55.584Z User undefined successfully completed authentication
+info: 2023-06-28T16:24:55.601Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.064 ms
+info: 2023-06-28T16:24:55.633Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:24:55.665Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.253 ms
+info: 2023-06-28T16:25:27.474Z User undefined successfully completed authentication
+info: 2023-06-28T16:25:27.499Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 326.668 ms
+info: 2023-06-28T16:25:27.574Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:25:27.649Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 86.168 ms
+info: 2023-06-28T16:25:27.818Z User undefined successfully completed authentication
+info: 2023-06-28T16:25:27.836Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.349 ms
+info: 2023-06-28T16:25:27.871Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:25:27.915Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 43.770 ms
+info: 2023-06-28T16:25:28.063Z User undefined successfully completed authentication
+info: 2023-06-28T16:25:28.080Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.937 ms
+info: 2023-06-28T16:25:28.129Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:25:28.179Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 54.105 ms
+info: 2023-06-28T16:27:23.930Z User undefined successfully completed authentication
+info: 2023-06-28T16:27:23.958Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 361.874 ms
+info: 2023-06-28T16:27:24.046Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:27:24.129Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 93.731 ms
+info: 2023-06-28T16:27:24.304Z User undefined successfully completed authentication
+info: 2023-06-28T16:27:24.321Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 118.357 ms
+info: 2023-06-28T16:27:24.364Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:27:24.404Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 44.518 ms
+info: 2023-06-28T16:27:24.543Z User undefined successfully completed authentication
+info: 2023-06-28T16:27:24.562Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.332 ms
+info: 2023-06-28T16:27:24.606Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:27:24.645Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 41.475 ms
+info: 2023-06-28T16:28:17.235Z User undefined successfully completed authentication
+info: 2023-06-28T16:28:17.265Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 344.941 ms
+info: 2023-06-28T16:28:17.343Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:28:17.399Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 76.320 ms
+info: 2023-06-28T16:28:17.567Z User undefined successfully completed authentication
+info: 2023-06-28T16:28:17.582Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.572 ms
+info: 2023-06-28T16:28:17.619Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:28:17.660Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 44.155 ms
+info: 2023-06-28T16:28:17.800Z User undefined successfully completed authentication
+info: 2023-06-28T16:28:17.818Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.424 ms
+info: 2023-06-28T16:28:17.852Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:28:17.888Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 38.393 ms
+info: 2023-06-28T16:31:40.913Z User undefined successfully completed authentication
+info: 2023-06-28T16:31:40.945Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 322.169 ms
+info: 2023-06-28T16:31:41.020Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:31:41.089Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 79.255 ms
+info: 2023-06-28T16:31:41.257Z User undefined successfully completed authentication
+info: 2023-06-28T16:31:41.274Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.440 ms
+info: 2023-06-28T16:31:41.309Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:31:41.354Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 47.593 ms
+info: 2023-06-28T16:31:41.477Z User undefined successfully completed authentication
+info: 2023-06-28T16:31:41.496Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.269 ms
+info: 2023-06-28T16:31:41.527Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:31:41.558Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 34.017 ms
+info: 2023-06-28T16:33:13.416Z User undefined successfully completed authentication
+info: 2023-06-28T16:33:13.455Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 369.507 ms
+info: 2023-06-28T16:33:13.539Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:33:13.624Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 98.598 ms
+info: 2023-06-28T16:33:13.807Z User undefined successfully completed authentication
+info: 2023-06-28T16:33:13.827Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 119.922 ms
+info: 2023-06-28T16:33:13.873Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:33:13.914Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.568 ms
+info: 2023-06-28T16:33:14.058Z User undefined successfully completed authentication
+info: 2023-06-28T16:33:14.079Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.977 ms
+info: 2023-06-28T16:33:14.118Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:33:14.158Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 40.932 ms
+info: 2023-06-28T16:33:58.830Z User undefined successfully completed authentication
+info: 2023-06-28T16:33:58.866Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 312.295 ms
+info: 2023-06-28T16:33:58.935Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:33:59.009Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.973 ms
+info: 2023-06-28T16:33:59.174Z User undefined successfully completed authentication
+info: 2023-06-28T16:33:59.188Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.063 ms
+info: 2023-06-28T16:33:59.223Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:33:59.264Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 44.510 ms
+info: 2023-06-28T16:33:59.397Z User undefined successfully completed authentication
+info: 2023-06-28T16:33:59.413Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.088 ms
+info: 2023-06-28T16:33:59.443Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:33:59.478Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 34.423 ms
+info: 2023-06-28T16:34:29.126Z User undefined successfully completed authentication
+info: 2023-06-28T16:34:29.155Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 376.483 ms
+info: 2023-06-28T16:34:29.241Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:34:29.316Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 91.682 ms
+info: 2023-06-28T16:34:29.482Z User undefined successfully completed authentication
+info: 2023-06-28T16:34:29.498Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.917 ms
+info: 2023-06-28T16:34:29.535Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:34:29.582Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 49.397 ms
+info: 2023-06-28T16:34:29.730Z User undefined successfully completed authentication
+info: 2023-06-28T16:34:29.743Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 118.381 ms
+info: 2023-06-28T16:34:29.784Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:34:29.819Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.956 ms
+info: 2023-06-28T16:35:30.372Z User undefined successfully completed authentication
+info: 2023-06-28T16:35:30.397Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 383.811 ms
+info: 2023-06-28T16:35:30.470Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:35:30.540Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 80.855 ms
+info: 2023-06-28T16:35:30.713Z User undefined successfully completed authentication
+info: 2023-06-28T16:35:30.725Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.438 ms
+info: 2023-06-28T16:35:30.756Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:35:30.796Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 42.411 ms
+info: 2023-06-28T16:35:30.929Z User undefined successfully completed authentication
+info: 2023-06-28T16:35:30.946Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.899 ms
+info: 2023-06-28T16:35:30.976Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:35:31.011Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 33.267 ms
+info: 2023-06-28T16:36:23.744Z User undefined successfully completed authentication
+info: 2023-06-28T16:36:23.768Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 321.313 ms
+info: 2023-06-28T16:36:23.864Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:36:23.946Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 105.793 ms
+info: 2023-06-28T16:36:24.119Z User undefined successfully completed authentication
+info: 2023-06-28T16:36:24.134Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 118.343 ms
+info: 2023-06-28T16:36:24.163Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:36:24.197Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 34.045 ms
+info: 2023-06-28T16:36:24.330Z User undefined successfully completed authentication
+info: 2023-06-28T16:36:24.343Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 102.227 ms
+info: 2023-06-28T16:36:24.376Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:36:24.412Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 36.386 ms
+info: 2023-06-28T16:37:14.280Z User undefined successfully completed authentication
+info: 2023-06-28T16:37:14.305Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 305.696 ms
+info: 2023-06-28T16:37:14.376Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:37:14.441Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 76.588 ms
+info: 2023-06-28T16:37:14.625Z User undefined successfully completed authentication
+info: 2023-06-28T16:37:14.637Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 115.111 ms
+info: 2023-06-28T16:37:14.674Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:37:14.706Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 35.466 ms
+info: 2023-06-28T16:37:14.835Z User undefined successfully completed authentication
+info: 2023-06-28T16:37:14.852Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 102.266 ms
+info: 2023-06-28T16:37:14.894Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:37:14.931Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.673 ms
+info: 2023-06-28T16:43:51.598Z User undefined successfully completed authentication
+info: 2023-06-28T16:43:51.634Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 298.307 ms
+info: 2023-06-28T16:43:51.703Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:43:51.775Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 87.016 ms
+info: 2023-06-28T16:43:51.965Z User undefined successfully completed authentication
+info: 2023-06-28T16:43:51.978Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.703 ms
+info: 2023-06-28T16:43:52.017Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:43:52.064Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 50.005 ms
+info: 2023-06-28T16:43:52.202Z User undefined successfully completed authentication
+info: 2023-06-28T16:43:52.215Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.971 ms
+info: 2023-06-28T16:43:52.244Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:43:52.284Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 41.423 ms
+info: 2023-06-28T16:45:22.503Z User undefined successfully completed authentication
+info: 2023-06-28T16:45:22.531Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 297.178 ms
+info: 2023-06-28T16:45:22.605Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:45:22.678Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 79.715 ms
+info: 2023-06-28T16:45:22.849Z User undefined successfully completed authentication
+info: 2023-06-28T16:45:22.868Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.019 ms
+info: 2023-06-28T16:45:22.905Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:45:22.946Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 44.523 ms
+info: 2023-06-28T16:45:23.090Z User undefined successfully completed authentication
+info: 2023-06-28T16:45:23.106Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.481 ms
+info: 2023-06-28T16:45:23.143Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:45:23.180Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 43.362 ms
+info: 2023-06-28T16:48:05.502Z User undefined successfully completed authentication
+info: 2023-06-28T16:48:05.531Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 306.123 ms
+info: 2023-06-28T16:48:05.603Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:48:05.679Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 94.116 ms
+info: 2023-06-28T16:48:05.846Z User undefined successfully completed authentication
+info: 2023-06-28T16:48:05.861Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.301 ms
+info: 2023-06-28T16:48:05.892Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:48:05.928Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 38.889 ms
+info: 2023-06-28T16:48:06.052Z User undefined successfully completed authentication
+info: 2023-06-28T16:48:06.070Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.758 ms
+info: 2023-06-28T16:48:06.100Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:48:06.136Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 34.523 ms
+info: 2023-06-28T16:49:56.389Z User undefined successfully completed authentication
+info: 2023-06-28T16:49:56.424Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 315.473 ms
+info: 2023-06-28T16:49:56.496Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:49:56.567Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.658 ms
+info: 2023-06-28T16:49:56.745Z User undefined successfully completed authentication
+info: 2023-06-28T16:49:56.763Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 120.678 ms
+info: 2023-06-28T16:49:56.801Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:49:56.845Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.493 ms
+info: 2023-06-28T16:49:56.976Z User undefined successfully completed authentication
+info: 2023-06-28T16:49:56.993Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.618 ms
+info: 2023-06-28T16:49:57.027Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:49:57.063Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.554 ms
+info: 2023-06-28T16:50:27.585Z User undefined successfully completed authentication
+info: 2023-06-28T16:50:27.614Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 338.329 ms
+info: 2023-06-28T16:50:27.689Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:50:27.768Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 92.263 ms
+info: 2023-06-28T16:50:27.928Z User undefined successfully completed authentication
+info: 2023-06-28T16:50:27.941Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.555 ms
+info: 2023-06-28T16:50:27.972Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:50:28.013Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.466 ms
+info: 2023-06-28T16:50:28.156Z User undefined successfully completed authentication
+info: 2023-06-28T16:50:28.170Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.592 ms
+info: 2023-06-28T16:50:28.207Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:50:28.245Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 43.078 ms
+info: 2023-06-28T16:50:55.710Z User undefined successfully completed authentication
+info: 2023-06-28T16:50:55.739Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 294.789 ms
+info: 2023-06-28T16:50:55.810Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:50:55.883Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 80.930 ms
+info: 2023-06-28T16:50:56.036Z User undefined successfully completed authentication
+info: 2023-06-28T16:50:56.053Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.363 ms
+info: 2023-06-28T16:50:56.088Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:50:56.127Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.691 ms
+info: 2023-06-28T16:50:56.260Z User undefined successfully completed authentication
+info: 2023-06-28T16:50:56.273Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.053 ms
+info: 2023-06-28T16:50:56.303Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:50:56.337Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 32.390 ms
+info: 2023-06-28T16:52:30.681Z User undefined successfully completed authentication
+info: 2023-06-28T16:52:30.705Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 314.053 ms
+info: 2023-06-28T16:52:30.791Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:52:30.877Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 100.761 ms
+info: 2023-06-28T16:52:31.048Z User undefined successfully completed authentication
+info: 2023-06-28T16:52:31.063Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.904 ms
+info: 2023-06-28T16:52:31.093Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:52:31.131Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.169 ms
+info: 2023-06-28T16:52:31.269Z User undefined successfully completed authentication
+info: 2023-06-28T16:52:31.283Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.090 ms
+info: 2023-06-28T16:52:31.322Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:52:31.359Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 38.585 ms
+info: 2023-06-28T16:52:50.067Z User undefined successfully completed authentication
+info: 2023-06-28T16:52:50.090Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 332.757 ms
+info: 2023-06-28T16:52:50.164Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:52:50.255Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 104.750 ms
+info: 2023-06-28T16:52:50.423Z User undefined successfully completed authentication
+info: 2023-06-28T16:52:50.434Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.129 ms
+info: 2023-06-28T16:52:50.464Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:52:50.503Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.428 ms
+info: 2023-06-28T16:52:50.637Z User undefined successfully completed authentication
+info: 2023-06-28T16:52:50.652Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.303 ms
+info: 2023-06-28T16:52:50.684Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:52:50.725Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 43.983 ms
+info: 2023-06-28T16:54:47.129Z User undefined successfully completed authentication
+info: 2023-06-28T16:54:47.158Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 299.855 ms
+info: 2023-06-28T16:54:47.234Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:54:47.310Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 86.434 ms
+info: 2023-06-28T16:54:47.482Z User undefined successfully completed authentication
+info: 2023-06-28T16:54:47.506Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 115.804 ms
+info: 2023-06-28T16:54:47.543Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:54:47.576Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 35.391 ms
+info: 2023-06-28T16:54:47.708Z User undefined successfully completed authentication
+info: 2023-06-28T16:54:47.723Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 98.918 ms
+info: 2023-06-28T16:54:47.761Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:54:47.793Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.754 ms
+info: 2023-06-28T16:55:36.442Z User undefined successfully completed authentication
+info: 2023-06-28T16:55:36.470Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 340.921 ms
+info: 2023-06-28T16:55:36.550Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:55:36.627Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 87.326 ms
+info: 2023-06-28T16:55:36.787Z User undefined successfully completed authentication
+info: 2023-06-28T16:55:36.799Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.352 ms
+info: 2023-06-28T16:55:36.832Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:55:36.868Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 38.855 ms
+info: 2023-06-28T16:55:36.996Z User undefined successfully completed authentication
+info: 2023-06-28T16:55:37.011Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.245 ms
+info: 2023-06-28T16:55:37.044Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:55:37.079Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.348 ms
+info: 2023-06-28T16:56:11.331Z User undefined successfully completed authentication
+info: 2023-06-28T16:56:11.368Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 363.837 ms
+info: 2023-06-28T16:56:11.454Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:56:11.574Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 133.560 ms
+info: 2023-06-28T16:56:11.757Z User undefined successfully completed authentication
+info: 2023-06-28T16:56:11.772Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.288 ms
+info: 2023-06-28T16:56:11.813Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:56:11.853Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 44.981 ms
+info: 2023-06-28T16:56:11.990Z User undefined successfully completed authentication
+info: 2023-06-28T16:56:12.004Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.059 ms
+info: 2023-06-28T16:56:12.044Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:56:12.100Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 55.154 ms
+info: 2023-06-28T16:57:10.169Z User undefined successfully completed authentication
+info: 2023-06-28T16:57:10.199Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 357.733 ms
+info: 2023-06-28T16:57:10.295Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:57:10.364Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.683 ms
+info: 2023-06-28T16:57:10.534Z User undefined successfully completed authentication
+info: 2023-06-28T16:57:10.552Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.990 ms
+info: 2023-06-28T16:57:10.583Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:57:10.619Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.743 ms
+info: 2023-06-28T16:57:10.751Z User undefined successfully completed authentication
+info: 2023-06-28T16:57:10.763Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.847 ms
+info: 2023-06-28T16:57:10.802Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:57:10.836Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.679 ms
+info: 2023-06-28T16:57:45.963Z User undefined successfully completed authentication
+info: 2023-06-28T16:57:45.988Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 286.709 ms
+info: 2023-06-28T16:57:46.062Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:57:46.133Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 86.430 ms
+info: 2023-06-28T16:57:46.289Z User undefined successfully completed authentication
+info: 2023-06-28T16:57:46.305Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.948 ms
+info: 2023-06-28T16:57:46.339Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:57:46.370Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 33.699 ms
+info: 2023-06-28T16:57:46.512Z User undefined successfully completed authentication
+info: 2023-06-28T16:57:46.525Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.394 ms
+info: 2023-06-28T16:57:46.555Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:57:46.594Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.493 ms
+info: 2023-06-28T16:59:00.106Z User undefined successfully completed authentication
+info: 2023-06-28T16:59:00.135Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 369.064 ms
+info: 2023-06-28T16:59:00.226Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:59:00.286Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 72.965 ms
+info: 2023-06-28T16:59:00.469Z User undefined successfully completed authentication
+info: 2023-06-28T16:59:00.492Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 130.219 ms
+info: 2023-06-28T16:59:00.539Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:59:00.579Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 49.012 ms
+info: 2023-06-28T16:59:00.731Z User undefined successfully completed authentication
+info: 2023-06-28T16:59:00.749Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 116.120 ms
+info: 2023-06-28T16:59:00.791Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:59:00.833Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 45.027 ms
+info: 2023-06-28T16:59:37.603Z User undefined successfully completed authentication
+info: 2023-06-28T16:59:37.634Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 371.202 ms
+info: 2023-06-28T16:59:37.708Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T16:59:37.779Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 81.079 ms
+info: 2023-06-28T16:59:37.943Z User undefined successfully completed authentication
+info: 2023-06-28T16:59:37.958Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.904 ms
+info: 2023-06-28T16:59:37.991Z User user provided a valid token. Authentication completed
+info: 2023-06-28T16:59:38.028Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 43.157 ms
+info: 2023-06-28T16:59:38.152Z User undefined successfully completed authentication
+info: 2023-06-28T16:59:38.166Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 96.224 ms
+info: 2023-06-28T16:59:38.197Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T16:59:38.232Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.351 ms
+info: 2023-06-28T17:01:23.573Z User undefined successfully completed authentication
+info: 2023-06-28T17:01:23.598Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 295.799 ms
+info: 2023-06-28T17:01:23.676Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:01:23.739Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 73.137 ms
+info: 2023-06-28T17:01:23.898Z User undefined successfully completed authentication
+info: 2023-06-28T17:01:23.911Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.401 ms
+info: 2023-06-28T17:01:23.951Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:01:23.983Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 37.055 ms
+info: 2023-06-28T17:01:24.110Z User undefined successfully completed authentication
+info: 2023-06-28T17:01:24.127Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.329 ms
+info: 2023-06-28T17:01:24.159Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:01:24.189Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 32.656 ms
+info: 2023-06-28T17:02:17.839Z User undefined successfully completed authentication
+info: 2023-06-28T17:02:17.876Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 388.905 ms
+info: 2023-06-28T17:02:17.963Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:02:18.055Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 108.679 ms
+info: 2023-06-28T17:02:18.236Z User undefined successfully completed authentication
+info: 2023-06-28T17:02:18.249Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.878 ms
+info: 2023-06-28T17:02:18.287Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:02:18.319Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.265 ms
+info: 2023-06-28T17:02:18.462Z User undefined successfully completed authentication
+info: 2023-06-28T17:02:18.482Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.087 ms
+info: 2023-06-28T17:02:18.525Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:02:18.563Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.338 ms
+info: 2023-06-28T17:03:17.076Z User undefined successfully completed authentication
+info: 2023-06-28T17:03:17.107Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 364.312 ms
+info: 2023-06-28T17:03:17.179Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:03:17.247Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 80.731 ms
+info: 2023-06-28T17:03:17.412Z User undefined successfully completed authentication
+info: 2023-06-28T17:03:17.426Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.409 ms
+info: 2023-06-28T17:03:17.460Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:03:17.496Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.258 ms
+info: 2023-06-28T17:03:17.627Z User undefined successfully completed authentication
+info: 2023-06-28T17:03:17.645Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.993 ms
+info: 2023-06-28T17:03:17.675Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:03:17.708Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.411 ms
+info: 2023-06-28T17:04:00.472Z User undefined successfully completed authentication
+info: 2023-06-28T17:04:00.497Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 332.690 ms
+info: 2023-06-28T17:04:00.590Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:04:00.663Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 84.143 ms
+info: 2023-06-28T17:04:00.834Z User undefined successfully completed authentication
+info: 2023-06-28T17:04:00.851Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.504 ms
+info: 2023-06-28T17:04:00.886Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:04:00.922Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 37.630 ms
+info: 2023-06-28T17:04:01.055Z User undefined successfully completed authentication
+info: 2023-06-28T17:04:01.071Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.801 ms
+info: 2023-06-28T17:04:01.104Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:04:01.140Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.733 ms
+info: 2023-06-28T17:05:33.235Z User undefined successfully completed authentication
+info: 2023-06-28T17:05:33.263Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 343.067 ms
+info: 2023-06-28T17:05:33.345Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:05:33.410Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 79.963 ms
+info: 2023-06-28T17:05:33.577Z User undefined successfully completed authentication
+info: 2023-06-28T17:05:33.595Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.010 ms
+info: 2023-06-28T17:05:33.627Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:05:33.683Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 50.340 ms
+info: 2023-06-28T17:05:33.899Z User undefined successfully completed authentication
+info: 2023-06-28T17:05:33.915Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 137.727 ms
+info: 2023-06-28T17:05:33.952Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:05:33.999Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 49.918 ms
+info: 2023-06-28T17:05:48.894Z User undefined successfully completed authentication
+info: 2023-06-28T17:05:48.927Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 386.467 ms
+info: 2023-06-28T17:05:49.016Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:05:49.099Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 96.669 ms
+info: 2023-06-28T17:05:49.275Z User undefined successfully completed authentication
+info: 2023-06-28T17:05:49.292Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.367 ms
+info: 2023-06-28T17:05:49.328Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:05:49.371Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 50.170 ms
+info: 2023-06-28T17:05:49.512Z User undefined successfully completed authentication
+info: 2023-06-28T17:05:49.527Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.427 ms
+info: 2023-06-28T17:05:49.561Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:05:49.598Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 38.513 ms
+info: 2023-06-28T17:07:28.719Z User undefined successfully completed authentication
+info: 2023-06-28T17:07:28.749Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 327.996 ms
+info: 2023-06-28T17:07:28.835Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:07:28.902Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 84.290 ms
+info: 2023-06-28T17:07:29.074Z User undefined successfully completed authentication
+info: 2023-06-28T17:07:29.088Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.698 ms
+info: 2023-06-28T17:07:29.128Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:07:29.165Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 36.562 ms
+info: 2023-06-28T17:07:29.288Z User undefined successfully completed authentication
+info: 2023-06-28T17:07:29.305Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.454 ms
+info: 2023-06-28T17:07:29.336Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:07:29.371Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 34.615 ms
+info: 2023-06-28T17:09:17.964Z User undefined successfully completed authentication
+info: 2023-06-28T17:09:17.997Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 315.781 ms
+info: 2023-06-28T17:09:18.082Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:09:18.164Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 92.905 ms
+info: 2023-06-28T17:09:18.336Z User undefined successfully completed authentication
+info: 2023-06-28T17:09:18.356Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.464 ms
+info: 2023-06-28T17:09:18.390Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:09:18.420Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 34.677 ms
+info: 2023-06-28T17:09:18.553Z User undefined successfully completed authentication
+info: 2023-06-28T17:09:18.566Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.613 ms
+info: 2023-06-28T17:09:18.597Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:09:18.633Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.513 ms
+info: 2023-06-28T17:11:04.458Z User undefined successfully completed authentication
+info: 2023-06-28T17:11:04.491Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 358.289 ms
+info: 2023-06-28T17:11:04.595Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:11:04.673Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 92.475 ms
+info: 2023-06-28T17:11:04.844Z User undefined successfully completed authentication
+info: 2023-06-28T17:11:04.860Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 114.833 ms
+info: 2023-06-28T17:11:04.901Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:11:04.956Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 57.965 ms
+info: 2023-06-28T17:11:05.106Z User undefined successfully completed authentication
+info: 2023-06-28T17:11:05.128Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 113.751 ms
+info: 2023-06-28T17:11:05.174Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:11:05.230Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 64.092 ms
+info: 2023-06-28T17:12:35.856Z User undefined successfully completed authentication
+info: 2023-06-28T17:12:35.889Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 321.313 ms
+info: 2023-06-28T17:12:35.971Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:12:36.084Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 114.981 ms
+info: 2023-06-28T17:12:36.324Z User undefined successfully completed authentication
+info: 2023-06-28T17:12:36.340Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 117.228 ms
+info: 2023-06-28T17:12:36.377Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:12:36.418Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 44.019 ms
+info: 2023-06-28T17:12:36.558Z User undefined successfully completed authentication
+info: 2023-06-28T17:12:36.574Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.761 ms
+info: 2023-06-28T17:12:36.608Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:12:36.639Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 35.476 ms
+info: 2023-06-28T17:13:58.402Z User undefined successfully completed authentication
+info: 2023-06-28T17:13:58.433Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 319.550 ms
+info: 2023-06-28T17:13:58.508Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:13:58.585Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 92.248 ms
+info: 2023-06-28T17:13:58.755Z User undefined successfully completed authentication
+info: 2023-06-28T17:13:58.768Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.053 ms
+info: 2023-06-28T17:13:58.804Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:13:58.841Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 42.616 ms
+info: 2023-06-28T17:13:58.972Z User undefined successfully completed authentication
+info: 2023-06-28T17:13:58.988Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.387 ms
+info: 2023-06-28T17:13:59.022Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:13:59.060Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 42.787 ms
+info: 2023-06-28T17:15:03.064Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:03.097Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 311.344 ms
+info: 2023-06-28T17:15:03.170Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:15:03.238Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 79.339 ms
+info: 2023-06-28T17:15:03.409Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:03.422Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.574 ms
+info: 2023-06-28T17:15:03.456Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:15:03.489Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 38.753 ms
+info: 2023-06-28T17:15:03.617Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:03.629Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.981 ms
+info: 2023-06-28T17:15:03.662Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:15:03.695Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.644 ms
+info: 2023-06-28T17:15:28.735Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:28.799Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 383.596 ms
+info: 2023-06-28T17:15:28.912Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:15:29.006Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 110.747 ms
+info: 2023-06-28T17:15:29.200Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:29.215Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 119.761 ms
+info: 2023-06-28T17:15:29.254Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:15:29.292Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 42.520 ms
+info: 2023-06-28T17:15:29.435Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:29.452Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.553 ms
+info: 2023-06-28T17:15:29.502Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:15:29.551Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 58.140 ms
+info: 2023-06-28T17:15:48.164Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:48.199Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 321.512 ms
+info: 2023-06-28T17:15:48.282Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:15:48.347Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 86.444 ms
+info: 2023-06-28T17:15:48.527Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:48.541Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 115.628 ms
+info: 2023-06-28T17:15:48.582Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:15:48.620Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.901 ms
+info: 2023-06-28T17:15:48.763Z User undefined successfully completed authentication
+info: 2023-06-28T17:15:48.777Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.715 ms
+info: 2023-06-28T17:15:48.813Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:15:48.858Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.325 ms
+info: 2023-06-28T17:16:26.695Z User undefined successfully completed authentication
+info: 2023-06-28T17:16:26.739Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 372.802 ms
+info: 2023-06-28T17:16:26.857Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:16:26.960Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 129.768 ms
+info: 2023-06-28T17:16:27.154Z User undefined successfully completed authentication
+info: 2023-06-28T17:16:27.175Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 116.980 ms
+info: 2023-06-28T17:16:27.217Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:16:27.256Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.156 ms
+info: 2023-06-28T17:16:27.396Z User undefined successfully completed authentication
+info: 2023-06-28T17:16:27.410Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.889 ms
+info: 2023-06-28T17:16:27.449Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:16:27.490Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.561 ms
+info: 2023-06-28T17:16:53.757Z User undefined successfully completed authentication
+info: 2023-06-28T17:16:53.785Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 330.078 ms
+info: 2023-06-28T17:16:53.880Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:16:53.956Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 87.237 ms
+info: 2023-06-28T17:16:54.127Z User undefined successfully completed authentication
+info: 2023-06-28T17:16:54.143Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.660 ms
+info: 2023-06-28T17:16:54.181Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:16:54.220Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.694 ms
+info: 2023-06-28T17:16:54.350Z User undefined successfully completed authentication
+info: 2023-06-28T17:16:54.368Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.893 ms
+info: 2023-06-28T17:16:54.404Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:16:54.438Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 37.494 ms
+info: 2023-06-28T17:19:32.823Z User undefined successfully completed authentication
+info: 2023-06-28T17:19:32.853Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 302.933 ms
+info: 2023-06-28T17:19:32.927Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:19:32.994Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 76.465 ms
+info: 2023-06-28T17:19:33.153Z User undefined successfully completed authentication
+info: 2023-06-28T17:19:33.167Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 102.889 ms
+info: 2023-06-28T17:19:33.200Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:19:33.237Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.053 ms
+info: 2023-06-28T17:19:33.370Z User undefined successfully completed authentication
+info: 2023-06-28T17:19:33.386Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 102.889 ms
+info: 2023-06-28T17:19:33.420Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:19:33.458Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 40.710 ms
+info: 2023-06-28T17:20:44.420Z User undefined successfully completed authentication
+info: 2023-06-28T17:20:44.441Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 298.166 ms
+info: 2023-06-28T17:20:44.513Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:20:44.588Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 88.071 ms
+info: 2023-06-28T17:20:44.756Z User undefined successfully completed authentication
+info: 2023-06-28T17:20:44.773Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.440 ms
+info: 2023-06-28T17:20:44.806Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:20:44.843Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.934 ms
+info: 2023-06-28T17:20:44.970Z User undefined successfully completed authentication
+info: 2023-06-28T17:20:44.985Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.037 ms
+info: 2023-06-28T17:20:45.019Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:20:45.054Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 36.758 ms
+info: 2023-06-28T17:21:45.955Z User undefined successfully completed authentication
+info: 2023-06-28T17:21:45.990Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 323.603 ms
+info: 2023-06-28T17:21:46.078Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:21:46.173Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 116.620 ms
+info: 2023-06-28T17:21:46.337Z User undefined successfully completed authentication
+info: 2023-06-28T17:21:46.350Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.807 ms
+info: 2023-06-28T17:21:46.384Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:21:46.416Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 39.422 ms
+info: 2023-06-28T17:21:46.552Z User undefined successfully completed authentication
+info: 2023-06-28T17:21:46.566Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.903 ms
+info: 2023-06-28T17:21:46.606Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:21:46.653Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 50.394 ms
+info: 2023-06-28T17:23:11.682Z User undefined successfully completed authentication
+info: 2023-06-28T17:23:11.709Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 359.920 ms
+info: 2023-06-28T17:23:11.795Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:23:11.862Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 82.437 ms
+info: 2023-06-28T17:23:12.054Z User undefined successfully completed authentication
+info: 2023-06-28T17:23:12.076Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 134.376 ms
+info: 2023-06-28T17:23:12.119Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:23:12.167Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 53.177 ms
+info: 2023-06-28T17:23:12.310Z User undefined successfully completed authentication
+info: 2023-06-28T17:23:12.328Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.078 ms
+info: 2023-06-28T17:23:12.366Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:23:12.409Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 45.624 ms
+info: 2023-06-28T17:23:27.350Z User undefined successfully completed authentication
+info: 2023-06-28T17:23:27.376Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 305.658 ms
+info: 2023-06-28T17:23:27.462Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:23:27.531Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 80.971 ms
+info: 2023-06-28T17:23:27.697Z User undefined successfully completed authentication
+info: 2023-06-28T17:23:27.710Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.304 ms
+info: 2023-06-28T17:23:27.749Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:23:27.794Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 50.167 ms
+info: 2023-06-28T17:23:27.928Z User undefined successfully completed authentication
+info: 2023-06-28T17:23:27.944Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.688 ms
+info: 2023-06-28T17:23:27.979Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:23:28.025Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 48.403 ms
+info: 2023-06-28T17:24:08.876Z User undefined successfully completed authentication
+info: 2023-06-28T17:24:08.901Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 309.162 ms
+info: 2023-06-28T17:24:08.979Z User Admin provided a valid token. Authentication completed
+info: 2023-06-28T17:24:09.046Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 78.552 ms
+info: 2023-06-28T17:24:09.211Z User undefined successfully completed authentication
+info: 2023-06-28T17:24:09.224Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.727 ms
+info: 2023-06-28T17:24:09.259Z User user provided a valid token. Authentication completed
+info: 2023-06-28T17:24:09.293Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 35.552 ms
+info: 2023-06-28T17:24:09.425Z User undefined successfully completed authentication
+info: 2023-06-28T17:24:09.438Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.209 ms
+info: 2023-06-28T17:24:09.468Z User guest provided a valid token. Authentication completed
+info: 2023-06-28T17:24:09.504Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.026 ms

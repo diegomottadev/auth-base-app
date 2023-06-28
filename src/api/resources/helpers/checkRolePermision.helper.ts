@@ -17,7 +17,7 @@ export const checkUserRolePermission = (permission: string) => {
       // Get the authenticated user ID from the JWT payload
       const authenticatedUserId = req.user ? (req.user as User).id : null;
 
-      if (!authenticatedUserId) {
+      if (authenticatedUserId === null) {
         return res.status(401).json({ message: "Unauthorized" });
       }
 

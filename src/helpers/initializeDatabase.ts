@@ -10,12 +10,12 @@ const createRoles = async () => {
 
   for (const roleName of roles) {
     const existingRole = await findRole(null, roleName);
-    console.log(!existingRole)
+    // console.log(!existingRole)
     if (!existingRole) {
       await createRole({ name: roleName });
       console.log(`Role '${roleName}' created.`);
     } else {
-      console.log(`Role '${roleName}' already exists. Skipping creation.`);
+      //console.log(`Role '${roleName}' already exists. Skipping creation.`);
     }
   }
 };
@@ -28,7 +28,32 @@ const createUserRoot = async () => {
     const user = await createUser({ name: 'Admin', email: "admin@admin.com", roleId: role.id  },hash);
     console.log(`User '${user.name}' created.`);
   } else {
-    console.log(`User or Role for the user  exist.`);
+    //console.log(`User or Role for the user  exist.`);
+  }
+};
+
+const createNormalUser = async () => {
+  const existingUser = await findUser(null, 'User');
+  const role = await findRole(null, 'User');
+  if (!existingUser   && role !== null) {
+    const hash = await bcrypt.hash("user", 10);
+    const user = await createUser({ name: 'user', email: "user@user.com", roleId: role.id  },hash);
+    console.log(`User '${user.name}' created.`);
+  } else {
+    //console.log(`User or Role for the user  exist.`);
+  }
+};
+
+
+const createGuestUser = async () => {
+  const existingUser = await findUser(null, 'Guest');
+  const role = await findRole(null, 'Guest');
+  if (!existingUser   && role !== null) {
+    const hash = await bcrypt.hash("guest", 10);
+    const user = await createUser({ name: 'guest', email: "guest@guest.com", roleId: role.id  },hash);
+    console.log(`User '${user.name}' created.`);
+  } else {
+    //console.log(`User or Role for the user  exist.`);
   }
 };
 
@@ -51,10 +76,10 @@ const assignPermissionsToRoles = async () => {
             await createRolePermission([permission.id], createUserRole.id);
             console.log(`Permission '${permissionName}' assigned to role 'User'.`);
           } else {
-            console.log(`Permission '${permissionName}' already assigned to role 'User'. Skipping assignment.`);
+            //console.log(`Permission '${permissionName}' already assigned to role 'User'. Skipping assignment.`);
           }
         } else {
-          console.log(`Permission '${permissionName}' not found. Skipping assignment.`);
+          //console.log(`Permission '${permissionName}' not found. Skipping assignment.`);
         }
       } catch (error) {
         console.log(`Error assigning permission '${permissionName}' to role 'User': ${error}`);
@@ -73,7 +98,7 @@ const assignPermissionsToRoles = async () => {
             await createRolePermission([permission.id], createGuestRole.id);
             console.log(`Permission '${permissionName}' assigned to role 'Guest'.`);
           } else {
-            console.log(`Permission '${permissionName}' already assigned to role 'Guest'. Skipping assignment.`);
+            //console.log(`Permission '${permissionName}' already assigned to role 'Guest'. Skipping assignment.`);
           }
         } else {
           console.log(`Permission '${permissionName}' not found. Skipping assignment.`);
@@ -92,7 +117,10 @@ export const initializeDatabase = async () => {
     await loadPermissions();
     await assignPermissionsToRoles();
     await createUserRoot();
+    await createNormalUser();
+    await createGuestUser();
+
   } catch (error) {
-    console.log(`Error loading permissions: ${error}`);
+    //console.log(`Error loading permissions: ${error}`);
   }
 };

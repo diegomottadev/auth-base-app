@@ -1,6 +1,6 @@
 
 
-import { Permission } from "../../../models/permissio.model"
+import { Permission } from "../../../models/permission.model"
 import { Op } from 'sequelize';
 
 /*
@@ -50,11 +50,11 @@ export const loadPermissions = (): Promise<void> => {
           await Permission.create({ name: permissionName });
           console.log(`Permission '${permissionName}' created.`);
         } else {
-          console.log(`Permission '${permissionName}' already exists. Skipping creation.`);
+          //console.log(`Permission '${permissionName}' already exists. Skipping creation.`);
         }
       }
 
-      console.log('Permissions loaded successfully.');
+      //console.log('Permissions loaded successfully.');
       resolve();
     } catch (error) {
       console.error('Error loading permissions:', error);

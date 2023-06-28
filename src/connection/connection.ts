@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize-typescript"
 import { User } from "../models/user.model"
 import dotenv from 'dotenv';
 import { Role } from "../models/role.model";
-import { Permission } from "../models/permissio.model";
+import { Permission } from "../models/permission.model";
 import { RolePermission } from "../models/rolePermission.model";
 import log from '../../src/api/resources/utils/logger';
 import { Person } from "../models/person.model";
@@ -53,3 +53,13 @@ export const connectionDB = async (): Promise<boolean> => {
       return false;
     }
   };
+export const disconnectDB = async (): Promise<boolean> => {
+  try {
+    await connection.close();
+    return true;
+  } catch (error) {
+    log.error(`Error disconnecting from the database: ${error}`);
+    console.log(error);
+    return false;
+  }
+};

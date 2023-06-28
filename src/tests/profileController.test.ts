@@ -1,9 +1,10 @@
-import { Permission } from '../models/permissio.model';
+import { Permission } from '../models/permission.model';
 import { Person } from '../models/person.model';
 import { Role } from '../models/role.model';
 import { User } from '../models/user.model';
 import { edit , me} from '../api/resources/profile/profile.controller'; // Ajusta la ruta al archivo donde se encuentra la función edit
 import { ProfileParameterNotSpecify } from '../api/resources/profile/profile.error';
+import { UserNotExist } from '../api/resources/users/users.error';
 
     // Mockear los modelos y las funciones necesarias
     jest.mock('./../models/user.model.ts', () => ({
@@ -130,4 +131,26 @@ import { ProfileParameterNotSpecify } from '../api/resources/profile/profile.err
     });
   
     // Puedes escribir más pruebas para cubrir diferentes casos y escenarios
+    it('should throw UserNotExist exception when the user does not exist', async () => {
+      const userId = 1;
+      const userData = {
+        name: 'John Doe',
+        email: 'johndoe@example.com',
+        firstName: 'John',
+        lastName: 'Doe',
+        dateBurn: new Date(),
+        telephone: '123456789',
+        biography: 'Lorem ipsum',
+      };
+  
+      // Mockear la función findOne de User para devolver null (usuario no existe)
+      jest.spyOn(User, 'findOne').mockResolvedValueOnce(null);
+  
+      try {
+        await edit(userId, userData);
+        fail('Expected UserNotExist error to be thrown');
+      } catch (error: any) {
+        expect(error).toBeInstanceOf(UserNotExist);
+      }
+    });
   });

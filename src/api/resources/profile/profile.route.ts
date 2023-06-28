@@ -24,11 +24,11 @@ profileRouter.get('/me', [jwtAuthenticate,checkUserRolePermission('Read')], proc
     } catch (error) {
       // Handle the error
       if (error instanceof ProfileNotExist) {
-        log.warning( `User profile for the user with ID [${user_id}] does not works: ${error.message}`);
+        log.warn( `User profile for the user with ID [${user_id}] does not works: ${error.message}`);
         res.status(405).json({ message: error.message });
       }
       else if (error instanceof ProfileParameterNotSpecify) {
-          log.warning( `User with ID [${user_id}] does not specify a parameter: ${error.message}`);
+          log.warn( `User with ID [${user_id}] does not specify a parameter: ${error.message}`);
           res.status(405).json({ message: error.message });
       } else {
         log.error(`Error getting the user profile with ID [${user_id}]`);
@@ -55,7 +55,7 @@ profileRouter.get('/me', [jwtAuthenticate,checkUserRolePermission('Read')], proc
     } catch (error) {
 
       if (error instanceof ProfileNotExist) {
-        log.warning(`User with ID [${user_id}] not found :${error.message}`);
+        log.warn(`User with ID [${user_id}] not found :${error.message}`);
         res.status(404).json({ message: error.message });
       } else {
         log.error(`Error updating user profile with user ID [${user_id}].`);

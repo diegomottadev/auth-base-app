@@ -1,12 +1,12 @@
-import express from 'express';
+import express, { Express } from 'express';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
 import logger from './api/resources/utils/logger';
 import authJTW from './api/libs/auth';
 import config from './api/config';
 import passport from 'passport';
-import {procesarErrores,erroresEnProduccion,erroresEnDesarrollo} from './api/libs/errorHandler';
-import {connectionDB} from "./connection/connection"
+import { procesarErrores, erroresEnProduccion, erroresEnDesarrollo } from './api/libs/errorHandler';
+import { connectionDB } from "./connection/connection"
 
 import cors from 'cors';
 import usersRouter from './api/resources/users/users.route';
@@ -16,7 +16,7 @@ import permissionsRouter from './api/resources/permissions/permissions.route';
 import profileRouter from './api/resources/profile/profile.route';
 import { initializeDatabase } from './helpers/initializeDatabase';
 
-const app = express(); // Create an instance of the Express application
+const app: Express = express(); // Create an instance of the Express application
 
 app.use(cors()); // Enable Cross-Origin Resource Sharing
 
@@ -35,9 +35,7 @@ app.use(bodyParser.json()); // Parse incoming request bodies in JSON format and 
 app.use(passport.initialize()); // Initialize Passport middleware
 
 // Connect to the database
-
-
-connectionDB().then((databaseExists:boolean) => {
+connectionDB().then((databaseExists: boolean) => {
   // Only run the initialization script if the database exists
   if (databaseExists) {
     initializeDatabase();
@@ -60,4 +58,6 @@ if (config.ambiente === 'prod') {
   app.use(erroresEnDesarrollo); // Error handling middleware for development environment
 }
 
-app.listen(3000, () => console.log('listening...survey!!!')); // Start the server and listen on port 3000
+const server = app.listen(3000, () => console.log('Server listening on port 3000'));
+
+export { app, server };

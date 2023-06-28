@@ -1,5 +1,5 @@
 import { Table, Model, Column, DataType, BeforeValidate, BelongsToMany } from "sequelize-typescript"
-import { Permission } from "./permissio.model";
+import { Permission } from "./permission.model";
 import { RolePermission } from "./rolePermission.model";
 
 @Table({

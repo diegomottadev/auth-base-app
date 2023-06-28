@@ -11,7 +11,7 @@ such as the password and email fields.
 */
 
 const blueprintLogin = Joi.object({
-  password: Joi.string().min(5).max(200).required(),
+  password: Joi.string().min(4).max(200).required(),
   email: Joi.string().required(),
 });
 

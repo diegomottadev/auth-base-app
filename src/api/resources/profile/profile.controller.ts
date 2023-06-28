@@ -1,4 +1,4 @@
-import { Permission } from "../../../models/permissio.model";
+import { Permission } from "../../../models/permission.model";
 import { Person } from "../../../models/person.model";
 import { Role } from "../../../models/role.model";
 import { User } from "../../../models/user.model"

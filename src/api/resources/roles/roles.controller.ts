@@ -1,7 +1,7 @@
 import { Role } from "../../../models/role.model"
 import { Op } from 'sequelize';
 import { RoleNotExist } from './roles.error';
-import { Permission } from "../../../models/permissio.model";
+import { Permission } from "../../../models/permission.model";
 
 
 /*
@@ -122,10 +122,10 @@ export const edit = (id: number, role: { name: string }): Promise<Role | null> =
 
 */
 
-export const destroy = async (id: number, roleToDelete: Role): Promise<Role> => {
-  const hasPermissions = await roleToDelete.$count("permissions");
+export const destroy = async (id: number, roleToDelete: Role ): Promise<Role> => {
+  const hasPermissions = await roleToDelete?.$count("permissions");
 
-  if (hasPermissions > 0) {
+  if (hasPermissions && hasPermissions > 0) {
     /* TODO:
 
         Create a customized Exception about this error
@@ -170,16 +170,15 @@ export const createRolePermission = async (permissionIds: number[], roleId: numb
 
   // Filter out the permission IDs that are already assigned to the role
   const newPermissionIds = permissionIds.filter((permissionId) => !existingPermissionIds.includes(permissionId));
-
-  // Assign new permission IDs to the role
+    // Assign new permission IDs to the role
   await role.$add("permissions", newPermissionIds);
 
   // Refresh the role to include the updated permissions
-  role = await Role.findByPk(roleId, {
+  const roleWithPermission = await Role.findByPk(roleId, {
     include: [Permission],
   });
 
-  return role;
+  return roleWithPermission;
 };
 
 
@@ -247,7 +246,7 @@ export const editRolePermissions = async (permissionIds: number[], roleId: numbe
       const permissions = await Permission.findAll({
         where: { id: permissionIds },
       });
-
+    
       await role.$set("permissions", permissions);
 
       // Refresh the role to include the updated permissions

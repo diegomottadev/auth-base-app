@@ -38,7 +38,7 @@ authRouter.post('/login',[validLogin, convertBodyALowerCase as RequestHandler],
 
     let passwordIsCorrect;
 
-    console.log("[AUTH]", config.default.jwt.secreto);
+    //console.log("[AUTH]", config.default.jwt.secreto);
 
     passwordIsCorrect = await bcrypt.compare(userUnauthenticated.password, userExisting.password);
     if (passwordIsCorrect) {

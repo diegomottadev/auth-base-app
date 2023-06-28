@@ -26,7 +26,7 @@ rolesRouter.post('/', [jwtAuthenticate, validationRole, checkUserRolePermission(
   } catch (error) {
     // Handle the error
     if (error instanceof InfoRoleInUse) {
-      log.warning(`Error creating the role [${roleNew.name}]: ${error.message}`);
+      log.warn(`Error creating the role [${roleNew.name}]: ${error.message}`);
       res.status(409).json({ message: error.message });
     } else {
       log.error(`Error creating the role [${roleNew.name}]`);
@@ -59,7 +59,7 @@ rolesRouter.get('/:id', [jwtAuthenticate,checkUserRolePermission('Read')], proce
   } catch (error) {
     // Handle the error
     if (error instanceof RoleNotExist) {
-      log.warning(`${error.message}. Role ID [${id}] does not exist`);
+      log.warn(`${error.message}. Role ID [${id}] does not exist`);
       res.status(405).json({ message: error.message });
     } else {
       log.error(`Error getting the role with ID [${id}]`);
@@ -87,7 +87,7 @@ rolesRouter.put('/:id', [jwtAuthenticate,checkUserRolePermission('Update')], pro
   } catch (error) {
     // Handle the error
     if (error instanceof RoleNotExist) {
-      log.warning(`${error.message}. Role ID [${id}] does not exist`);
+      log.warn(`${error.message}. Role ID [${id}] does not exist`);
       res.status(404).json({ message: error.message });
     } else {
       log.error(`Error modifying the role with ID [${id}]`);
@@ -110,7 +110,7 @@ rolesRouter.delete('/:id', [jwtAuthenticate,checkUserRolePermission('Delete')], 
     res.json({ message: `Role with name [${roleToDelete.name}] has been deleted.`, data: roleToDelete });
   } catch (error) {
     if (error instanceof RoleNotExist) {
-      log.warning(`${error.message}. Role ID [${id}] does not exist`);
+      log.warn(`${error.message}. Role ID [${id}] does not exist`);
       res.status(404).json({ message: error.message });
     } else {
       log.error(`Error deleting the role with ID [${id}]`);

@@ -31,7 +31,8 @@ const usersRouter = express.Router();
   -In case of an error, a response with the corresponding error message is sent.
 
 */
-usersRouter.post('/', [validationUser, checkUserRolePermission('Create')], procesarErrores(async (req: Request, res: Response) => {
+usersRouter.post('/', [jwtAuthenticate,checkUserRolePermission('Create'),validationUser ], procesarErrores(async (req: Request, res: Response) => {
+
   let newUser = req.body;
   try {
     const userExist = await userController.userExist(newUser);
@@ -45,7 +46,7 @@ usersRouter.post('/', [validationUser, checkUserRolePermission('Create')], proce
     res.status(201).json({ message: `User with name [${userCreated.name}] created successfully.`, data: userCreated.name });
   } catch (error) {
     if (error instanceof InfoUserInUse) {
-      log.warning(`${error.message}: ${newUser.email} | ${newUser.name}`);
+      log.warn(`${error.message}: ${newUser.email} | ${newUser.name}`);
       res.status(409).json({ message: error.message });
     } else {
       log.error(`Error creating the user with email [${newUser.email}] and name [${newUser.name}].`);
@@ -92,7 +93,7 @@ usersRouter.get('/:id', [jwtAuthenticate, checkUserRolePermission('Read')], proc
     res.json(user);
   } catch (error) {
     if (error instanceof UserNotExist) {
-      log.warning(`${error.message}. User with ID [${id}] not found.`);
+      log.warn(`${error.message}. User with ID [${id}] not found.`);
       res.status(405).json({ message: error.message });
     } else {
       log.error(`Error retrieving user with ID [${id}].`);
@@ -125,7 +126,7 @@ usersRouter.put('/:id', [jwtAuthenticate, checkUserRolePermission('Update')], pr
     }
   } catch (error) {
     if (error instanceof UserNotExist) {
-      log.warning(`${error.message}. User with ID [${id}] not found.`);
+      log.warn(`${error.message}. User with ID [${id}] not found.`);
       res.status(404).json({ message: error.message });
     } else {
       log.error(`Error updating user with ID [${id}].`);
@@ -156,7 +157,7 @@ usersRouter.delete('/:id', [jwtAuthenticate, checkUserRolePermission('Delete')],
   } catch (error) {
     // Handle the error
     if (error instanceof UserNotExist) {
-      log.warning(`${error.message}. User with ID [${id}] not found.`);
+      log.warn(`${error.message}. User with ID [${id}] not found.`);
       res.status(404).json({ message: error.message });
     } else {
       log.error(`Error deleting user with ID [${id}].`);
