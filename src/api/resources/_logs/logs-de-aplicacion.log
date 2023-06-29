@@ -4474,3 +4474,434 @@ info: 2023-06-28T17:24:09.425Z User undefined successfully completed authenticat
 info: 2023-06-28T17:24:09.438Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 101.209 ms
 info: 2023-06-28T17:24:09.468Z User guest provided a valid token. Authentication completed
 info: 2023-06-28T17:24:09.504Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 39.026 ms
+error: 2023-06-29T13:17:43.615Z Error connecting to the database: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+info: 2023-06-29T13:17:43.661Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 500 829 - 98.044 ms
+info: 2023-06-29T13:17:43.752Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 401 - - 11.748 ms
+info: 2023-06-29T13:17:43.909Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 401 - - 6.316 ms
+error: 2023-06-29T13:17:45.541Z Error connecting to the database: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+info: 2023-06-29T13:17:45.568Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 500 829 - 48.799 ms
+info: 2023-06-29T13:17:45.620Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 0.612 ms
+info: 2023-06-29T13:17:45.724Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 500 1675 - 58.700 ms
+info: 2023-06-29T13:17:45.756Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 0.876 ms
+info: 2023-06-29T13:17:45.816Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 500 1675 - 16.717 ms
+info: 2023-06-29T13:17:45.856Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 0.540 ms
+error: 2023-06-29T13:19:54.671Z Error connecting to the database: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+info: 2023-06-29T13:19:54.888Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 500 1675 - 99.846 ms
+info: 2023-06-29T13:19:54.957Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 401 - - 9.601 ms
+info: 2023-06-29T13:19:55.065Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 401 - - 5.828 ms
+error: 2023-06-29T13:19:55.911Z Error connecting to the database: SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+info: 2023-06-29T13:19:55.996Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 500 1675 - 30.411 ms
+info: 2023-06-29T13:19:56.055Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 1.685 ms
+info: 2023-06-29T13:19:56.122Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 500 1675 - 21.220 ms
+info: 2023-06-29T13:19:56.157Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 0.560 ms
+info: 2023-06-29T13:19:56.210Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 500 1675 - 13.216 ms
+info: 2023-06-29T13:19:56.260Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 401 - - 0.399 ms
+info: 2023-06-29T13:20:55.786Z User undefined successfully completed authentication
+info: 2023-06-29T13:20:55.850Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 415.243 ms
+info: 2023-06-29T13:20:55.940Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:20:56.035Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:20:56.056Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 115.745 ms
+info: 2023-06-29T13:20:56.157Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:20:56.201Z Role with name [ExistingRole] already exists.
+warn: 2023-06-29T13:20:56.211Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:20:56.223Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 76.973 ms
+info: 2023-06-29T13:20:56.304Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:20:56.335Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:20:56.344Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:20:56.352Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 59.694 ms
+info: 2023-06-29T13:20:57.434Z User undefined successfully completed authentication
+info: 2023-06-29T13:20:57.448Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 174.167 ms
+info: 2023-06-29T13:20:57.506Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:20:57.563Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 69.279 ms
+info: 2023-06-29T13:20:57.729Z User undefined successfully completed authentication
+info: 2023-06-29T13:20:57.743Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 118.384 ms
+info: 2023-06-29T13:20:57.779Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:20:57.823Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 47.012 ms
+info: 2023-06-29T13:20:57.967Z User undefined successfully completed authentication
+info: 2023-06-29T13:20:57.987Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 115.477 ms
+info: 2023-06-29T13:20:58.025Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:20:58.072Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 46.311 ms
+info: 2023-06-29T13:21:54.938Z User undefined successfully completed authentication
+info: 2023-06-29T13:21:54.968Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 306.140 ms
+info: 2023-06-29T13:21:55.063Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:21:55.133Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:21:55.143Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:21:55.154Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 111.533 ms
+info: 2023-06-29T13:21:55.271Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:21:55.317Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:21:55.325Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:21:55.334Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 77.522 ms
+info: 2023-06-29T13:21:56.465Z User undefined successfully completed authentication
+info: 2023-06-29T13:21:56.479Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 195.220 ms
+info: 2023-06-29T13:21:56.533Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:21:56.591Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 61.283 ms
+info: 2023-06-29T13:21:56.753Z User undefined successfully completed authentication
+info: 2023-06-29T13:21:56.766Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.796 ms
+info: 2023-06-29T13:21:56.797Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:21:56.830Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 35.755 ms
+info: 2023-06-29T13:21:56.962Z User undefined successfully completed authentication
+info: 2023-06-29T13:21:56.978Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.821 ms
+info: 2023-06-29T13:21:57.021Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:21:57.068Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 53.484 ms
+info: 2023-06-29T13:22:38.894Z User undefined successfully completed authentication
+info: 2023-06-29T13:22:38.917Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 324.933 ms
+info: 2023-06-29T13:22:39.011Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:22:39.070Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:22:39.080Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:22:39.093Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 95.188 ms
+info: 2023-06-29T13:22:39.209Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:22:39.253Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:22:39.268Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:22:39.276Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 81.130 ms
+info: 2023-06-29T13:22:40.357Z User undefined successfully completed authentication
+info: 2023-06-29T13:22:40.370Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 201.166 ms
+info: 2023-06-29T13:22:40.429Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:22:40.492Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 67.787 ms
+info: 2023-06-29T13:22:40.643Z User undefined successfully completed authentication
+info: 2023-06-29T13:22:40.658Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.375 ms
+info: 2023-06-29T13:22:40.690Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:22:40.728Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.468 ms
+info: 2023-06-29T13:22:40.866Z User undefined successfully completed authentication
+info: 2023-06-29T13:22:40.887Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.385 ms
+info: 2023-06-29T13:22:40.932Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:22:40.980Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 51.596 ms
+info: 2023-06-29T13:23:29.215Z User undefined successfully completed authentication
+info: 2023-06-29T13:23:29.248Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 301.692 ms
+info: 2023-06-29T13:23:29.346Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:23:29.406Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:23:29.422Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:23:29.433Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 106.272 ms
+info: 2023-06-29T13:23:29.546Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:23:29.590Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:23:29.602Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:23:29.611Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 79.509 ms
+info: 2023-06-29T13:23:30.684Z User undefined successfully completed authentication
+info: 2023-06-29T13:23:30.697Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 182.962 ms
+info: 2023-06-29T13:23:30.754Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:23:30.806Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 64.443 ms
+info: 2023-06-29T13:23:30.970Z User undefined successfully completed authentication
+info: 2023-06-29T13:23:30.984Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.361 ms
+info: 2023-06-29T13:23:31.019Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:23:31.056Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.206 ms
+info: 2023-06-29T13:23:31.183Z User undefined successfully completed authentication
+info: 2023-06-29T13:23:31.196Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 98.861 ms
+info: 2023-06-29T13:23:31.240Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:23:31.282Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 46.511 ms
+info: 2023-06-29T13:24:42.851Z User undefined successfully completed authentication
+info: 2023-06-29T13:24:42.876Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 301.671 ms
+info: 2023-06-29T13:24:42.962Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:24:43.070Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:24:43.092Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 124.748 ms
+info: 2023-06-29T13:24:43.204Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:24:43.245Z Role with name [ExistingRole] already exists.
+warn: 2023-06-29T13:24:43.253Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:24:43.267Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 75.264 ms
+info: 2023-06-29T13:24:43.328Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:24:43.357Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:24:43.366Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:24:43.375Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 58.869 ms
+info: 2023-06-29T13:24:44.366Z User undefined successfully completed authentication
+info: 2023-06-29T13:24:44.379Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 170.445 ms
+info: 2023-06-29T13:24:44.427Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:24:44.477Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 56.543 ms
+info: 2023-06-29T13:24:44.630Z User undefined successfully completed authentication
+info: 2023-06-29T13:24:44.650Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.524 ms
+info: 2023-06-29T13:24:44.680Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:24:44.715Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 37.747 ms
+info: 2023-06-29T13:24:44.836Z User undefined successfully completed authentication
+info: 2023-06-29T13:24:44.851Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.297 ms
+info: 2023-06-29T13:24:44.893Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:24:44.934Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 44.186 ms
+info: 2023-06-29T13:25:33.503Z User undefined successfully completed authentication
+info: 2023-06-29T13:25:33.536Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 309.207 ms
+info: 2023-06-29T13:25:33.620Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:25:33.722Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:25:33.736Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 125.788 ms
+info: 2023-06-29T13:25:33.854Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:25:33.909Z Role with name [ExistingRole] already exists.
+warn: 2023-06-29T13:25:33.920Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:25:33.932Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 95.191 ms
+info: 2023-06-29T13:25:33.997Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:25:34.026Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:25:34.035Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:25:34.045Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 56.643 ms
+info: 2023-06-29T13:25:35.081Z User undefined successfully completed authentication
+info: 2023-06-29T13:25:35.103Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 211.149 ms
+info: 2023-06-29T13:25:35.184Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:25:35.256Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 84.010 ms
+info: 2023-06-29T13:25:35.442Z User undefined successfully completed authentication
+info: 2023-06-29T13:25:35.470Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 120.106 ms
+info: 2023-06-29T13:25:35.520Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:25:35.594Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 87.368 ms
+info: 2023-06-29T13:25:35.762Z User undefined successfully completed authentication
+info: 2023-06-29T13:25:35.781Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 119.658 ms
+info: 2023-06-29T13:25:35.828Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:25:35.875Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 52.027 ms
+info: 2023-06-29T13:26:29.089Z User undefined successfully completed authentication
+info: 2023-06-29T13:26:29.116Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 310.854 ms
+info: 2023-06-29T13:26:29.210Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:26:29.327Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:26:29.338Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 137.817 ms
+info: 2023-06-29T13:26:29.440Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:26:29.481Z Role with name [ExistingRole] already exists.
+warn: 2023-06-29T13:26:29.490Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:26:29.501Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 76.308 ms
+info: 2023-06-29T13:26:29.555Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:26:29.586Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:26:29.595Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:26:29.604Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 61.694 ms
+info: 2023-06-29T13:26:30.655Z User undefined successfully completed authentication
+info: 2023-06-29T13:26:30.676Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 195.933 ms
+info: 2023-06-29T13:26:30.745Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:26:30.823Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 85.911 ms
+info: 2023-06-29T13:26:30.996Z User undefined successfully completed authentication
+info: 2023-06-29T13:26:31.019Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.550 ms
+info: 2023-06-29T13:26:31.068Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:26:31.131Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 65.733 ms
+info: 2023-06-29T13:26:31.287Z User undefined successfully completed authentication
+info: 2023-06-29T13:26:31.310Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.496 ms
+info: 2023-06-29T13:26:31.370Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:26:31.419Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 51.989 ms
+info: 2023-06-29T13:29:32.236Z User undefined successfully completed authentication
+info: 2023-06-29T13:29:32.267Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 322.540 ms
+info: 2023-06-29T13:29:32.363Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:29:32.423Z Role with name [TestRole] already exists.
+warn: 2023-06-29T13:29:32.432Z Error creating the role [TestRole]: There is a role with the same name.
+info: 2023-06-29T13:29:32.446Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 98.706 ms
+info: 2023-06-29T13:29:33.550Z User undefined successfully completed authentication
+info: 2023-06-29T13:29:33.569Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 191.275 ms
+info: 2023-06-29T13:29:33.636Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:29:33.708Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 82.775 ms
+info: 2023-06-29T13:29:33.877Z User undefined successfully completed authentication
+info: 2023-06-29T13:29:33.889Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.189 ms
+info: 2023-06-29T13:29:33.927Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:29:33.965Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 42.399 ms
+info: 2023-06-29T13:29:34.092Z User undefined successfully completed authentication
+info: 2023-06-29T13:29:34.105Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.988 ms
+info: 2023-06-29T13:29:34.139Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:29:34.175Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 40.155 ms
+info: 2023-06-29T13:30:22.538Z User undefined successfully completed authentication
+info: 2023-06-29T13:30:22.563Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 328.230 ms
+info: 2023-06-29T13:30:22.662Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:30:22.723Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:30:22.736Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 92.445 ms
+info: 2023-06-29T13:30:23.861Z User undefined successfully completed authentication
+info: 2023-06-29T13:30:23.881Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 180.520 ms
+info: 2023-06-29T13:30:23.944Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:30:24.012Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 82.541 ms
+info: 2023-06-29T13:30:24.176Z User undefined successfully completed authentication
+info: 2023-06-29T13:30:24.188Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.390 ms
+info: 2023-06-29T13:30:24.226Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:30:24.262Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.661 ms
+info: 2023-06-29T13:30:24.405Z User undefined successfully completed authentication
+info: 2023-06-29T13:30:24.423Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.968 ms
+info: 2023-06-29T13:30:24.465Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:30:24.507Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 46.664 ms
+info: 2023-06-29T13:33:35.251Z User undefined successfully completed authentication
+info: 2023-06-29T13:33:35.279Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 323.663 ms
+info: 2023-06-29T13:33:35.377Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:33:35.436Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:33:35.454Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 86.971 ms
+info: 2023-06-29T13:33:35.545Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:33:35.592Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:33:35.605Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 81.118 ms
+info: 2023-06-29T13:33:36.740Z User undefined successfully completed authentication
+info: 2023-06-29T13:33:36.755Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 201.224 ms
+info: 2023-06-29T13:33:36.813Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:33:36.878Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 68.999 ms
+info: 2023-06-29T13:33:37.042Z User undefined successfully completed authentication
+info: 2023-06-29T13:33:37.058Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.537 ms
+info: 2023-06-29T13:33:37.094Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:33:37.135Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 43.028 ms
+info: 2023-06-29T13:33:37.274Z User undefined successfully completed authentication
+info: 2023-06-29T13:33:37.297Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.264 ms
+info: 2023-06-29T13:33:37.344Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:33:37.386Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 46.022 ms
+info: 2023-06-29T13:34:23.855Z User undefined successfully completed authentication
+info: 2023-06-29T13:34:23.888Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 337.856 ms
+info: 2023-06-29T13:34:23.983Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:34:24.047Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:34:24.065Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 95.563 ms
+info: 2023-06-29T13:34:24.145Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:34:24.191Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:34:24.207Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 73.356 ms
+info: 2023-06-29T13:34:25.295Z User undefined successfully completed authentication
+info: 2023-06-29T13:34:25.309Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 189.736 ms
+info: 2023-06-29T13:34:25.367Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:34:25.425Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 66.444 ms
+info: 2023-06-29T13:34:25.585Z User undefined successfully completed authentication
+info: 2023-06-29T13:34:25.599Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.625 ms
+info: 2023-06-29T13:34:25.631Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:34:25.667Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 38.127 ms
+info: 2023-06-29T13:34:25.788Z User undefined successfully completed authentication
+info: 2023-06-29T13:34:25.801Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 96.497 ms
+info: 2023-06-29T13:34:25.842Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:34:25.890Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 50.698 ms
+info: 2023-06-29T13:36:53.536Z User undefined successfully completed authentication
+info: 2023-06-29T13:36:53.561Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 302.796 ms
+info: 2023-06-29T13:36:53.653Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:36:53.710Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:36:53.721Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 78.831 ms
+info: 2023-06-29T13:36:53.810Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:36:53.860Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:36:53.879Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 87.789 ms
+info: 2023-06-29T13:36:53.953Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:36:53.992Z Error creating the role [TestRole]
+info: 2023-06-29T13:36:54.005Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 500 38 - 68.533 ms
+info: 2023-06-29T13:36:55.017Z User undefined successfully completed authentication
+info: 2023-06-29T13:36:55.031Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 174.339 ms
+info: 2023-06-29T13:36:55.096Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:36:55.169Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 83.434 ms
+info: 2023-06-29T13:36:55.323Z User undefined successfully completed authentication
+info: 2023-06-29T13:36:55.334Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.730 ms
+info: 2023-06-29T13:36:55.366Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:36:55.406Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 40.941 ms
+info: 2023-06-29T13:36:55.544Z User undefined successfully completed authentication
+info: 2023-06-29T13:36:55.561Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 105.089 ms
+info: 2023-06-29T13:36:55.601Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:36:55.644Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 48.843 ms
+info: 2023-06-29T13:37:55.719Z User undefined successfully completed authentication
+info: 2023-06-29T13:37:55.745Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 328.923 ms
+info: 2023-06-29T13:37:55.840Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:37:55.903Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:37:55.915Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 87.996 ms
+info: 2023-06-29T13:37:56.002Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:37:56.048Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:37:56.065Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 76.239 ms
+info: 2023-06-29T13:37:56.150Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:37:56.220Z Error creating the role [TestRole]
+info: 2023-06-29T13:37:56.233Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 500 38 - 109.145 ms
+info: 2023-06-29T13:37:57.328Z User undefined successfully completed authentication
+info: 2023-06-29T13:37:57.343Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 197.007 ms
+info: 2023-06-29T13:37:57.403Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:37:57.470Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 72.420 ms
+info: 2023-06-29T13:37:57.627Z User undefined successfully completed authentication
+info: 2023-06-29T13:37:57.640Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 109.713 ms
+info: 2023-06-29T13:37:57.679Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:37:57.715Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.314 ms
+info: 2023-06-29T13:37:57.853Z User undefined successfully completed authentication
+info: 2023-06-29T13:37:57.873Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.735 ms
+info: 2023-06-29T13:37:57.926Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:37:57.971Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 52.594 ms
+info: 2023-06-29T13:43:15.497Z User undefined successfully completed authentication
+info: 2023-06-29T13:43:15.536Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 314.891 ms
+info: 2023-06-29T13:43:15.644Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:43:15.709Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:43:15.721Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 106.005 ms
+info: 2023-06-29T13:43:15.809Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:43:15.859Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:43:15.872Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 76.234 ms
+info: 2023-06-29T13:43:15.967Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:43:16.007Z Error creating the role [TestRole]
+info: 2023-06-29T13:43:16.021Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 500 38 - 66.569 ms
+info: 2023-06-29T13:43:16.150Z User undefined successfully completed authentication
+info: 2023-06-29T13:43:16.166Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 99.115 ms
+info: 2023-06-29T13:43:17.350Z User undefined successfully completed authentication
+info: 2023-06-29T13:43:17.364Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 252.230 ms
+info: 2023-06-29T13:43:17.421Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:43:17.487Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 71.630 ms
+info: 2023-06-29T13:43:17.646Z User undefined successfully completed authentication
+info: 2023-06-29T13:43:17.659Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 104.356 ms
+info: 2023-06-29T13:43:17.691Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:43:17.733Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 44.697 ms
+info: 2023-06-29T13:43:17.884Z User undefined successfully completed authentication
+info: 2023-06-29T13:43:17.903Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 110.542 ms
+info: 2023-06-29T13:43:17.956Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:43:18.011Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 59.282 ms
+info: 2023-06-29T13:46:28.725Z User undefined successfully completed authentication
+info: 2023-06-29T13:46:28.751Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 308.401 ms
+info: 2023-06-29T13:46:28.844Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:46:28.913Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:46:28.928Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 92.983 ms
+info: 2023-06-29T13:46:29.015Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:46:29.064Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:46:29.078Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 74.688 ms
+info: 2023-06-29T13:46:29.168Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:46:29.209Z Error creating the role [TestRole]
+info: 2023-06-29T13:46:29.222Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 500 38 - 73.901 ms
+info: 2023-06-29T13:46:29.357Z User undefined successfully completed authentication
+info: 2023-06-29T13:46:29.370Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 97.504 ms
+info: 2023-06-29T13:46:29.421Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:46:29.450Z Role with ID [1] does not exist.. Role ID [1] does not exist
+info: 2023-06-29T13:46:29.473Z ::ffff:127.0.0.1 - GET /roles/1 HTTP/1.1 405 46 - 48.453 ms
+info: 2023-06-29T13:46:29.522Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:46:29.548Z Error getting the role with ID [1]
+info: 2023-06-29T13:46:29.563Z ::ffff:127.0.0.1 - GET /roles/1 HTTP/1.1 500 37 - 44.652 ms
+info: 2023-06-29T13:46:30.651Z User undefined successfully completed authentication
+info: 2023-06-29T13:46:30.668Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 165.279 ms
+info: 2023-06-29T13:46:30.728Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:46:30.787Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 67.307 ms
+info: 2023-06-29T13:46:30.940Z User undefined successfully completed authentication
+info: 2023-06-29T13:46:30.957Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 111.964 ms
+info: 2023-06-29T13:46:30.994Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:46:31.036Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 41.066 ms
+info: 2023-06-29T13:46:31.179Z User undefined successfully completed authentication
+info: 2023-06-29T13:46:31.197Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 112.052 ms
+info: 2023-06-29T13:46:31.236Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:46:31.272Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 40.456 ms
+info: 2023-06-29T13:47:14.248Z User undefined successfully completed authentication
+info: 2023-06-29T13:47:14.283Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 330.637 ms
+info: 2023-06-29T13:47:14.375Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:47:14.433Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:47:14.450Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 87.961 ms
+info: 2023-06-29T13:47:14.534Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:47:14.571Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:47:14.590Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 66.849 ms
+info: 2023-06-29T13:47:14.675Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:47:14.724Z Error creating the role [TestRole]
+info: 2023-06-29T13:47:14.738Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 500 38 - 76.799 ms
+info: 2023-06-29T13:47:14.872Z User undefined successfully completed authentication
+info: 2023-06-29T13:47:14.886Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 100.318 ms
+info: 2023-06-29T13:47:14.923Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:47:14.949Z ::ffff:127.0.0.1 - GET /roles/1 HTTP/1.1 200 26 - 29.091 ms
+info: 2023-06-29T13:47:14.996Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:47:15.024Z Role with ID [1] does not exist.. Role ID [1] does not exist
+info: 2023-06-29T13:47:15.039Z ::ffff:127.0.0.1 - GET /roles/1 HTTP/1.1 405 46 - 44.962 ms
+info: 2023-06-29T13:47:15.085Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:47:15.108Z Error getting the role with ID [1]
+info: 2023-06-29T13:47:15.121Z ::ffff:127.0.0.1 - GET /roles/1 HTTP/1.1 500 37 - 40.489 ms
+info: 2023-06-29T13:47:16.128Z User undefined successfully completed authentication
+info: 2023-06-29T13:47:16.142Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 181.541 ms
+info: 2023-06-29T13:47:16.199Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:47:16.255Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 65.036 ms
+info: 2023-06-29T13:47:16.405Z User undefined successfully completed authentication
+info: 2023-06-29T13:47:16.418Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 107.115 ms
+info: 2023-06-29T13:47:16.448Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:47:16.491Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 45.728 ms
+info: 2023-06-29T13:47:16.621Z User undefined successfully completed authentication
+info: 2023-06-29T13:47:16.642Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 103.011 ms
+info: 2023-06-29T13:47:16.687Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:47:16.735Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 51.416 ms
+info: 2023-06-29T13:48:08.124Z User undefined successfully completed authentication
+info: 2023-06-29T13:48:08.158Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 368.234 ms
+info: 2023-06-29T13:48:08.231Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:48:08.291Z Role with name [TestRole] created successfully.
+info: 2023-06-29T13:48:08.302Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 201 79 - 78.301 ms
+info: 2023-06-29T13:48:08.382Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:48:08.435Z Error creating the role [ExistingRole]: There is a role with the same name.
+info: 2023-06-29T13:48:08.447Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 409 49 - 78.129 ms
+info: 2023-06-29T13:48:08.521Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:48:08.563Z Error creating the role [TestRole]
+info: 2023-06-29T13:48:08.576Z ::ffff:127.0.0.1 - POST /roles HTTP/1.1 500 38 - 67.275 ms
+info: 2023-06-29T13:48:08.698Z User undefined successfully completed authentication
+info: 2023-06-29T13:48:08.711Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 95.559 ms
+info: 2023-06-29T13:48:08.749Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:48:08.770Z ::ffff:127.0.0.1 - GET /roles/1 HTTP/1.1 200 26 - 28.328 ms
+info: 2023-06-29T13:48:08.816Z User Admin provided a valid token. Authentication completed
+warn: 2023-06-29T13:48:08.835Z Role with ID [1] does not exist.. Role ID [1] does not exist
+info: 2023-06-29T13:48:08.848Z ::ffff:127.0.0.1 - GET /roles/1 HTTP/1.1 405 46 - 36.264 ms
+info: 2023-06-29T13:48:08.898Z User Admin provided a valid token. Authentication completed
+error: 2023-06-29T13:48:08.917Z Error getting the role with ID [1]
+info: 2023-06-29T13:48:08.929Z ::ffff:127.0.0.1 - GET /roles/1 HTTP/1.1 500 37 - 34.356 ms
+info: 2023-06-29T13:48:09.915Z User undefined successfully completed authentication
+info: 2023-06-29T13:48:09.934Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 186.702 ms
+info: 2023-06-29T13:48:09.988Z User Admin provided a valid token. Authentication completed
+info: 2023-06-29T13:48:10.047Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 609 - 65.480 ms
+info: 2023-06-29T13:48:10.204Z User undefined successfully completed authentication
+info: 2023-06-29T13:48:10.216Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 108.143 ms
+info: 2023-06-29T13:48:10.246Z User user provided a valid token. Authentication completed
+info: 2023-06-29T13:48:10.277Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 1440 - 34.189 ms
+info: 2023-06-29T13:48:10.407Z User undefined successfully completed authentication
+info: 2023-06-29T13:48:10.423Z ::ffff:127.0.0.1 - POST /auth/login HTTP/1.1 200 149 - 106.714 ms
+info: 2023-06-29T13:48:10.468Z User guest provided a valid token. Authentication completed
+info: 2023-06-29T13:48:10.521Z ::ffff:127.0.0.1 - GET /profile/me HTTP/1.1 200 940 - 58.879 ms

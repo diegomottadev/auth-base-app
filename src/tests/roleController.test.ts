@@ -4,7 +4,6 @@ import { Permission } from "../models/permission.model";
 import {
   create,
   all,
-  roleExist,
   edit,
   destroy,
   createRolePermission,
