@@ -9,27 +9,32 @@ import {
   destroy,
   createRolePermission,
   editRolePermissions,
-} from "../api/resources/roles/roles.controller"; // Ajusta la ruta al archivo donde se encuentra la función edit
+} from "../api/resources/roles/roles.controller"; // Adjust the path to the file where the edit function is located
 
+// Mock the "../models/role.model" module
 jest.mock("../models/role.model", () => ({
   Role: {
-    create: jest.fn(),
-    findAll: jest.fn(),
-    findOne: jest.fn(),
-    destroy: jest.fn(),
-    update: jest.fn(),
-    findByPk: jest.fn(),
-    $add: jest.fn(),
-    $set: jest.fn(),
-    $count: jest.fn()
+    // Mocked methods and attributes of the Role model
+    create: jest.fn(),       // Mock the create method
+    findAll: jest.fn(),      // Mock the findAll method
+    findOne: jest.fn(),      // Mock the findOne method
+    destroy: jest.fn(),      // Mock the destroy method
+    update: jest.fn(),       // Mock the update method
+    findByPk: jest.fn(),     // Mock the findByPk method
+    $add: jest.fn(),         // Mock the $add attribute
+    $set: jest.fn(),         // Mock the $set attribute
+    $count: jest.fn(),       // Mock the $count attribute
   },
 }));
 
+// Mock the "../models/permission.model" module
 jest.mock('../models/permission.model', () => ({
   Permission: {
-    findAll: jest.fn(),
+    // Mocked methods and attributes of the Permission model
+    findAll: jest.fn(),      // Mock the findAll method
   },
 }));
+
 
 describe("Role Controller", () => {
   describe("create", () => {
@@ -45,14 +50,14 @@ describe("Role Controller", () => {
 
       /*
           
-          El método toHaveBeenCalledWith() se utiliza en las pruebas con Jest para verificar si
-          una función ha sido llamada con ciertos argumentos específicos. 
-          Utilizo toHaveBeenCalledWith() para verificar si la función 
-          Role.create ha sido llamada con un objeto que tiene ciertas
-          propiedades y valores. Se verifica si se ha llamado a Role.create
-          con un objeto que incluye una propiedad include con el 
-          valor [Permission] y una propiedad name con el valor role.name.
-          */
+      The toHaveBeenCalledWith() method is used in Jest tests to verify if
+      a function has been called with specific arguments.
+      I use toHaveBeenCalledWith() to verify if the function
+      Role.create has been called with an object that has certain
+      properties and values. It checks if Role.create has been called
+      with an object that includes a property include with the
+      value [Permission] and a property name with the value role.name.
+      */
       expect(Role.create).toHaveBeenCalledWith({
         include: [Permission],
         name: role.name,
@@ -73,46 +78,19 @@ describe("Role Controller", () => {
       name: role2.name,
       permissions: [],
     } as unknown as Role;
-
+  
     jest
       .spyOn(Role, "findAll")
       .mockResolvedValueOnce([createdRole1, createdRole2]);
-
+  
     const roles = await all();
-    /*
-       El método .toBeDefined() se utiliza en las pruebas con Jest para verificar si un valor está definido. 
-       Se puede utilizar para comprobar si una variable, objeto, función u otro tipo de valor tiene un valor asignado y no es undefined.
-      */
-
+  
+    // Verify that the roles array is defined, is an array, and matches the expected values
     expect(roles).toBeDefined();
     expect(Array.isArray(roles)).toBe(true);
     expect(roles).toEqual([createdRole1, createdRole2]);
   });
-
-  describe("roleExist", () => {
-    it("should check if a role exists", async () => {
-      const role1 = { name: "Test Role 1" };
-      const createdRole1 = {
-        id: 7,
-        name: role1.name,
-        permissions: [],
-      } as unknown as Role;
-      const role2 = { name: "Test Role 2" };
-      const createdRole2 = {
-        id: 8,
-        name: role2.name,
-        permissions: [],
-      } as unknown as Role;
-
-      jest
-        .spyOn(Role, "findAll")
-        .mockResolvedValueOnce([createdRole1, createdRole2]);
-
-      const roleExists = await roleExist(createdRole1);
-      expect(roleExists).toBe(true);
-    });
-  });
-
+  
   describe("edit", () => {
     it("should edit a role", async () => {
       const role = { name: "Updated Role" };
@@ -121,43 +99,44 @@ describe("Role Controller", () => {
         name: role.name,
         permissions: [],
       } as unknown as Role;
-      // Mock the dependencies
-      // Simular el comportamiento de la función `update` del modelo `Role`
+      
+      // Mock the behavior of the `update` function of the `Role` model
       const updateMock = jest
         .spyOn(Role, "update")
         .mockResolvedValue(mockRole.id);
-      // Esta simulación imita el comportamiento de la función `update`, devolviendo el `id` del rol actualizado.
-
-      // Simular el comportamiento de la función `findOne` del modelo `Role`
+      // This mock simulates the behavior of the `update` function, returning the `id` of the updated role.
+  
+      // Mock the behavior of the `findOne` function of the `Role` model
       const findMock = jest.spyOn(Role, "findOne").mockResolvedValue(mockRole);
-      // Esta simulación imita el comportamiento de la función `findOne`, devolviendo el objeto `findRole`.
-      // Esto asegura que cuando se llame a la función `findOne`, se resuelva con el objeto `findRole`.
-
-      // Estas simulaciones nos permiten controlar el comportamiento de las funciones `update` y `findOne` en nuestras pruebas.
-      // Podemos especificar los valores de retorno y hacer un seguimiento de si se llaman con los argumentos esperados.
-
+      // This mock simulates the behavior of the `findOne` function, returning the `findRole` object.
+      // This ensures that when the `findOne` function is called, it resolves with the `findRole` object.
+  
+      // These mocks allow us to control the behavior of the `update` and `findOne` functions in our tests.
+      // We can specify the return values and track if they are called with the expected arguments.
+  
       // Call the edit function
       /*
-          El mocking se utiliza antes de llamar al método edit en las pruebas para controlar el comportamiento de las dependencias externas
-          y permitir pruebas independientes, controlada y predecibles de la lógica del método.
-
-          Al mockear las dependencias antes de llamar al método edit, se asegura que la prueba se ejecute de forma aislada y 
-          que no se realicen operaciones reales en la base de datos o en otras partes del sistema.
-        */
+        Mocking is used before calling the edit method in the tests to control the behavior of external dependencies
+        and allow independent, controlled, and predictable testing of the method's logic.
+  
+        By mocking the dependencies before calling the edit method, it ensures that the test runs in isolation
+        and no actual operations are performed in the database or other parts of the system.
+      */
       const editedRole = await edit(mockRole.id, mockRole);
-
+  
       // Assertions
       expect(updateMock).toHaveBeenCalledWith(
         { name: "Updated Role" },
         { where: { id: 7 } }
       );
-
+  
       expect(findMock).toHaveBeenCalledWith({
         include: [Permission],
         where: { id: 7 },
       });
-
+  
       expect(editedRole).toEqual(mockRole);
+  
       // Restore the mocked functions
       updateMock.mockRestore();
       findMock.mockRestore();
@@ -219,80 +198,78 @@ describe("Role Controller", () => {
 
   describe('createRolePermission', () => {
     it('should assign permissions to a role', async () => {
-      const permissionIds = [1, 2, 3]; // IDs válidos de permisos de tu base de datos
-      const roleId = 1; // ID del rol
+      const permissionIds = [1, 2, 3]; // Valid permission IDs from your database
+      const roleId = 1; // ID of the role
   
       const role = {
         id: roleId,
         name: 'Admin',
-        permissions: [], // Permisos inicialmente vacíos
+        permissions: [], // Initially empty permissions
       } as unknown  as Role;
-
+  
       role.$add = jest.fn().mockResolvedValue(0);
-
+  
       const role2 = {
         id: roleId,
         name: 'Admin',
-        permissions: [1,2,3], // Permisos inicialmente vacíos
+        permissions: [1,2,3], // Initially empty permissions
       } as unknown  as Role;
-     // role.$add = jest.fn().mockResolvedValue(3);
-
-      // Mockear la función findByPk de Role
+  
+      // Mock the findByPk function of Role
       const findByPkMock = jest.spyOn(Role, 'findByPk').mockResolvedValueOnce(role).mockResolvedValueOnce(role2);
   
-      // Llamar a la función createRolePermission
+      // Call the createRolePermission function
       const updatedRole = await createRolePermission(permissionIds, roleId);
   
-      // Verificar que se haya llamado findByPk con los parámetros correctos
+      // Verify that findByPk was called with the correct parameters
       expect(findByPkMock).toHaveBeenCalledWith(roleId, { include: [Permission] });
   
-      // Verificar que se hayan asignado correctamente los permisos
+      // Verify that the permissions were assigned correctly
       expect(updatedRole).toBeDefined();
       expect(updatedRole?.id).toBe(roleId);
       expect(updatedRole?.permissions).toHaveLength(permissionIds.length);
       expect(updatedRole?.permissions.map((p: any) => p)).toEqual(permissionIds);
   
-      // Restaurar la implementación original de findByPk
+      // Restore the original implementation of findByPk
       findByPkMock.mockRestore();
     });
   });
   
-
   describe('editRolePermissions', () => {
     it('should update role permissions', async () => {
       const roleId = 1;
       const permissionIds = [1, 2, 3];
-      const permissionIdsSend = [4, 5,6];
-      // Crear un objeto de rol y definir los permisos iniciales
+      const permissionIdsSend = [4, 5, 6];
+  
+      // Create a role object and set the initial permissions
       const role = {
         id: roleId,
         name: 'Admin',
         permissions: permissionIdsSend,
       } as unknown as Role;
       role.$set = jest.fn().mockResolvedValue(0);
-
+  
       const roleExpected = {
         id: roleId,
         name: 'Admin',
         permissions: permissionIds,
       } as unknown as Role;
-
-
-      // Configurar el mock de Role.findByPk para devolver el rol
+  
+      // Mock the Role.findByPk to return the role
       (Role.findByPk as jest.Mock).mockResolvedValueOnce(role);
       (Role.findByPk as jest.Mock).mockResolvedValueOnce(roleExpected);
-
-      // Configurar el mock de Permission.findAll para devolver los permisos
+  
+      // Mock the Permission.findAll to return the permissions
       (Permission.findAll as jest.Mock).mockResolvedValueOnce([
         { id: 1, name: 'Permission 1' },
         { id: 2, name: 'Permission 2' },
         { id: 3, name: 'Permission 3' },
       ]);
   
-      // Llamar a la función editRolePermissions
+      // Call the editRolePermissions function
       const updatedRole = await editRolePermissions(permissionIds, roleId);
   
-      // Verificar que se hayan realizado las llamadas esperadas
+      // Verify the expected function calls
       expect(Role.findByPk).toHaveBeenCalledWith(roleId, { include: [Permission] });
       expect(Permission.findAll).toHaveBeenCalledWith({ where: { id: permissionIds } });
       expect(role.$set).toHaveBeenCalledWith('permissions', [
@@ -301,26 +278,25 @@ describe("Role Controller", () => {
         { id: 3, name: 'Permission 3' },
       ]);
   
-      // Verificar el resultado
+      // Verify the result
       expect(updatedRole).toEqual(roleExpected);
       expect(updatedRole?.permissions).toHaveLength(3);
-
     });
   
     it('should remove all role permissions', async () => {
       const roleId = 1;
       const permissionIds: number[] = [];
   
-      // Crear un objeto de rol y definir los permisos iniciales
+      // Create a role object and set the initial permissions
       const role = {
         id: roleId,
         name: 'Admin',
         permissions: [{ id: 1, name: 'Permission 1' }, { id: 2, name: 'Permission 2' }],
       } as unknown as Role;
-
-      role.$set = jest.fn().mockResolvedValue( [{ id: 1, name: 'Permission 1' }, { id: 2, name: 'Permission 2' }]);
-
-      // Configurar el mock de Role.findByPk para devolver el rol
+  
+      role.$set = jest.fn().mockResolvedValue([{ id: 1, name: 'Permission 1' }, { id: 2, name: 'Permission 2' }]);
+  
+      // Mock the Role.findByPk to return the role
       (Role.findByPk as jest.Mock).mockResolvedValueOnce(role);
   
       const roleExpected = {
@@ -328,23 +304,23 @@ describe("Role Controller", () => {
         name: 'Admin',
         permissions: [],
       } as unknown as Role;
-
-      roleExpected.$set = jest.fn().mockResolvedValue( []);
-
-      // Configurar el mock de Role.findByPk para devolver el rol
+  
+      roleExpected.$set = jest.fn().mockResolvedValue([]);
+  
+      // Mock the Role.findByPk to return the role
       (Role.findByPk as jest.Mock).mockResolvedValueOnce(roleExpected);
-
-
-      // Llamar a la función editRolePermissions
+  
+      // Call the editRolePermissions function
       const updatedRole = await editRolePermissions(permissionIds, role.id);
   
-      // Verificar que se hayan realizado las llamadas esperadas
+      // Verify the expected function calls
       expect(Role.findByPk).toHaveBeenCalledWith(roleId, { include: [Permission] });
       expect(role.$set).toHaveBeenCalledWith('permissions', []);
   
-      // Verificar el resultado
+      // Verify the result
       expect(updatedRole).toEqual(roleExpected);
       expect(updatedRole?.permissions).toHaveLength(0);
     });
   });
+  
 });
