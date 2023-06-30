@@ -81,8 +81,8 @@ usersRouter.get('/', [jwtAuthenticate, checkUserRolePermission('List')], procesa
   -In case of an error, a response with the corresponding error message is sent.
 
 */
-usersRouter.get('/:id', [jwtAuthenticate, checkUserRolePermission('Read')], procesarErrores(async (req: Request, res: Response) => {
-  const id = parseInt(req.params.id);
+usersRouter.get('/:id', [jwtAuthenticate, checkUserRolePermission('Read')], procesarErrores(async (_req: Request, res: Response) => {
+  const id = parseInt(_req.params.id);
 
   try {
     const user = await userController.find(id);

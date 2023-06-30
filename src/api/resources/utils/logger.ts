@@ -13,7 +13,8 @@ const logger = winston.createLogger({
             format: winston.format.combine(
                 winston.format.colorize({ message: true }),
                 winston.format.simple()
-            )
+            ),
+            silent: true // Desactiva la salida en la consola
         }),
         new winston.transports.File({
             level: 'info',

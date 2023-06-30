@@ -58,6 +58,7 @@ if (config.ambiente === 'prod') {
   app.use(erroresEnDesarrollo); // Error handling middleware for development environment
 }
 
-const server = app.listen(3000, () => console.log('Server listening on port 3000'));
+//const server = app.listen(3000, () => console.log('Server listening on port 3000'));
+const server = app.listen(3000);
 
 export { app, server };

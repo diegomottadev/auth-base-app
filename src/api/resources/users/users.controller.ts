@@ -67,9 +67,9 @@ export const all = (): Promise<User[]> => {
 */
 
 export const find = (id: number | null = null, name: string | null = null, email: string | null = null): Promise<User | null> => {
-  if (id) return User.findOne({ include: [Role], where: { id: parseInt(id.toString()) } });
-  if (email) return User.findOne({  include: [Role],where: { email: email } });
-  if (name) return User.findOne({  include: [Role], where: { name: name } });
+  if (id) return User.findOne({ include: [Role], where: { id: parseInt(id.toString()) } }) as Promise<User | null>;
+  if (email) return User.findOne({  include: [Role],where: { email: email } })as Promise<User | null>;
+  if (name) return User.findOne({  include: [Role], where: { name: name } })as Promise<User | null>;
 
   throw new Error('No especifico un parametro para buscar el usuario');
 };
@@ -209,7 +209,7 @@ export const checkUserRolePermission = async (authenticatedUserId: number, permi
 
     // Check if the authenticated user has the necessary permission
     const isAdmin = authenticatedUserRoleName === 'ADMIN';
-    const hasPermission = isAdmin || (authenticatedUser.role?.permissions?.some((permissionObj) => permissionObj.name === permission));
+    const hasPermission = isAdmin ?  isAdmin : (authenticatedUser.role?.permissions?.some((permissionObj) => permissionObj.name === permission));
 
     return hasMatchingRole && hasPermission;
   } catch (error) {
