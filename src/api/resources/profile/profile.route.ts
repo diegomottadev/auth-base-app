@@ -6,11 +6,23 @@ import { procesarErrores } from '../../libs/errorHandler';
 import  { checkUserRolePermission } from './../helpers/checkRolePermision.helper';
 import { User } from '../../../models/user.model';
 import { ProfileNotExist, ProfileParameterNotSpecify } from './profile.error';
+import { saveImage } from './../../data/image.controller';
+import validarImagenDeProducto from './profile.validate';
 
 const jwtAuthenticate = passport.authenticate('jwt', { session: false });
 
 const profileRouter = express.Router();
 
+
+function generateRandomNumber(): string {
+  const extensionLength = 10;
+  const min = 10 ** (extensionLength - 1);
+  const max = (10 ** extensionLength) - 1;
+  const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+  return randomNumber.toString();
+}
+
+ 
 // Get a specific role by ID
 profileRouter.get('/me', [jwtAuthenticate,checkUserRolePermission('Read')], procesarErrores(async (req: Request, res: Response) => {
     const user = req.user as User
@@ -64,5 +76,22 @@ profileRouter.get('/me', [jwtAuthenticate,checkUserRolePermission('Read')], proc
     }
   }));
   
+
+  profileRouter.put('/photo', [jwtAuthenticate, checkUserRolePermission('Update'), validarImagenDeProducto], procesarErrores(async (req: Request, res: Response) => {
+    const user = req.user as User
+    const user_id = user?.id;
+
+      let profileToUpdate = await profileController.me(user_id);
+      if (!profileToUpdate) {
+        throw new ProfileNotExist(`User with ID [${user_id}] does not exist.`);
+      }
+
+      const nameRandom = `${generateRandomNumber()}.${req.extensionDeArchivo}`
+      await saveImage(req.body,nameRandom)
+      const urlImage = `https://app-base-auth-aws.s3.us-east-2.amazonaws.com/images/${nameRandom}`
+      const profileUpdated = await profileController.saveUrlImageProfile(user_id,urlImage)
+      res.status(200).json(profileUpdated)
+    
+  }));
 
   export default profileRouter;

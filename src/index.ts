@@ -5,7 +5,7 @@ import logger from './api/resources/utils/logger';
 import authJTW from './api/libs/auth';
 import config from './api/config';
 import passport from 'passport';
-import { procesarErrores, erroresEnProduccion, erroresEnDesarrollo } from './api/libs/errorHandler';
+import { procesarErrores, erroresEnProduccion, erroresEnDesarrollo, procesarErroresDeTamañoDeBody } from './api/libs/errorHandler';
 import { connectionDB } from "./connection/connection"
 
 import cors from 'cors';
@@ -31,7 +31,7 @@ app.use(
 passport.use(authJTW); // Configure Passport to use the authJTW strategy for authentication
 
 app.use(bodyParser.json()); // Parse incoming request bodies in JSON format and make the data available on req.body
-
+app.use(bodyParser.raw({type:'image/*', limit:'1mb'})) // ¨Procesing content  type of image
 app.use(passport.initialize()); // Initialize Passport middleware
 
 // Connect to the database
@@ -51,6 +51,7 @@ app.use('/permissions', permissionsRouter); // Route requests for permission-rel
 app.use('/profile', profileRouter); // Route requests for permission-related endpoints to the permissionsRouter
 
 app.use(procesarErrores); // Custom error handling middleware
+app.use(procesarErroresDeTamañoDeBody); // Custom error handling middleware
 
 if (config.ambiente === 'prod') {
   app.use(erroresEnProduccion); // Error handling middleware for production environment

@@ -62,3 +62,19 @@ export const edit = async (id: number, body: { name: string; email: string,first
     throw error;
   }
 };
+
+
+export const saveUrlImageProfile = async (id: number, imageUrl: string) => {
+  try {
+    const user = await User.findByPk(id);
+    if (!user) {
+      throw new Error(`User with id ${id} not found`);
+    }
+
+    user.urlImageProfile = imageUrl;
+    await user.save();
+    return user;
+  } catch (error) {
+    throw new Error(`Error saving urlImageProfile for user with id ${id}: ${error}`);
+  }
+};

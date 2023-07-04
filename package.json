@@ -2,19 +2,19 @@
   "name": "clone-linktree-back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "start": "node build/index.js",
     "tsc": "tsc",
     "test": "jest --detectOpenHandles --runInBand"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.1409.0",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "buffer": "^6.0.3",

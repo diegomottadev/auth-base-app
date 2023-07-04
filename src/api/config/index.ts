@@ -1,8 +1,15 @@
+import dotenv from 'dotenv';
+dotenv.config()
 const ambiente: string = process.env.NODE_ENV || 'development';
 
 const configuracionBase: any = {
   jwt: {},
-  puerto: 3000
+  puerto: 3000,
+  s3: {
+    accessKeyid :process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey :process.env.AWS_SECRET_ACCESS_KEY,
+    region: process.env.AWS_REGION
+  }
 };
 
 let configuracionDeAmbiente: any = {};

@@ -1,5 +1,15 @@
 import { Request, Response, NextFunction } from 'express';
 
+
+export const procesarErroresDeTamañoDeBody = (err: any, req: Request, res: Response, next: NextFunction) => {
+  if (err.status === 413) {
+    err.message = `El body enviado en el request a la ruta [${req.path}] pasa el límite de tamaño. Máximo tamaño permitido es ${err.limit} bytes`;
+    res.status(413).json({ message: err.message });
+
+  }
+  next(err);
+};
+
 /*
 
 procesarErrores is a middleware function used to handle errors in asynchronous functions. 

@@ -60,6 +60,12 @@ export class User extends Model {
   } as any)
   password!: string;
 
+  @Column({
+    type: DataType.STRING,
+    allowNull: true,
+  })
+  urlImageProfile?: string; // Add the urlImageProfile field
+  
   @Column(DataType.DATE)
   confirmedAt?: Date;
 
