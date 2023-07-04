@@ -1,3 +1,9 @@
+/*
+
+AWS SDK for JavaScript (v2).
+
+*/
+
 // import AWS from 'aws-sdk';
 // import config from './../../api/config';
 
@@ -29,7 +35,8 @@ AWS SDK for JavaScript (v3).
 */
 import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 import config from './../../api/config';
-// console.log(config)
+
+// Create an instance of the S3 client with the provided region and credentials
 const s3Client = new S3Client({
   region: config.s3.region,
   credentials: {
@@ -38,7 +45,9 @@ const s3Client = new S3Client({
   }
 });
 
+// Function to save an image to S3
 export const saveImage = async (imageData: Buffer, nombreDelArchivo: string) => {
+  // Create a PutObjectCommand with the image data, bucket name, and object key
   const command = new PutObjectCommand({
     Body: imageData,
     Bucket: 'app-base-auth-aws',
@@ -46,10 +55,12 @@ export const saveImage = async (imageData: Buffer, nombreDelArchivo: string) => 
   });
 
   try {
+    // Send the command to upload the image to S3 and await the response
     const response = await s3Client.send(command);
-    console.log('Imagen guardada exitosamente:', response);
+    console.log('Image saved successfully:', response);
   } catch (error) {
-    console.error('Error al guardar la imagen:', error);
+    console.error('Error saving the image:', error);
     throw error;
   }
 };
+
