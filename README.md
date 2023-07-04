@@ -17,6 +17,20 @@ To run the code on your computer, you'll need to install Node.js and a Node.js p
   3 - Run the application
   
     npm run dev
+
+  4 - Create a .env file in the root of the project with similar values:
+
+    PORT=3000
+    DB_HOST=localhost
+    DB_NAME=<VALUE_DB_NAME>
+    DB_USER=<VALUE_DB_USER>
+    DB_PASS=<VALUE_DB_USER>
+    AWS_ACCESS_KEY_ID=<VALUE_AWS_ACCESS_KEY_ID>
+    AWS_SECRET_ACCESS_KEY=<VALUE_AWS_SECRET_ACCESS_KEY>
+    AWS_REGION==<VALUE_AWS_REGION>
+
+  Note: It is necessary to configure an AWS S3 (Simple Storage Service) user and create a bucket with permissions to read and write images. The AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_REGION should be replaced with your own values.
+
 # User Management API Documentation
 
 You can visit this link https://documenter.getpostman.com/view/21594008/2s93z873e9 and you can test the endpoints with Postman.
