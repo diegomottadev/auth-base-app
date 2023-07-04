@@ -6,7 +6,7 @@ const configuracionBase: any = {
   jwt: {},
   puerto: 3000,
   s3: {
-    accessKeyid :process.env.AWS_ACCESS_KEY_ID,
+    accessKeyId :process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey :process.env.AWS_SECRET_ACCESS_KEY,
     region: process.env.AWS_REGION
   }

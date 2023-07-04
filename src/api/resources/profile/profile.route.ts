@@ -8,6 +8,7 @@ import { User } from '../../../models/user.model';
 import { ProfileNotExist, ProfileParameterNotSpecify } from './profile.error';
 import { saveImage } from './../../data/image.controller';
 import validarImagenDeProducto from './profile.validate';
+import * as https from 'https';
 
 const jwtAuthenticate = passport.authenticate('jwt', { session: false });
 
@@ -24,7 +25,7 @@ function generateRandomNumber(): string {
 
  
 // Get a specific role by ID
-profileRouter.get('/me', [jwtAuthenticate,checkUserRolePermission('Read')], procesarErrores(async (req: Request, res: Response) => {
+profileRouter.get('/', [jwtAuthenticate,checkUserRolePermission('Read')], procesarErrores(async (req: Request, res: Response) => {
     const user = req.user as User
     const user_id = user?.id;
     try {
@@ -93,5 +94,53 @@ profileRouter.get('/me', [jwtAuthenticate,checkUserRolePermission('Read')], proc
       res.status(200).json(profileUpdated)
     
   }));
+
+profileRouter.get('/photo', [jwtAuthenticate, checkUserRolePermission('Read')], procesarErrores(async (req: Request, res: Response) => {
+  const user = req.user as User;
+  const user_id = user?.id;
+
+  try {
+    const profile = await profileController.me(user_id);
+    if (!profile) {
+      throw new ProfileNotExist();
+    }
+
+    // Read the image file
+    const imagePath = profile.urlImageProfile; // Replace with the actual path to the image file
+    if (imagePath) {
+      https.get(imagePath, (response) => {
+        let data = Buffer.alloc(0);
+      
+        response.on('data', (chunk) => {
+          data = Buffer.concat([data, chunk]);
+        });
+      
+        response.on('end', () => {
+          // Set the appropriate content type for the response
+          res.contentType('image/jpeg');
+          res.send(data);
+        });
+      
+        response.on('error', (error) => {
+          console.error('Error reading image:', error);
+          res.status(500).json({ message: 'Error reading image.' });
+        });
+      });
+    }  
+  } catch (error) {
+    // Handle the error
+    if (error instanceof ProfileNotExist) {
+      console.warn(`User profile for the user with ID [${user_id}] does not exist: ${error.message}`);
+      res.status(405).json({ message: error.message });
+    } else if (error instanceof ProfileParameterNotSpecify) {
+      console.warn(`User with ID [${user_id}] did not specify a parameter: ${error.message}`);
+      res.status(405).json({ message: error.message });
+    } else {
+      console.error(`Error getting the user profile with ID [${user_id}]:`, error);
+      res.status(500).json({ message: 'Error getting the user profile.' });
+    }
+  }
+}));
+
 
   export default profileRouter;

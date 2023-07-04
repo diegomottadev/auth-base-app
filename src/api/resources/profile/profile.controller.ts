@@ -14,7 +14,7 @@ import { ProfileParameterNotSpecify } from "./profile.error";
 
 */
 export const me = (id: number | null = null): Promise<User | null> => {
-    if (id) return User.findOne({ include: [{ model: Person }, { model: Role, include: [Permission] }],
+    if (id) return User.findOne({  include: [{ model: Person }, { model: Role, include: [Permission] }],
                                    where: { id: parseInt(id.toString()) } });
   
     throw new ProfileParameterNotSpecify(`Does not specify a parameter ID [${id}] to look up the user profile`);
