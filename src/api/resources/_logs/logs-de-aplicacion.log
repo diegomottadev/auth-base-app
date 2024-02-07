@@ -13457,3 +13457,868 @@ info: 2023-07-04T15:03:18.762Z User Admin provided a valid token. Authentication
 info: 2023-07-04T15:03:18.784Z ::1 - GET /profile HTTP/1.1 200 900 - 36.124 ms
 info: 2023-07-04T15:03:50.104Z User Admin provided a valid token. Authentication completed
 info: 2023-07-04T15:03:50.134Z ::1 - GET /profile HTTP/1.1 200 1161 - 41.088 ms
+info: 2023-07-04T19:03:23.034Z User undefined successfully completed authentication
+info: 2023-07-04T19:03:23.043Z ::1 - POST /auth/login HTTP/1.1 200 149 - 138.123 ms
+info: 2023-07-04T19:03:49.777Z User undefined successfully completed authentication
+info: 2023-07-04T19:03:49.779Z ::1 - POST /auth/login HTTP/1.1 200 149 - 89.469 ms
+info: 2023-07-04T19:04:55.133Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:04:55.272Z User with ID [4] has been successfully created.
+info: 2023-07-04T19:04:55.273Z ::1 - POST /users HTTP/1.1 201 77 - 150.863 ms
+info: 2023-07-04T19:05:31.250Z ::1 - POST /users HTTP/1.1 401 - - 1.299 ms
+info: 2023-07-04T19:05:47.375Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:05:47.492Z User with ID [5] has been successfully created.
+info: 2023-07-04T19:05:47.494Z ::1 - POST /users HTTP/1.1 201 75 - 126.494 ms
+info: 2023-07-04T19:06:27.850Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:06:27.876Z User with ID [2] has been successfully updated.
+info: 2023-07-04T19:06:27.878Z ::1 - PUT /users/2 HTTP/1.1 200 490 - 36.699 ms
+info: 2023-07-04T19:06:50.716Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:06:50.740Z User with ID [2] has been successfully updated.
+info: 2023-07-04T19:06:50.742Z ::1 - PUT /users/2 HTTP/1.1 200 487 - 32.448 ms
+info: 2023-07-04T19:07:36.660Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:07:36.679Z User with ID [2] has been deleted.
+info: 2023-07-04T19:07:36.681Z ::1 - DELETE /users/2 HTTP/1.1 200 474 - 27.341 ms
+info: 2023-07-04T19:07:51.000Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:07:51.013Z Successfully retrieved all users.
+info: 2023-07-04T19:07:51.015Z ::1 - GET /users HTTP/1.1 200 1734 - 23.076 ms
+info: 2023-07-04T19:08:01.979Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:08:01.991Z Successfully retrieved user with ID [3].
+info: 2023-07-04T19:08:01.992Z ::1 - GET /users/3 HTTP/1.1 200 411 - 21.242 ms
+info: 2023-07-04T19:08:24.284Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:08:24.306Z Role with name [new role] created successfully.
+info: 2023-07-04T19:08:24.306Z ::1 - POST /roles HTTP/1.1 201 79 - 29.329 ms
+info: 2023-07-04T19:08:55.455Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:08:55.478Z Permissions assigned to the role with ID 2
+info: 2023-07-04T19:08:55.478Z ::1 - POST /roles/2/permissions HTTP/1.1 200 1024 - 31.837 ms
+info: 2023-07-04T19:09:16.460Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:09:16.476Z ::1 - GET /roles HTTP/1.1 200 1715 - 23.401 ms
+info: 2023-07-04T19:09:30.488Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:09:30.520Z Role with ID [2] has been successfully modified.
+info: 2023-07-04T19:09:30.520Z ::1 - PUT /roles/2 HTTP/1.1 200 1043 - 40.528 ms
+info: 2023-07-04T19:09:42.083Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:09:42.104Z Role with ID [4] has been deleted.
+info: 2023-07-04T19:09:42.105Z ::1 - DELETE /roles/4 HTTP/1.1 200 203 - 29.861 ms
+info: 2023-07-04T19:09:53.552Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:09:53.581Z Permissions updated for the role with ID 2
+info: 2023-07-04T19:09:53.581Z ::1 - PUT /roles/2/permissions HTTP/1.1 200 528 - 38.328 ms
+info: 2023-07-04T19:10:14.728Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:10:14.742Z ::1 - GET /roles/2 HTTP/1.1 200 468 - 22.412 ms
+info: 2023-07-04T19:10:29.752Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:10:29.765Z ::1 - GET /permissions HTTP/1.1 200 843 - 22.935 ms
+info: 2023-07-04T19:10:39.360Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:10:39.375Z ::1 - GET /permissions/1 HTTP/1.1 200 119 - 19.393 ms
+info: 2023-07-04T19:10:58.834Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:10:58.851Z ::1 - GET /profile HTTP/1.1 200 1161 - 24.953 ms
+info: 2023-07-04T19:11:18.206Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:11:19.229Z ::1 - GET /profile/photo HTTP/1.1 200 17800 - 1030.870 ms
+info: 2023-07-04T19:11:43.452Z User Admin provided a valid token. Authentication completed
+info: 2023-07-04T19:11:44.794Z ::1 - GET /profile/photo HTTP/1.1 200 17800 - 1356.268 ms
+info: 2024-02-07T14:15:47.022Z User undefined successfully completed authentication
+info: 2024-02-07T14:15:47.032Z ::1 - POST /auth/login HTTP/1.1 200 149 - 254.882 ms
+info: 2024-02-07T14:16:14.130Z User Admin provided a valid token. Authentication completed
+error: 2024-02-07T14:16:14.154Z Error modifying the role with ID [2]
+info: 2024-02-07T14:16:14.156Z ::1 - PUT /roles/2 HTTP/1.1 500 39 - 44.111 ms
+info: 2024-02-07T14:16:46.506Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T14:16:46.547Z Role with ID [2] has been successfully modified.
+info: 2024-02-07T14:16:46.548Z ::1 - PUT /roles/2 HTTP/1.1 200 547 - 55.770 ms
+info: 2024-02-07T15:15:28.228Z User undefined successfully completed authentication
+info: 2024-02-07T15:15:28.231Z ::1 - POST /auth/login HTTP/1.1 200 149 - 113.210 ms
+info: 2024-02-07T15:40:13.293Z ::1 - GET /roles HTTP/1.1 401 - - 2.597 ms
+info: 2024-02-07T15:40:29.574Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T15:40:29.596Z ::1 - GET /roles HTTP/1.1 200 2046 - 32.810 ms
+error: 2024-02-07T15:52:30.555Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(2,1): error TS6133: 'Op' is declared but its value is never read.
+src/api/resources/roles/roles.controller.ts(29,16): error TS6133: 'all' is declared but its value is never read.
+src/api/resources/roles/roles.controller.ts(37,44): error TS2345: Argument of type '{ where: any; include: (typeof Permission)[]; offset: number | undefined; limit: number | null; }' is not assignable to parameter of type 'FindOptions<any>'.
+  Types of property 'limit' are incompatible.
+    Type 'number | null' is not assignable to type 'number | undefined'.
+      Type 'null' is not assignable to type 'number | undefined'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(2,1): error TS6133: 'Op' is declared but its value is never read.
+src/api/resources/roles/roles.controller.ts(29,16): error TS6133: 'all' is declared but its value is never read.
+src/api/resources/roles/roles.controller.ts(37,44): error TS2345: Argument of type '{ where: any; include: (typeof Permission)[]; offset: number | undefined; limit: number | null; }' is not assignable to parameter of type 'FindOptions<any>'.
+  Types of property 'limit' are incompatible.
+    Type 'number | null' is not assignable to type 'number | undefined'.
+      Type 'null' is not assignable to type 'number | undefined'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 12:52:30 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":688518},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":1244824,"external":6653519,"heapTotal":56807424,"heapUsed":38716648,"rss":79486976},"pid":25160,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.controller.ts(2,1): error TS6133: 'Op' is declared but its value is never read.\r\nsrc/api/resources/roles/roles.controller.ts(29,16): error TS6133: 'all' is declared but its value is never read.\r\nsrc/api/resources/roles/roles.controller.ts(37,44): error TS2345: Argument of type '{ where: any; include: (typeof Permission)[]; offset: number | undefined; limit: number | null; }' is not assignable to parameter of type 'FindOptions<any>'.\r\n  Types of property 'limit' are incompatible.\r\n    Type 'number | null' is not assignable to type 'number | undefined'.\r\n      Type 'null' is not assignable to type 'number | undefined'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+error: 2024-02-07T15:53:53.494Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(31,16): error TS6133: 'all' is declared but its value is never read.
+src/api/resources/roles/roles.controller.ts(41,44): error TS2345: Argument of type '{ where: { id: { [OpTypes.not]: null; }; }; include: (typeof Permission)[]; offset: number | undefined; limit: number | null; }' is not assignable to parameter of type 'FindOptions<any>'.
+  Types of property 'limit' are incompatible.
+    Type 'number | null' is not assignable to type 'number | undefined'.
+      Type 'null' is not assignable to type 'number | undefined'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(31,16): error TS6133: 'all' is declared but its value is never read.
+src/api/resources/roles/roles.controller.ts(41,44): error TS2345: Argument of type '{ where: { id: { [OpTypes.not]: null; }; }; include: (typeof Permission)[]; offset: number | undefined; limit: number | null; }' is not assignable to parameter of type 'FindOptions<any>'.
+  Types of property 'limit' are incompatible.
+    Type 'number | null' is not assignable to type 'number | undefined'.
+      Type 'null' is not assignable to type 'number | undefined'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 12:53:53 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":688600},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":1284103,"external":6653552,"heapTotal":56807424,"heapUsed":38810264,"rss":79908864},"pid":24780,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.controller.ts(31,16): error TS6133: 'all' is declared but its value is never read.\r\nsrc/api/resources/roles/roles.controller.ts(41,44): error TS2345: Argument of type '{ where: { id: { [OpTypes.not]: null; }; }; include: (typeof Permission)[]; offset: number | undefined; limit: number | null; }' is not assignable to parameter of type 'FindOptions<any>'.\r\n  Types of property 'limit' are incompatible.\r\n    Type 'number | null' is not assignable to type 'number | undefined'.\r\n      Type 'null' is not assignable to type 'number | undefined'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+error: 2024-02-07T16:01:29.904Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(45,23): error TS2304: Cannot find name 'Op'.
+src/api/resources/roles/roles.route.ts(48,60): error TS2352: Conversion of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'ParsedQs[]' is not comparable to type 'number'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(45,23): error TS2304: Cannot find name 'Op'.
+src/api/resources/roles/roles.route.ts(48,60): error TS2352: Conversion of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'ParsedQs[]' is not comparable to type 'number'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 13:01:29 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":689057},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":356807,"external":1147737,"heapTotal":61526016,"heapUsed":33916800,"rss":92033024},"pid":2408,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.route.ts(45,23): error TS2304: Cannot find name 'Op'.\r\nsrc/api/resources/roles/roles.route.ts(48,60): error TS2352: Conversion of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.\r\n  Type 'ParsedQs[]' is not comparable to type 'number'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+error: 2024-02-07T16:02:44.521Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(51,60): error TS2352: Conversion of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'ParsedQs[]' is not comparable to type 'number'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(51,60): error TS2352: Conversion of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'ParsedQs[]' is not comparable to type 'number'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 13:02:44 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":689131},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":338069,"external":6619360,"heapTotal":58380288,"heapUsed":27238432,"rss":80359424},"pid":24812,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.route.ts(51,60): error TS2352: Conversion of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.\r\n  Type 'ParsedQs[]' is not comparable to type 'number'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+error: 2024-02-07T16:03:21.883Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(51,60): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(51,60): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 13:03:21 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":689169},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":361531,"external":6619350,"heapTotal":58642432,"heapUsed":27203224,"rss":80691200},"pid":688,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.route.ts(51,60): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | undefined' is not assignable to parameter of type 'number'.\r\n  Type 'undefined' is not assignable to type 'number'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+error: 2024-02-07T16:03:41.937Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(51,60): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | 10' is not assignable to parameter of type 'number'.
+  Type 'string' is not assignable to type 'number'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(51,60): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | 10' is not assignable to parameter of type 'number'.
+  Type 'string' is not assignable to type 'number'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 13:03:41 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":689189},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":372825,"external":6619355,"heapTotal":58118144,"heapUsed":27814672,"rss":80420864},"pid":23664,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.route.ts(51,60): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | 10' is not assignable to parameter of type 'number'.\r\n  Type 'string' is not assignable to type 'number'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+error: 2024-02-07T16:03:49.214Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(2,10): error TS6133: 'Op' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(2,10): error TS6133: 'Op' is declared but its value is never read.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 13:03:49 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":689196},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":393584,"external":6655074,"heapTotal":58642432,"heapUsed":27938568,"rss":80183296},"pid":14548,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.controller.ts(2,10): error TS6133: 'Op' is declared but its value is never read.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+info: 2024-02-07T16:04:06.677Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:04:06.703Z ::1 - GET /roles HTTP/1.1 200 2046 - 36.686 ms
+info: 2024-02-07T16:06:15.215Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:15.258Z Role with name [new role 0] created successfully.
+info: 2024-02-07T16:06:15.259Z ::1 - POST /roles HTTP/1.1 201 83 - 88.267 ms
+info: 2024-02-07T16:06:18.307Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:18.326Z Role with name [new role 1] created successfully.
+info: 2024-02-07T16:06:18.327Z ::1 - POST /roles HTTP/1.1 201 83 - 24.527 ms
+info: 2024-02-07T16:06:21.604Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:21.632Z Role with name [new role 2] created successfully.
+info: 2024-02-07T16:06:21.633Z ::1 - POST /roles HTTP/1.1 201 83 - 34.129 ms
+info: 2024-02-07T16:06:26.243Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:26.273Z Role with name [new role 3] created successfully.
+info: 2024-02-07T16:06:26.274Z ::1 - POST /roles HTTP/1.1 201 83 - 35.679 ms
+info: 2024-02-07T16:06:28.723Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:28.809Z Role with name [new role 4] created successfully.
+info: 2024-02-07T16:06:28.809Z ::1 - POST /roles HTTP/1.1 201 83 - 111.175 ms
+info: 2024-02-07T16:06:31.885Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:31.905Z Role with name [new role 5] created successfully.
+info: 2024-02-07T16:06:31.906Z ::1 - POST /roles HTTP/1.1 201 83 - 27.304 ms
+info: 2024-02-07T16:06:34.541Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:34.561Z Role with name [new role 6] created successfully.
+info: 2024-02-07T16:06:34.562Z ::1 - POST /roles HTTP/1.1 201 83 - 22.657 ms
+info: 2024-02-07T16:06:37.855Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:37.879Z Role with name [new role 7] created successfully.
+info: 2024-02-07T16:06:37.880Z ::1 - POST /roles HTTP/1.1 201 83 - 28.710 ms
+info: 2024-02-07T16:06:41.248Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:06:41.272Z ::1 - GET /roles HTTP/1.1 200 2894 - 26.735 ms
+info: 2024-02-07T16:09:19.244Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:09:19.299Z ::1 - GET /roles HTTP/1.1 200 2894 - 152.324 ms
+info: 2024-02-07T16:10:07.545Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:10:07.564Z ::1 - GET /roles?page=2 HTTP/1.1 200 294 - 33.137 ms
+info: 2024-02-07T16:19:47.961Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:19:47.964Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:19:47.966Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:22:41.793Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:22:41.797Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:22:41.806Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:22:41.813Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:22:41.817Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:22:41.819Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T16:22:43.112Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:22:43.120Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:22:43.147Z ::1 - GET /roles HTTP/1.1 200 2894 - 56.519 ms
+info: 2024-02-07T16:22:43.160Z ::1 - GET /roles HTTP/1.1 200 2894 - 62.878 ms
+error: 2024-02-07T16:26:09.819Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(52,26): error TS2339: Property 'rows' does not exist on type 'Role[]'.
+src/api/resources/roles/roles.route.ts(52,45): error TS2339: Property 'count' does not exist on type 'Role[]'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(52,26): error TS2339: Property 'rows' does not exist on type 'Role[]'.
+src/api/resources/roles/roles.route.ts(52,45): error TS2339: Property 'count' does not exist on type 'Role[]'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 13:26:09 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":690537},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":1251720,"external":6619387,"heapTotal":56545280,"heapUsed":38731336,"rss":79790080},"pid":21752,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.route.ts(52,26): error TS2339: Property 'rows' does not exist on type 'Role[]'.\r\nsrc/api/resources/roles/roles.route.ts(52,45): error TS2339: Property 'count' does not exist on type 'Role[]'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+error: 2024-02-07T16:28:37.702Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(52,26): error TS2339: Property 'rows' does not exist on type 'Role[]'.
+src/api/resources/roles/roles.route.ts(52,45): error TS2339: Property 'count' does not exist on type 'Role[]'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(52,26): error TS2339: Property 'rows' does not exist on type 'Role[]'.
+src/api/resources/roles/roles.route.ts(52,45): error TS2339: Property 'count' does not exist on type 'Role[]'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 13:28:37 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":690685},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":381042,"external":6619387,"heapTotal":58118144,"heapUsed":28013264,"rss":80568320},"pid":22924,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.route.ts(52,26): error TS2339: Property 'rows' does not exist on type 'Role[]'.\r\nsrc/api/resources/roles/roles.route.ts(52,45): error TS2339: Property 'count' does not exist on type 'Role[]'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+info: 2024-02-07T16:31:41.800Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:31:41.837Z ::1 - GET /roles?page=2 HTTP/1.1 200 305 - 47.607 ms
+info: 2024-02-07T16:32:33.663Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:32:33.690Z ::1 - GET /roles?page=1 HTTP/1.1 200 2905 - 39.773 ms
+info: 2024-02-07T16:33:20.315Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:33:20.339Z ::1 - GET /roles?page=1 HTTP/1.1 200 2057 - 36.768 ms
+info: 2024-02-07T16:33:59.012Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:33:59.039Z ::1 - GET /roles?page=1 HTTP/1.1 200 2057 - 40.403 ms
+info: 2024-02-07T16:39:14.390Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:39:14.414Z ::1 - GET /roles?page=1 HTTP/1.1 200 2057 - 33.238 ms
+info: 2024-02-07T16:40:07.786Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:40:07.851Z ::1 - GET /roles?page=1 HTTP/1.1 200 2057 - 149.736 ms
+info: 2024-02-07T16:40:31.959Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:40:32.015Z ::1 - GET /roles?page=1 HTTP/1.1 200 497 - 150.197 ms
+info: 2024-02-07T16:40:46.133Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:40:46.169Z ::1 - GET /roles?page=1 HTTP/1.1 200 2057 - 47.359 ms
+error: 2024-02-07T16:42:12.958Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(42,17): error TS6133: 'count' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(42,17): error TS6133: 'count' is declared but its value is never read.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-8110578382413447.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 13:42:12 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":691500},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":345583,"external":6655378,"heapTotal":58118144,"heapUsed":27341824,"rss":80613376},"pid":10884,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.controller.ts(42,17): error TS6133: 'count' is declared but its value is never read.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-8110578382413447.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+info: 2024-02-07T16:43:17.830Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:43:17.876Z ::1 - GET /roles?page=1 HTTP/1.1 200 2056 - 58.438 ms
+info: 2024-02-07T16:43:18.862Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:43:18.882Z ::1 - GET /roles?page=1 HTTP/1.1 200 2056 - 26.737 ms
+info: 2024-02-07T16:44:33.462Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:44:33.513Z ::1 - GET /roles HTTP/1.1 200 2056 - 76.880 ms
+info: 2024-02-07T16:44:33.549Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:44:33.577Z ::1 - GET /roles HTTP/1.1 304 - - 34.741 ms
+info: 2024-02-07T16:44:45.597Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:44:45.622Z ::1 - GET /roles HTTP/1.1 304 - - 36.363 ms
+info: 2024-02-07T16:44:45.636Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:44:45.659Z ::1 - GET /roles HTTP/1.1 304 - - 27.842 ms
+info: 2024-02-07T16:44:47.133Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:44:47.153Z ::1 - GET /roles HTTP/1.1 304 - - 28.053 ms
+info: 2024-02-07T16:44:47.168Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:44:47.186Z ::1 - GET /roles HTTP/1.1 304 - - 24.260 ms
+info: 2024-02-07T16:45:16.814Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:45:16.839Z ::1 - GET /roles HTTP/1.1 304 - - 42.615 ms
+info: 2024-02-07T16:45:16.854Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:45:16.874Z ::1 - GET /roles HTTP/1.1 304 - - 25.506 ms
+info: 2024-02-07T16:45:32.603Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:45:32.634Z ::1 - GET /roles HTTP/1.1 304 - - 43.891 ms
+info: 2024-02-07T16:45:32.648Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:45:32.668Z ::1 - GET /roles HTTP/1.1 304 - - 23.619 ms
+info: 2024-02-07T16:45:52.635Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:45:52.659Z ::1 - GET /roles HTTP/1.1 304 - - 36.422 ms
+info: 2024-02-07T16:45:52.672Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:45:52.693Z ::1 - GET /roles HTTP/1.1 304 - - 24.827 ms
+info: 2024-02-07T16:46:08.108Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:46:08.136Z ::1 - GET /roles HTTP/1.1 304 - - 38.209 ms
+info: 2024-02-07T16:47:02.992Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:47:03.070Z ::ffff:127.0.0.1 - GET /roles HTTP/1.1 304 - - 156.040 ms
+info: 2024-02-07T16:47:03.089Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:47:03.137Z ::ffff:127.0.0.1 - GET /roles HTTP/1.1 304 - - 57.218 ms
+info: 2024-02-07T16:47:03.158Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:47:03.187Z ::ffff:127.0.0.1 - GET /roles HTTP/1.1 304 - - 36.474 ms
+info: 2024-02-07T16:47:03.205Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:47:03.237Z ::ffff:127.0.0.1 - GET /roles HTTP/1.1 304 - - 42.053 ms
+info: 2024-02-07T16:47:30.547Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:47:30.588Z ::ffff:127.0.0.1 - GET /roles HTTP/1.1 304 - - 61.614 ms
+info: 2024-02-07T16:47:30.606Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:47:30.639Z ::ffff:127.0.0.1 - GET /roles HTTP/1.1 304 - - 40.245 ms
+info: 2024-02-07T16:47:47.108Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:47:47.145Z ::1 - GET /roles HTTP/1.1 304 - - 53.100 ms
+info: 2024-02-07T16:47:47.163Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T16:47:47.188Z ::1 - GET /roles HTTP/1.1 304 - - 31.306 ms
+info: 2024-02-07T19:17:58.800Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:17:58.830Z ::1 - GET /roles HTTP/1.1 304 - - 41.284 ms
+info: 2024-02-07T19:17:58.847Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:17:58.870Z ::1 - GET /roles HTTP/1.1 304 - - 28.901 ms
+info: 2024-02-07T19:18:57.447Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T19:18:57.448Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T19:18:58.351Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:18:58.385Z ::1 - GET /roles HTTP/1.1 304 - - 46.939 ms
+info: 2024-02-07T19:18:58.399Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:18:58.424Z ::1 - GET /roles HTTP/1.1 304 - - 29.837 ms
+info: 2024-02-07T19:19:08.313Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:19:08.343Z ::1 - GET /roles HTTP/1.1 304 - - 36.613 ms
+info: 2024-02-07T19:19:11.481Z User Admin provided a valid token. Authentication completed
+error: 2024-02-07T19:19:11.497Z Error deleting the role with ID [2]
+info: 2024-02-07T19:19:11.500Z ::1 - DELETE /roles/2 HTTP/1.1 500 38 - 21.865 ms
+info: 2024-02-07T19:20:01.668Z User Admin provided a valid token. Authentication completed
+error: 2024-02-07T19:20:01.685Z Error deleting the role with ID [2]
+info: 2024-02-07T19:20:01.686Z ::1 - DELETE /roles/2 HTTP/1.1 500 38 - 26.328 ms
+info: 2024-02-07T19:21:57.564Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:21:57.589Z ::1 - GET /roles HTTP/1.1 304 - - 39.370 ms
+info: 2024-02-07T19:22:03.299Z User Admin provided a valid token. Authentication completed
+error: 2024-02-07T19:22:03.315Z Error deleting the role with ID [3]
+info: 2024-02-07T19:22:03.316Z ::1 - DELETE /roles/3 HTTP/1.1 500 38 - 20.437 ms
+info: 2024-02-07T19:24:12.851Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:24:12.877Z ::1 - GET /roles HTTP/1.1 304 - - 40.332 ms
+info: 2024-02-07T19:24:22.536Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:24:22.561Z ::1 - GET /roles HTTP/1.1 304 - - 32.988 ms
+info: 2024-02-07T19:26:46.790Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:26:46.834Z ::1 - GET /roles HTTP/1.1 304 - - 59.687 ms
+info: 2024-02-07T19:28:08.463Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:28:08.485Z ::1 - GET /roles HTTP/1.1 304 - - 35.889 ms
+info: 2024-02-07T19:28:40.901Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:28:40.944Z ::1 - GET /roles HTTP/1.1 304 - - 58.112 ms
+info: 2024-02-07T19:28:45.755Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:28:45.785Z ::1 - GET /roles HTTP/1.1 304 - - 36.011 ms
+info: 2024-02-07T19:29:27.165Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:29:27.196Z ::1 - GET /roles HTTP/1.1 304 - - 41.093 ms
+info: 2024-02-07T19:29:46.118Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:29:46.139Z ::1 - GET /roles HTTP/1.1 304 - - 28.369 ms
+info: 2024-02-07T19:30:52.221Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:30:52.240Z ::1 - GET /roles HTTP/1.1 304 - - 28.787 ms
+info: 2024-02-07T19:30:52.278Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:30:52.300Z ::1 - GET /roles HTTP/1.1 304 - - 27.363 ms
+info: 2024-02-07T19:34:16.849Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:34:16.866Z ::1 - GET /roles HTTP/1.1 304 - - 24.758 ms
+info: 2024-02-07T19:34:17.002Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:34:17.027Z ::1 - GET /roles HTTP/1.1 304 - - 29.823 ms
+info: 2024-02-07T19:34:24.167Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T19:34:24.170Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T19:34:25.172Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:34:25.199Z ::1 - GET /roles HTTP/1.1 304 - - 33.267 ms
+info: 2024-02-07T19:34:25.216Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:34:25.242Z ::1 - GET /roles HTTP/1.1 304 - - 32.105 ms
+info: 2024-02-07T19:38:32.227Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T19:38:32.230Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T19:40:23.394Z User Admin provided a valid token. Authentication completed
+warn: 2024-02-07T19:40:23.399Z The role data did not pass validation: : {"name":"newfarmakd2023","description":"1231312312321"} - ["description" is not allowed]
+info: 2024-02-07T19:40:23.400Z ::1 - POST /roles HTTP/1.1 400 30 - 53.792 ms
+info: 2024-02-07T19:40:25.752Z User Admin provided a valid token. Authentication completed
+warn: 2024-02-07T19:40:25.753Z The role data did not pass validation: : {"name":"newfarmakd2023","description":"1231312312321"} - ["description" is not allowed]
+info: 2024-02-07T19:40:25.754Z ::1 - POST /roles HTTP/1.1 400 30 - 5.531 ms
+info: 2024-02-07T19:41:02.330Z User Admin provided a valid token. Authentication completed
+warn: 2024-02-07T19:41:02.331Z The role data did not pass validation: : {"name":"newfarmakd2023","description":"1231312312321"} - ["description" is not allowed]
+info: 2024-02-07T19:41:02.332Z ::1 - POST /roles HTTP/1.1 400 30 - 10.566 ms
+info: 2024-02-07T19:41:51.498Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:41:51.544Z ::1 - GET /roles HTTP/1.1 304 - - 68.752 ms
+info: 2024-02-07T19:41:51.562Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:41:51.587Z ::1 - GET /roles HTTP/1.1 304 - - 32.947 ms
+info: 2024-02-07T19:42:02.569Z User Admin provided a valid token. Authentication completed
+warn: 2024-02-07T19:42:02.573Z The role data did not pass validation: : {"name":"faustina","description":""} - ["description" is not allowed to be empty]
+info: 2024-02-07T19:42:02.576Z ::1 - POST /roles HTTP/1.1 400 42 - 39.735 ms
+info: 2024-02-07T19:42:40.017Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:42:40.065Z Role with name [faustina] created successfully.
+info: 2024-02-07T19:42:40.067Z ::1 - POST /roles HTTP/1.1 201 79 - 85.272 ms
+info: 2024-02-07T19:42:43.473Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:42:43.507Z ::1 - GET /roles HTTP/1.1 200 2196 - 41.065 ms
+info: 2024-02-07T19:42:43.531Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:42:43.556Z ::1 - GET /roles HTTP/1.1 304 - - 29.015 ms
+info: 2024-02-07T19:51:07.858Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:51:07.914Z ::ffff:127.0.0.1 - GET /roles HTTP/1.1 304 - - 114.759 ms
+info: 2024-02-07T19:51:07.931Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:51:07.975Z ::ffff:127.0.0.1 - GET /roles HTTP/1.1 304 - - 51.509 ms
+info: 2024-02-07T19:51:10.870Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:51:11.004Z ::ffff:127.0.0.1 - GET /roles/export HTTP/1.1 200 - - 137.644 ms
+info: 2024-02-07T19:51:47.988Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:51:48.014Z ::ffff:127.0.0.1 - GET /roles?page=1&name=A HTTP/1.1 200 296 - 36.990 ms
+info: 2024-02-07T19:51:48.217Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:51:48.233Z ::ffff:127.0.0.1 - GET /roles?page=1&name=Ad HTTP/1.1 200 156 - 20.740 ms
+info: 2024-02-07T19:51:51.826Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:51:51.896Z ::ffff:127.0.0.1 - GET /roles/export HTTP/1.1 200 - - 75.566 ms
+info: 2024-02-07T19:52:23.758Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:52:23.785Z ::1 - GET /roles?page=1&name=Adm HTTP/1.1 200 156 - 39.894 ms
+info: 2024-02-07T19:52:27.219Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:52:27.277Z ::1 - GET /roles/export HTTP/1.1 200 - - 59.799 ms
+info: 2024-02-07T19:52:54.870Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:52:54.947Z ::1 - GET /roles HTTP/1.1 304 - - 131.728 ms
+info: 2024-02-07T19:52:54.960Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:52:54.987Z ::1 - GET /roles HTTP/1.1 304 - - 33.383 ms
+info: 2024-02-07T19:52:56.654Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:52:56.673Z ::1 - GET /roles?page=1&name=a HTTP/1.1 200 296 - 22.061 ms
+info: 2024-02-07T19:52:56.841Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:52:56.860Z ::1 - GET /roles?page=1&name=ad HTTP/1.1 200 156 - 23.678 ms
+info: 2024-02-07T19:52:59.140Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:52:59.294Z ::1 - GET /roles/export HTTP/1.1 200 - - 159.024 ms
+info: 2024-02-07T19:54:19.727Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:54:19.800Z ::1 - GET /roles HTTP/1.1 304 - - 110.690 ms
+info: 2024-02-07T19:54:19.820Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:54:19.853Z ::1 - GET /roles HTTP/1.1 304 - - 41.097 ms
+info: 2024-02-07T19:54:21.133Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:54:21.151Z ::1 - GET /roles?page=1&name=a HTTP/1.1 304 - - 23.203 ms
+info: 2024-02-07T19:54:21.247Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:54:21.266Z ::1 - GET /roles?page=1&name=ad HTTP/1.1 304 - - 22.716 ms
+info: 2024-02-07T19:54:21.330Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:54:21.353Z ::1 - GET /roles?page=1&name=adm HTTP/1.1 200 156 - 26.237 ms
+info: 2024-02-07T19:54:21.495Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:54:21.515Z ::1 - GET /roles?page=1&name=admi HTTP/1.1 200 156 - 25.434 ms
+info: 2024-02-07T19:54:21.660Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:54:21.676Z ::1 - GET /roles?page=1&name=admin HTTP/1.1 200 156 - 19.461 ms
+info: 2024-02-07T19:54:24.763Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:54:24.902Z ::1 - GET /roles/export HTTP/1.1 200 - - 141.644 ms
+info: 2024-02-07T19:55:46.561Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:55:46.596Z ::1 - GET /roles?page=1&name=admin HTTP/1.1 304 - - 59.611 ms
+info: 2024-02-07T19:59:06.906Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:59:06.949Z ::1 - GET /roles?page=1&name=admin HTTP/1.1 304 - - 57.773 ms
+info: 2024-02-07T19:59:07.062Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:59:07.087Z ::1 - GET /roles HTTP/1.1 304 - - 31.171 ms
+info: 2024-02-07T19:59:07.104Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:59:07.133Z ::1 - GET /roles HTTP/1.1 304 - - 35.191 ms
+info: 2024-02-07T19:59:36.658Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T19:59:36.697Z ::1 - GET /roles HTTP/1.1 304 - - 51.060 ms
+info: 2024-02-07T20:01:26.578Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:01:26.624Z ::1 - GET /roles HTTP/1.1 304 - - 63.781 ms
+info: 2024-02-07T20:01:45.710Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:01:45.731Z ::1 - GET /roles?page=1&name=a HTTP/1.1 304 - - 30.156 ms
+info: 2024-02-07T20:01:45.856Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:01:45.876Z ::1 - GET /roles?page=1&name=ad HTTP/1.1 304 - - 23.598 ms
+info: 2024-02-07T20:01:45.964Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:01:45.982Z ::1 - GET /roles?page=1&name=adm HTTP/1.1 304 - - 21.074 ms
+info: 2024-02-07T20:01:46.146Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:01:46.166Z ::1 - GET /roles?page=1&name=admi HTTP/1.1 304 - - 23.363 ms
+info: 2024-02-07T20:02:28.542Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:02:28.567Z ::1 - GET /roles?page=1&name=admi HTTP/1.1 304 - - 36.126 ms
+info: 2024-02-07T20:02:59.917Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:02:59.953Z ::1 - GET /roles?page=1&name=admi HTTP/1.1 304 - - 48.908 ms
+info: 2024-02-07T20:03:05.606Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:03:05.688Z ::1 - GET /roles/export?name=admi HTTP/1.1 200 - - 85.128 ms
+info: 2024-02-07T20:03:18.183Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:03:18.196Z ::1 - GET /roles/1 HTTP/1.1 200 135 - 23.551 ms
+info: 2024-02-07T20:03:18.225Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:03:18.237Z ::1 - GET /roles/1 HTTP/1.1 304 - - 21.311 ms
+info: 2024-02-07T20:03:52.598Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:03:52.601Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:03:54.086Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:03:54.104Z ::1 - GET /roles/1 HTTP/1.1 304 - - 31.554 ms
+info: 2024-02-07T20:03:54.122Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:03:54.141Z ::1 - GET /roles/1 HTTP/1.1 304 - - 23.894 ms
+info: 2024-02-07T20:04:29.176Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:04:29.190Z ::1 - GET /roles/1 HTTP/1.1 304 - - 23.147 ms
+info: 2024-02-07T20:04:32.530Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:04:32.531Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:04:34.027Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:04:34.054Z ::1 - GET /roles/1 HTTP/1.1 304 - - 32.094 ms
+info: 2024-02-07T20:04:34.073Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:04:34.088Z ::1 - GET /roles/1 HTTP/1.1 304 - - 21.083 ms
+info: 2024-02-07T20:04:38.490Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:04:38.526Z Role with ID [1] has been successfully modified.
+info: 2024-02-07T20:04:38.526Z ::1 - PUT /roles/1 HTTP/1.1 200 221 - 65.055 ms
+info: 2024-02-07T20:04:41.963Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:04:41.970Z ::1 - GET /roles HTTP/1.1 403 33 - 16.065 ms
+info: 2024-02-07T20:04:41.986Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:04:41.995Z ::1 - GET /roles HTTP/1.1 403 33 - 12.374 ms
+info: 2024-02-07T20:04:52.053Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:04:52.054Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:04:53.342Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:04:53.356Z ::1 - GET /roles HTTP/1.1 403 33 - 29.496 ms
+info: 2024-02-07T20:04:53.374Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:04:53.394Z ::1 - GET /roles HTTP/1.1 403 33 - 25.662 ms
+info: 2024-02-07T20:04:59.707Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:04:59.709Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:05:00.654Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:00.670Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:00.679Z ::1 - GET /roles HTTP/1.1 403 33 - 30.160 ms
+info: 2024-02-07T20:05:00.687Z ::1 - GET /roles HTTP/1.1 403 33 - 27.877 ms
+info: 2024-02-07T20:05:14.083Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:14.092Z ::1 - GET /roles HTTP/1.1 403 33 - 17.930 ms
+info: 2024-02-07T20:05:16.002Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:16.011Z ::1 - GET /roles HTTP/1.1 403 33 - 14.004 ms
+info: 2024-02-07T20:05:16.022Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:16.030Z ::1 - GET /roles HTTP/1.1 403 33 - 12.379 ms
+info: 2024-02-07T20:05:23.164Z User undefined successfully completed authentication
+info: 2024-02-07T20:05:23.165Z ::1 - POST /auth/login HTTP/1.1 200 149 - 96.098 ms
+info: 2024-02-07T20:05:25.166Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:25.173Z ::1 - GET /roles HTTP/1.1 403 33 - 12.699 ms
+info: 2024-02-07T20:05:25.188Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:25.200Z ::1 - GET /roles HTTP/1.1 403 33 - 14.747 ms
+info: 2024-02-07T20:05:40.963Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:05:40.965Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:05:40.966Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:05:42.303Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:42.315Z ::1 - GET /roles HTTP/1.1 403 33 - 25.515 ms
+info: 2024-02-07T20:05:42.331Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:05:42.345Z ::1 - GET /roles HTTP/1.1 403 33 - 18.611 ms
+info: 2024-02-07T20:06:42.423Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:06:42.457Z ::1 - GET /roles HTTP/1.1 403 33 - 66.470 ms
+info: 2024-02-07T20:06:42.477Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:06:42.494Z ::1 - GET /roles HTTP/1.1 403 33 - 24.815 ms
+info: 2024-02-07T20:07:18.064Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:07:18.067Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:07:19.014Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:07:19.036Z ::1 - GET /roles HTTP/1.1 403 33 - 54.153 ms
+info: 2024-02-07T20:07:19.092Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:07:19.118Z ::1 - GET /roles HTTP/1.1 403 33 - 34.490 ms
+info: 2024-02-07T20:08:29.939Z User undefined successfully completed authentication
+info: 2024-02-07T20:08:29.945Z ::1 - POST /auth/login HTTP/1.1 200 149 - 133.817 ms
+info: 2024-02-07T20:08:32.188Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:08:32.231Z ::1 - GET /roles HTTP/1.1 200 2333 - 53.383 ms
+info: 2024-02-07T20:08:32.253Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:08:32.275Z ::1 - GET /roles HTTP/1.1 304 - - 26.636 ms
+info: 2024-02-07T20:09:27.830Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:09:27.868Z ::1 - GET /roles HTTP/1.1 200 2056 - 52.611 ms
+info: 2024-02-07T20:09:27.889Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:09:27.920Z ::1 - GET /roles HTTP/1.1 304 - - 36.494 ms
+info: 2024-02-07T20:09:35.195Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:09:35.246Z ::1 - GET /roles HTTP/1.1 304 - - 56.635 ms
+info: 2024-02-07T20:09:35.280Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:09:35.316Z ::1 - GET /roles HTTP/1.1 304 - - 55.835 ms
+info: 2024-02-07T20:09:48.467Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:09:48.490Z ::1 - GET /roles HTTP/1.1 304 - - 37.291 ms
+info: 2024-02-07T20:09:48.502Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:09:48.520Z ::1 - GET /roles HTTP/1.1 304 - - 21.228 ms
+info: 2024-02-07T20:10:21.030Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:10:21.052Z ::1 - GET /roles HTTP/1.1 304 - - 32.708 ms
+info: 2024-02-07T20:10:36.391Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:10:36.410Z ::1 - GET /roles HTTP/1.1 304 - - 28.951 ms
+info: 2024-02-07T20:10:51.444Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:10:51.464Z ::1 - GET /roles HTTP/1.1 304 - - 31.365 ms
+info: 2024-02-07T20:22:06.682Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:22:06.704Z ::1 - GET /roles HTTP/1.1 304 - - 35.576 ms
+info: 2024-02-07T20:22:38.506Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:22:38.540Z ::1 - GET /roles HTTP/1.1 304 - - 43.179 ms
+info: 2024-02-07T20:25:21.194Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:25:21.226Z ::1 - GET /roles HTTP/1.1 304 - - 48.725 ms
+info: 2024-02-07T20:25:43.701Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:25:43.727Z ::1 - GET /roles HTTP/1.1 304 - - 32.230 ms
+info: 2024-02-07T20:27:09.170Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:27:09.190Z ::1 - GET /roles HTTP/1.1 304 - - 31.049 ms
+info: 2024-02-07T20:28:30.577Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:30.607Z ::1 - GET /roles HTTP/1.1 304 - - 44.836 ms
+info: 2024-02-07T20:28:34.428Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:28:34.429Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:28:34.430Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:28:35.386Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:35.408Z ::1 - GET /roles HTTP/1.1 304 - - 30.346 ms
+info: 2024-02-07T20:28:35.423Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:35.446Z ::1 - GET /roles HTTP/1.1 304 - - 26.490 ms
+info: 2024-02-07T20:28:38.814Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:38.827Z ::1 - GET /roles?page=1&name=A HTTP/1.1 200 156 - 17.788 ms
+info: 2024-02-07T20:28:39.009Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:39.023Z ::1 - GET /roles?page=1&name=AD HTTP/1.1 200 156 - 16.484 ms
+info: 2024-02-07T20:28:39.544Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:39.561Z ::1 - GET /roles?page=1&name=ADm HTTP/1.1 200 156 - 19.431 ms
+info: 2024-02-07T20:28:40.060Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:40.076Z ::1 - GET /roles?page=1&name=ADmi HTTP/1.1 200 156 - 18.834 ms
+info: 2024-02-07T20:28:40.355Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:40.372Z ::1 - GET /roles?page=1&name=ADm HTTP/1.1 304 - - 19.704 ms
+info: 2024-02-07T20:28:40.514Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:40.525Z ::1 - GET /roles?page=1&name=AD HTTP/1.1 304 - - 15.670 ms
+info: 2024-02-07T20:28:40.614Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:40.624Z ::1 - GET /roles?page=1&name=A HTTP/1.1 304 - - 14.865 ms
+info: 2024-02-07T20:28:40.952Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:40.966Z ::1 - GET /roles?page=1&name=Ad HTTP/1.1 200 156 - 16.279 ms
+info: 2024-02-07T20:28:41.097Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:41.108Z ::1 - GET /roles?page=1&name=Adm HTTP/1.1 200 156 - 15.563 ms
+info: 2024-02-07T20:28:41.338Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:41.351Z ::1 - GET /roles?page=1&name=Admi HTTP/1.1 200 156 - 15.020 ms
+info: 2024-02-07T20:28:41.787Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:41.801Z ::1 - GET /roles?page=1&name=Admin HTTP/1.1 200 156 - 16.142 ms
+info: 2024-02-07T20:28:42.314Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:42.329Z ::1 - GET /roles?page=1&name=Admi HTTP/1.1 304 - - 17.823 ms
+info: 2024-02-07T20:28:42.463Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:42.476Z ::1 - GET /roles?page=1&name=Adm HTTP/1.1 304 - - 18.076 ms
+info: 2024-02-07T20:28:42.603Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:42.617Z ::1 - GET /roles?page=1&name=Ad HTTP/1.1 304 - - 17.731 ms
+info: 2024-02-07T20:28:42.732Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:42.748Z ::1 - GET /roles?page=1&name=A HTTP/1.1 304 - - 18.471 ms
+info: 2024-02-07T20:28:42.863Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:42.877Z ::1 - GET /roles?page=1&name= HTTP/1.1 200 2056 - 18.135 ms
+info: 2024-02-07T20:28:48.155Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:48.187Z Role with name [newfarmakd2023] created successfully.
+info: 2024-02-07T20:28:48.187Z ::1 - POST /roles HTTP/1.1 201 91 - 39.494 ms
+info: 2024-02-07T20:28:51.596Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:51.613Z ::1 - GET /roles HTTP/1.1 200 2202 - 22.318 ms
+info: 2024-02-07T20:28:51.636Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:51.655Z ::1 - GET /roles HTTP/1.1 304 - - 23.278 ms
+info: 2024-02-07T20:28:55.454Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:55.471Z Role with name [motta] created successfully.
+info: 2024-02-07T20:28:55.471Z ::1 - POST /roles HTTP/1.1 201 73 - 26.072 ms
+info: 2024-02-07T20:28:58.853Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:58.872Z ::1 - GET /roles HTTP/1.1 200 2339 - 22.412 ms
+info: 2024-02-07T20:28:58.896Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:28:58.912Z ::1 - GET /roles HTTP/1.1 304 - - 19.917 ms
+info: 2024-02-07T20:29:02.732Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:02.749Z Role with name [clubpedidos] created successfully.
+info: 2024-02-07T20:29:02.749Z ::1 - POST /roles HTTP/1.1 201 85 - 20.917 ms
+info: 2024-02-07T20:29:06.127Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:06.145Z ::1 - GET /roles HTTP/1.1 200 2482 - 21.268 ms
+info: 2024-02-07T20:29:06.170Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:06.188Z ::1 - GET /roles HTTP/1.1 304 - - 22.506 ms
+info: 2024-02-07T20:29:09.480Z User Admin provided a valid token. Authentication completed
+warn: 2024-02-07T20:29:09.489Z Role with name [clubpedidos] already exists.
+warn: 2024-02-07T20:29:09.490Z Error creating the role [clubpedidos]: There is a role with the same name.
+info: 2024-02-07T20:29:09.491Z ::1 - POST /roles HTTP/1.1 409 49 - 13.723 ms
+info: 2024-02-07T20:29:13.615Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:13.635Z Role with name [clubpedidosd] created successfully.
+info: 2024-02-07T20:29:13.636Z ::1 - POST /roles HTTP/1.1 201 87 - 25.822 ms
+info: 2024-02-07T20:29:17.019Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:17.044Z ::1 - GET /roles HTTP/1.1 200 2626 - 28.861 ms
+info: 2024-02-07T20:29:17.070Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:17.088Z ::1 - GET /roles HTTP/1.1 304 - - 23.111 ms
+info: 2024-02-07T20:29:27.361Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:27.382Z Role with name [new role 7] created successfully.
+info: 2024-02-07T20:29:27.382Z ::1 - POST /roles HTTP/1.1 201 83 - 23.281 ms
+info: 2024-02-07T20:29:31.225Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:31.245Z Role with name [new role d] created successfully.
+info: 2024-02-07T20:29:31.245Z ::1 - POST /roles HTTP/1.1 201 83 - 22.867 ms
+info: 2024-02-07T20:29:33.879Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:33.897Z Role with name [new role dd] created successfully.
+info: 2024-02-07T20:29:33.898Z ::1 - POST /roles HTTP/1.1 201 85 - 23.478 ms
+info: 2024-02-07T20:29:36.106Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:36.130Z Role with name [new role dfd] created successfully.
+info: 2024-02-07T20:29:36.131Z ::1 - POST /roles HTTP/1.1 201 87 - 28.961 ms
+info: 2024-02-07T20:29:38.072Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:38.093Z Role with name [new role dfgd] created successfully.
+info: 2024-02-07T20:29:38.093Z ::1 - POST /roles HTTP/1.1 201 89 - 26.955 ms
+info: 2024-02-07T20:29:40.461Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:40.487Z Role with name [new role dfghd] created successfully.
+info: 2024-02-07T20:29:40.488Z ::1 - POST /roles HTTP/1.1 201 91 - 30.072 ms
+info: 2024-02-07T20:29:44.119Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:44.141Z ::1 - GET /roles HTTP/1.1 200 3489 - 26.357 ms
+info: 2024-02-07T20:29:44.163Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:29:44.181Z ::1 - GET /roles HTTP/1.1 304 - - 20.035 ms
+info: 2024-02-07T20:30:02.602Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:30:02.604Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:30:03.789Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:30:03.834Z ::1 - GET /roles HTTP/1.1 304 - - 62.234 ms
+info: 2024-02-07T20:30:03.849Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:30:03.876Z ::1 - GET /roles HTTP/1.1 304 - - 32.764 ms
+info: 2024-02-07T20:30:25.366Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:30:25.401Z ::1 - GET /roles HTTP/1.1 304 - - 46.324 ms
+info: 2024-02-07T20:30:26.304Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:30:26.306Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:30:27.625Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:30:27.668Z ::1 - GET /roles HTTP/1.1 304 - - 50.192 ms
+info: 2024-02-07T20:30:27.693Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:30:27.725Z ::1 - GET /roles HTTP/1.1 304 - - 41.994 ms
+info: 2024-02-07T20:32:43.406Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:32:43.434Z ::1 - GET /roles HTTP/1.1 304 - - 40.948 ms
+info: 2024-02-07T20:32:43.486Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:32:43.548Z ::1 - GET /roles HTTP/1.1 304 - - 65.771 ms
+info: 2024-02-07T20:32:45.091Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:32:45.093Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:32:46.558Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:32:46.605Z ::1 - GET /roles HTTP/1.1 304 - - 56.482 ms
+info: 2024-02-07T20:32:46.623Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:32:46.648Z ::1 - GET /roles HTTP/1.1 304 - - 31.623 ms
+info: 2024-02-07T20:32:48.969Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:32:48.989Z ::1 - GET /roles HTTP/1.1 304 - - 25.367 ms
+info: 2024-02-07T20:32:55.570Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:32:55.587Z ::1 - GET /roles HTTP/1.1 304 - - 19.333 ms
+info: 2024-02-07T20:32:57.003Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:32:57.025Z ::1 - GET /roles HTTP/1.1 304 - - 24.341 ms
+info: 2024-02-07T20:34:01.834Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:34:01.856Z ::1 - GET /roles HTTP/1.1 304 - - 34.423 ms
+info: 2024-02-07T20:34:04.062Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:34:04.081Z ::1 - GET /roles HTTP/1.1 304 - - 23.808 ms
+info: 2024-02-07T20:34:46.372Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:34:46.374Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T20:34:48.083Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:34:48.110Z ::1 - GET /roles HTTP/1.1 304 - - 43.984 ms
+info: 2024-02-07T20:34:48.127Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:34:48.170Z ::1 - GET /roles HTTP/1.1 304 - - 46.175 ms
+info: 2024-02-07T20:34:53.672Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:34:53.699Z ::1 - GET /roles HTTP/1.1 304 - - 34.435 ms
+info: 2024-02-07T20:36:50.543Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:36:50.583Z ::1 - GET /roles HTTP/1.1 304 - - 50.214 ms
+info: 2024-02-07T20:36:53.891Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:36:53.913Z ::1 - GET /roles HTTP/1.1 304 - - 25.718 ms
+info: 2024-02-07T20:36:56.263Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:36:56.279Z ::1 - GET /roles HTTP/1.1 304 - - 20.500 ms
+info: 2024-02-07T20:37:20.958Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:37:20.986Z ::1 - GET /roles HTTP/1.1 304 - - 37.199 ms
+info: 2024-02-07T20:37:22.830Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:37:22.849Z ::1 - GET /roles HTTP/1.1 304 - - 24.940 ms
+info: 2024-02-07T20:38:09.324Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:38:09.349Z ::1 - GET /roles?page=1 HTTP/1.1 200 3489 - 35.123 ms
+info: 2024-02-07T20:38:12.191Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:38:12.214Z ::1 - GET /roles?page=2 HTTP/1.1 200 3489 - 27.247 ms
+info: 2024-02-07T20:38:13.426Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:38:13.446Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 25.044 ms
+info: 2024-02-07T20:38:14.453Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:38:14.471Z ::1 - GET /roles?page=2 HTTP/1.1 304 - - 20.986 ms
+info: 2024-02-07T20:38:36.795Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:38:36.817Z ::1 - GET /roles?page=1 HTTP/1.1 200 3489 - 32.028 ms
+info: 2024-02-07T20:38:40.535Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:38:40.552Z ::1 - GET /roles?page=2 HTTP/1.1 200 3489 - 21.622 ms
+info: 2024-02-07T20:40:08.209Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:40:08.261Z ::1 - GET /roles?page=2 HTTP/1.1 200 3489 - 62.393 ms
+info: 2024-02-07T20:41:02.643Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:41:02.697Z ::1 - GET /roles?page=2 HTTP/1.1 200 3489 - 58.677 ms
+info: 2024-02-07T20:42:08.269Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:42:08.330Z ::1 - GET /roles?page=2 HTTP/1.1 200 3489 - 68.247 ms
+error: 2024-02-07T20:42:36.106Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(43,26): error TS2345: Argument of type 'FindOptions<Role>' is not assignable to parameter of type 'string'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.controller.ts(43,26): error TS2345: Argument of type 'FindOptions<Role>' is not assignable to parameter of type 'string'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-6776106865477105.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-6776106865477105.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-6776106865477105.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 17:42:36 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":705923},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":424634,"external":6662565,"heapTotal":57856000,"heapUsed":28163048,"rss":80822272},"pid":11008,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.controller.ts(43,26): error TS2345: Argument of type 'FindOptions<Role>' is not assignable to parameter of type 'string'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.controller.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+info: 2024-02-07T20:42:46.888Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:42:46.970Z ::1 - GET /roles?page=2 HTTP/1.1 200 3489 - 214.598 ms
+info: 2024-02-07T20:43:16.651Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:43:16.703Z ::1 - GET /roles?page=2 HTTP/1.1 200 3489 - 64.175 ms
+info: 2024-02-07T20:44:15.953Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:44:16.011Z ::1 - GET /roles?page=2 HTTP/1.1 200 599 - 76.020 ms
+info: 2024-02-07T20:44:41.136Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:44:41.194Z ::1 - GET /roles?page=2 HTTP/1.1 200 599 - 68.082 ms
+info: 2024-02-07T20:44:49.425Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:44:49.471Z ::1 - GET /roles?page=1 HTTP/1.1 200 2911 - 74.247 ms
+info: 2024-02-07T20:44:49.523Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:44:49.557Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 41.508 ms
+info: 2024-02-07T20:44:52.086Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T20:44:52.107Z ::1 - GET /roles?page=2 HTTP/1.1 200 599 - 24.445 ms
+info: 2024-02-07T21:02:02.855Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:02:02.889Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 51.931 ms
+info: 2024-02-07T21:02:02.904Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:02:02.933Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 33.719 ms
+info: 2024-02-07T21:02:06.088Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:02:06.108Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 25.736 ms
+info: 2024-02-07T21:02:06.121Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:02:06.154Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 38.353 ms
+error: 2024-02-07T21:02:20.100Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(53,61): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | 10' is not assignable to parameter of type 'number'.
+  Type 'string' is not assignable to type 'number'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/roles/roles.route.ts(53,61): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | 10' is not assignable to parameter of type 'number'.
+  Type 'string' is not assignable to type 'number'.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\roles\roles.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-6776106865477105.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-6776106865477105.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-6776106865477105.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Wed Feb 07 2024 18:02:20 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":707107},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":382463,"external":6620801,"heapTotal":58118144,"heapUsed":27820928,"rss":80592896},"pid":21700,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/roles/roles.route.ts(53,61): error TS2345: Argument of type 'string | string[] | ParsedQs | ParsedQs[] | 10' is not assignable to parameter of type 'number'.\r\n  Type 'string' is not assignable to type 'number'.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\roles\\roles.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-6776106865477105.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+info: 2024-02-07T21:02:52.802Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:02:52.895Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 137.993 ms
+info: 2024-02-07T21:02:52.918Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:02:52.949Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 42.973 ms
+info: 2024-02-07T21:03:08.153Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:03:08.312Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 207.133 ms
+info: 2024-02-07T21:03:08.339Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:03:08.369Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 36.486 ms
+info: 2024-02-07T21:04:55.776Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:04:55.827Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 70.454 ms
+info: 2024-02-07T21:11:14.898Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:11:14.938Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 63.925 ms
+info: 2024-02-07T21:11:14.960Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:11:14.995Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 43.218 ms
+info: 2024-02-07T21:13:04.291Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:13:04.323Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 48.057 ms
+info: 2024-02-07T21:13:04.337Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:13:04.364Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 31.485 ms
+info: 2024-02-07T21:13:19.663Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:13:19.689Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 39.926 ms
+info: 2024-02-07T21:13:19.703Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:13:19.729Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 31.697 ms
+info: 2024-02-07T21:17:10.441Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T21:17:10.443Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T21:17:10.444Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T21:17:10.446Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T21:17:10.447Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-07T21:17:11.253Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:17:11.283Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 51.904 ms
+info: 2024-02-07T21:17:11.300Z User Admin provided a valid token. Authentication completed
+info: 2024-02-07T21:17:11.328Z ::1 - GET /roles?page=1 HTTP/1.1 304 - - 31.023 ms

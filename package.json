@@ -1,5 +1,5 @@
 {
-  "name": "clone-linktree-back",
+  "name": "auth-back-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -21,8 +21,9 @@
     "buffer": "^6.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.2.0",
+    "exceljs": "^4.4.0",
     "express": "^4.18.2",
-    "fs": "0.0.1-security",
+    "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.0",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",

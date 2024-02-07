@@ -10,6 +10,7 @@ import { Request, Response, NextFunction } from 'express';
 
 const blueprintRol = Joi.object({
   name: Joi.string().required(),
+  description: Joi.any(),
 });
 
 export const validationRole = (req: Request, res: Response, next: NextFunction) => {

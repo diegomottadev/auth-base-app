@@ -1,5 +1,5 @@
 import { Role } from "../../../models/role.model"
-import { Op } from 'sequelize';
+import {  FindOptions } from 'sequelize';
 import { RoleNotExist } from './roles.error';
 import { Permission } from "../../../models/permission.model";
 
@@ -26,13 +26,26 @@ export const create = async (role: { name: string }): Promise<Role> => {
 
 */
 
-export const all = (): Promise<Role[]> => {
-  return Role.findAll({ 
+
+
+export const all = async (page: number, pageSize: number, where: any): Promise<{ rows: Role[]; count: number }> => {
+  const options: FindOptions<Role> = {
+    where: where,
     include: [Permission],
-    where: {
-      id: { [Op.not]: null },
-    },
-  });
+  };
+
+  if (page && pageSize) {
+
+    options.offset = (page - 1) * pageSize;
+    options.limit = pageSize;
+    options.order = [['id', 'ASC']]; 
+  }
+
+  const { rows } = await Role.findAndCountAll(options);
+
+  const rolesCount = await Role.count({ where });
+
+  return { rows, count: rolesCount };
 };
 
 /*

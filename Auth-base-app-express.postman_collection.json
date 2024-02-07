@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "f66d147a-5714-47b2-ac98-1a6bc25abaa2",
+		"_postman_id": "794a2958-bf6c-4d82-b28c-bdf6e08b4e59",
 		"name": "Auth-base-app-express",
+		"description": "**User Management API Documentation**\n\n**Introduction**:\n\nThis documentation provides an overview of the REST API project built with Node.js, Express.js, and Sequelize using TypeScript. The API allows you to create and manage users, user roles, and user authentication in your application. It follows the principles of Representational State Transfer (REST) to provide a simple and efficient way to interact with the resources.\n\n**Authentication:**\n\nTo access protected endpoints, you need to include an authentication token in the request headers. Obtain the token by making a POST request to the `/auth/login` endpoint with valid credentials. The token must be included in the `Authorization` header using the Bearer scheme.\n\n**Errors:**  \nThe API returns appropriate HTTP status codes and error responses in case of failures. Error responses include a JSON object with a `message` field providing additional details about the error.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "12551466"
+		"_exporter_id": "21594008"
 	},
 	"item": [
 		{
@@ -16,7 +17,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"raw": "{\r\n    \"email\": \"Admin\",\r\n    \"password\": \"admin\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -36,7 +37,75 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"Admin\",\r\n    \"password\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"95-vxm9mubQE6shSIg7cwPozjtI/RM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:03:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDAzLCJleHAiOjE2ODg1ODM4MDN9.q8ZKf2WArigOJI41_q45RIPJ3_8dgtyqxE_XunsSRoI\"\n}"
+						}
+					]
 				}
 			]
 		},
@@ -46,10 +115,107 @@
 				{
 					"name": "new user",
 					"request": {
-						"method": "GET",
-						"header": []
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDAzLCJleHAiOjE2ODg1ODM4MDN9.q8ZKf2WArigOJI41_q45RIPJ3_8dgtyqxE_XunsSRoI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"diego22\",\r\n    \"password\": \"admin22\",\r\n    \"email\" : \"dieg2o2@mail.com\",\r\n    \"roleId\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "new user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"user01\",\r\n    \"password\": \"user01\",\r\n    \"email\" : \"user01@mail.com\",\r\n    \"roleId\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-BCzD8BN0zVto+2lvYfRDoDeHIkE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:05:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User with name [user01] created successfully.\",\n    \"data\": \"user01\"\n}"
+						}
+					]
 				},
 				{
 					"name": "edit user",
@@ -59,7 +225,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg2OTI5OTUwLCJleHAiOjE2ODcwMTYzNTB9.m_zT4RI8Ar52lr7ahDgHul_1zK0SZb6bzhWMhFb77FY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDAzLCJleHAiOjE2ODg1ODM4MDN9.q8ZKf2WArigOJI41_q45RIPJ3_8dgtyqxE_XunsSRoI",
 									"type": "string"
 								}
 							]
@@ -68,7 +234,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"jenny02\",\r\n    \"password\": \"jenny\",\r\n    \"email\" : \"jennii@jenny.com\"\r\n}",
+							"raw": "{\r\n    \"name\": \"user02\",\r\n    \"password\": \"user02\",\r\n    \"email\" : \"user02@mail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -88,7 +254,75 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "edit user",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"user02\",\r\n    \"password\": \"user02\",\r\n    \"email\" : \"user02@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "487"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e7-k1GYsJ5JJOmh+KdFpxtx9ZgG8SI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:06:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User with name [user02] has been successfully updated.\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"user02\",\n        \"email\": \"user02@mail.com\",\n        \"password\": \"$2b$10$D2zpS8EIf67YVlbIXDEXU.XqiTMf55LbUW32puotkiSLF6DsWDaBe\",\n        \"urlImageProfile\": null,\n        \"confirmedAt\": null,\n        \"active\": true,\n        \"deletedAt\": null,\n        \"roleId\": 2,\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-04T19:06:50.000Z\",\n        \"role\": {\n            \"id\": 2,\n            \"name\": \"User\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        }\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "delete user",
@@ -98,7 +332,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg2OTI5OTUwLCJleHAiOjE2ODcwMTYzNTB9.m_zT4RI8Ar52lr7ahDgHul_1zK0SZb6bzhWMhFb77FY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -118,7 +352,66 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "delete user",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "474"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1da-ABEwmJ9cGkdB2cvzdaLtApQfO9w\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:07:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User with name [user02] has been deleted.\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"user02\",\n        \"email\": \"user02@mail.com\",\n        \"password\": \"$2b$10$D2zpS8EIf67YVlbIXDEXU.XqiTMf55LbUW32puotkiSLF6DsWDaBe\",\n        \"urlImageProfile\": null,\n        \"confirmedAt\": null,\n        \"active\": true,\n        \"deletedAt\": null,\n        \"roleId\": 2,\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-04T19:06:50.000Z\",\n        \"role\": {\n            \"id\": 2,\n            \"name\": \"User\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        }\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "list users",
@@ -128,7 +421,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg2OTI5OTUwLCJleHAiOjE2ODcwMTYzNTB9.m_zT4RI8Ar52lr7ahDgHul_1zK0SZb6bzhWMhFb77FY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -147,7 +440,65 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "list users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1734"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6c6-WpL6tWScXl8XXn0zUUGr1YCG2tc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:07:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Admin\",\n            \"email\": \"admin@admin.com\",\n            \"password\": \"$2b$10$Blsay.opdJONAuixMtQxeefLkO6oDY7m/sfZr6dBfGYK3.k9LVoj2\",\n            \"urlImageProfile\": \"https://app-base-auth-aws.s3.us-east-2.amazonaws.com/images/4075228711.jpg\",\n            \"confirmedAt\": null,\n            \"active\": true,\n            \"deletedAt\": null,\n            \"roleId\": 1,\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-04T14:57:58.000Z\",\n            \"role\": {\n                \"id\": 1,\n                \"name\": \"ADMIN\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null\n            }\n        },\n        {\n            \"id\": 3,\n            \"name\": \"guest\",\n            \"email\": \"guest@guest.com\",\n            \"password\": \"$2b$10$F01XuWpMU.Dlk3DXzknCe.muPC.yDeC64USAkRCC091mElPUDS0H.\",\n            \"urlImageProfile\": null,\n            \"confirmedAt\": null,\n            \"active\": true,\n            \"deletedAt\": null,\n            \"roleId\": 3,\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"role\": {\n                \"id\": 3,\n                \"name\": \"Guest\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null\n            }\n        },\n        {\n            \"id\": 4,\n            \"name\": \"diego22\",\n            \"email\": \"dieg2o2@mail.com\",\n            \"password\": \"$2b$10$HvctxgGHCSS3HsWTYSyCz.3TKEbINDOW/0jtpwEBXwAJWVhHld4ti\",\n            \"urlImageProfile\": null,\n            \"confirmedAt\": null,\n            \"active\": true,\n            \"deletedAt\": null,\n            \"roleId\": 1,\n            \"createdAt\": \"2023-07-04T19:04:55.000Z\",\n            \"updatedAt\": \"2023-07-04T19:04:55.000Z\",\n            \"role\": {\n                \"id\": 1,\n                \"name\": \"ADMIN\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null\n            }\n        },\n        {\n            \"id\": 5,\n            \"name\": \"user01\",\n            \"email\": \"user01@mail.com\",\n            \"password\": \"$2b$10$DJR/RuIGg9CAmkkIIZoMpOSX/HslAISwthv7XMnLvLM5hJZ5jTig.\",\n            \"urlImageProfile\": null,\n            \"confirmedAt\": null,\n            \"active\": true,\n            \"deletedAt\": null,\n            \"roleId\": 1,\n            \"createdAt\": \"2023-07-04T19:05:47.000Z\",\n            \"updatedAt\": \"2023-07-04T19:05:47.000Z\",\n            \"role\": {\n                \"id\": 1,\n                \"name\": \"ADMIN\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null\n            }\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "find users",
@@ -157,7 +508,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg2OTI5OTUwLCJleHAiOjE2ODcwMTYzNTB9.m_zT4RI8Ar52lr7ahDgHul_1zK0SZb6bzhWMhFb77FY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -177,7 +528,66 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "find users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "411"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19b-fS5A0G0V2zBEAPfpBCf1/kyZ194\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:08:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"guest\",\n    \"email\": \"guest@guest.com\",\n    \"password\": \"$2b$10$F01XuWpMU.Dlk3DXzknCe.muPC.yDeC64USAkRCC091mElPUDS0H.\",\n    \"urlImageProfile\": null,\n    \"confirmedAt\": null,\n    \"active\": true,\n    \"deletedAt\": null,\n    \"roleId\": 3,\n    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n    \"role\": {\n        \"id\": 3,\n        \"name\": \"Guest\",\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
 				}
 			]
 		},
@@ -192,7 +602,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg3MzgxMzA5LCJleHAiOjE2ODc0Njc3MDl9.1Y2IO_akhJIE6QMK9JPRhWr2HHMSUdoLWfczBc0xtNI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -201,7 +611,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"CPao\"\r\n}",
+							"raw": "{\r\n    \"name\": \"new role\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -220,7 +630,74 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "new role",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"new role\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/roles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"roles"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-o3PoCTv4Vb2mYvjrXFUeQUzSywg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Role with name [new role] created successfully.\",\n    \"data\": \"new role\"\n}"
+						}
+					]
 				},
 				{
 					"name": "add permission to role",
@@ -230,7 +707,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg2OTQ2ODU3LCJleHAiOjE2ODcwMzMyNTd9.768gImssP3U74qL4kO1cqs4M7_lSum0gVig9K5I-yho",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -260,15 +737,163 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "add permission to role",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"permissionIds\": [1,2]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/roles/2/permissions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"roles",
+										"2",
+										"permissions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1024"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"400-IJJUKQrqlyk+bYJ3JaO2e1dUSXg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:08:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Permissions assigned to role with ID 2\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"User\",\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n        \"deletedAt\": null,\n        \"permissions\": [\n            {\n                \"id\": 1,\n                \"name\": \"Create\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 1\n                }\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Read\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 2\n                }\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Update\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 4\n                }\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Delete\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 5\n                }\n            },\n            {\n                \"id\": 6,\n                \"name\": \"List\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 6\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "list roles",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles"
+							]
+						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "list roles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/roles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1715"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6b3-vOb+ghwyiMv/KmmuN+J/Vt6RKx0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:09:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"ADMIN\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null,\n            \"permissions\": []\n        },\n        {\n            \"id\": 2,\n            \"name\": \"User\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null,\n            \"permissions\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"Create\",\n                    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"deletedAt\": null,\n                    \"RolePermission\": {\n                        \"roleId\": 2,\n                        \"permissionId\": 1\n                    }\n                },\n                {\n                    \"id\": 2,\n                    \"name\": \"Read\",\n                    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"deletedAt\": null,\n                    \"RolePermission\": {\n                        \"roleId\": 2,\n                        \"permissionId\": 2\n                    }\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"Update\",\n                    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"deletedAt\": null,\n                    \"RolePermission\": {\n                        \"roleId\": 2,\n                        \"permissionId\": 4\n                    }\n                },\n                {\n                    \"id\": 5,\n                    \"name\": \"Delete\",\n                    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"deletedAt\": null,\n                    \"RolePermission\": {\n                        \"roleId\": 2,\n                        \"permissionId\": 5\n                    }\n                },\n                {\n                    \"id\": 6,\n                    \"name\": \"List\",\n                    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"deletedAt\": null,\n                    \"RolePermission\": {\n                        \"roleId\": 2,\n                        \"permissionId\": 6\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Guest\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null,\n            \"permissions\": [\n                {\n                    \"id\": 2,\n                    \"name\": \"Read\",\n                    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"deletedAt\": null,\n                    \"RolePermission\": {\n                        \"roleId\": 3,\n                        \"permissionId\": 2\n                    }\n                },\n                {\n                    \"id\": 6,\n                    \"name\": \"List\",\n                    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                    \"deletedAt\": null,\n                    \"RolePermission\": {\n                        \"roleId\": 3,\n                        \"permissionId\": 6\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"name\": \"new role\",\n            \"createdAt\": \"2023-07-04T19:08:24.000Z\",\n            \"updatedAt\": \"2023-07-04T19:08:24.000Z\",\n            \"deletedAt\": null,\n            \"permissions\": []\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "edit role",
@@ -278,7 +903,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg3MzgxMzA5LCJleHAiOjE2ODc0Njc3MDl9.1Y2IO_akhJIE6QMK9JPRhWr2HHMSUdoLWfczBc0xtNI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -307,7 +932,75 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "edit role",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Guests\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/roles/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"roles",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1043"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"413-JeaasSHPUa3z97jecuCpDPyAD4I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:09:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Role with name [Guests] has been successfully modified.\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Guests\",\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-04T19:09:30.000Z\",\n        \"deletedAt\": null,\n        \"permissions\": [\n            {\n                \"id\": 1,\n                \"name\": \"Create\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 1\n                }\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Read\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 2\n                }\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Update\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 4\n                }\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Delete\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 5\n                }\n            },\n            {\n                \"id\": 6,\n                \"name\": \"List\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 6\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "delete role",
@@ -317,7 +1010,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg3MzgxMzA5LCJleHAiOjE2ODc0Njc3MDl9.1Y2IO_akhJIE6QMK9JPRhWr2HHMSUdoLWfczBc0xtNI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -337,7 +1030,66 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "delete role",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/roles/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"roles",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cb-qCbG1Fm56wcrgZOI9S0ji7G1Brw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:09:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Role with name [new role] has been deleted.\",\n    \"data\": {\n        \"id\": 4,\n        \"name\": \"new role\",\n        \"createdAt\": \"2023-07-04T19:08:24.000Z\",\n        \"updatedAt\": \"2023-07-04T19:08:24.000Z\",\n        \"deletedAt\": null,\n        \"permissions\": []\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "edit permissions to role",
@@ -347,7 +1099,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg3MzgxMzA5LCJleHAiOjE2ODc0Njc3MDl9.1Y2IO_akhJIE6QMK9JPRhWr2HHMSUdoLWfczBc0xtNI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -377,7 +1129,76 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "edit permissions to role",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"permissionIds\": [3,4]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/roles/2/permissions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"roles",
+										"2",
+										"permissions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "528"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"210-3ynlqUXS6ypXnSOGZk6Ii6I31oQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:09:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Permissions updated for role with ID 2\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Guests\",\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-04T19:09:30.000Z\",\n        \"deletedAt\": null,\n        \"permissions\": [\n            {\n                \"id\": 3,\n                \"name\": \"Write\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 3\n                }\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Update\",\n                \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n                \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n                \"deletedAt\": null,\n                \"RolePermission\": {\n                    \"roleId\": 2,\n                    \"permissionId\": 4\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "find role",
@@ -387,7 +1208,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg3MzgxMzA5LCJleHAiOjE2ODc0Njc3MDl9.1Y2IO_akhJIE6QMK9JPRhWr2HHMSUdoLWfczBc0xtNI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -407,7 +1228,66 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "find role",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/roles/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"roles",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "468"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d4-q8+Av/r07QzFzMjAoS3OjjiwoVg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:10:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Guests\",\n    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n    \"updatedAt\": \"2023-07-04T19:09:30.000Z\",\n    \"deletedAt\": null,\n    \"permissions\": [\n        {\n            \"id\": 3,\n            \"name\": \"Write\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null,\n            \"RolePermission\": {\n                \"roleId\": 2,\n                \"permissionId\": 3\n            }\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Update\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null,\n            \"RolePermission\": {\n                \"roleId\": 2,\n                \"permissionId\": 4\n            }\n        }\n    ]\n}"
+						}
+					]
 				}
 			]
 		},
@@ -422,7 +1302,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg3MzgxMzA5LCJleHAiOjE2ODc0Njc3MDl9.1Y2IO_akhJIE6QMK9JPRhWr2HHMSUdoLWfczBc0xtNI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
 									"type": "string"
 								}
 							]
@@ -441,15 +1321,494 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "all permissions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/permissions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"permissions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "843"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34b-6eubHpXfUTx7FU/SoW9r6MxuN6s\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:10:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Create\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Read\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Write\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Update\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Delete\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 6,\n            \"name\": \"List\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Deny\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "find permission",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/permissions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "find permission",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/permissions/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"permissions",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "119"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"77-/IBHVIx2RMUsKloQQ/EW87zLkXE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:10:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Create\",\n    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n    \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n    \"deletedAt\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "profile",
+			"item": [
+				{
+					"name": "find profile user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDc5MDg2LCJleHAiOjE2ODg1NjU0ODZ9.mLIN7I3f1f-OOr7_AcvwfMKvah3x99CCCPA5I6xpxJ0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "find profile user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1161"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"489-496fW+MO9wT60OFj3ZNFyVaXrUk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 19:10:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Admin\",\n    \"email\": \"admin@admin.com\",\n    \"password\": \"$2b$10$Blsay.opdJONAuixMtQxeefLkO6oDY7m/sfZr6dBfGYK3.k9LVoj2\",\n    \"urlImageProfile\": \"https://app-base-auth-aws.s3.us-east-2.amazonaws.com/images/4075228711.jpg\",\n    \"confirmedAt\": null,\n    \"active\": true,\n    \"deletedAt\": null,\n    \"roleId\": 1,\n    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n    \"updatedAt\": \"2023-07-04T14:57:58.000Z\",\n    \"person\": {\n        \"id\": 1,\n        \"firstName\": \"Diego\",\n        \"lastName\": \"Motta\",\n        \"telephone\": \"23423423\",\n        \"dateBurn\": \"2023-06-23T00:00:00.000Z\",\n        \"biography\": \"I have been working with PHP and JavaScript for over 9 years, and for the past 6 years, I have been heavily using the Laravel framework and the React library as primary tools for web application and service development. However, as market and project needs arise, I have also developed products in Java with the Angular framework. I have successfully deployed multiple projects on servers such as Amazon and Digital Ocean.\",\n        \"deletedAt\": null,\n        \"userId\": 1,\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-04T15:02:36.000Z\"\n    },\n    \"role\": {\n        \"id\": 1,\n        \"name\": \"ADMIN\",\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n        \"deletedAt\": null,\n        \"permissions\": []\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get profile photo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDk3NDI5LCJleHAiOjE2ODg1ODM4Mjl9.H_78DKdMVyfgUqGSlbzn1aj6SW5dETlHZNP6cVLRcjs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/photo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"photo"
+							]
+						}
 					},
 					"response": []
+				},
+				{
+					"name": "update photo profle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDc5MDg2LCJleHAiOjE2ODg1NjU0ODZ9.mLIN7I3f1f-OOr7_AcvwfMKvah3x99CCCPA5I6xpxJ0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {
+								"src": "/C:/Users/dmotta/Downloads/9247718403.jpg"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/photo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"photo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update photo profle",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "file",
+									"file": {
+										"src": "/C:/Users/dmotta/Downloads/9247718403.jpg"
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/profile/photo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile",
+										"photo"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "357"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"165-k35rfemHCycYyeM8Te526nvW3jU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 14:57:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Admin\",\n    \"email\": \"admin@admin.com\",\n    \"password\": \"$2b$10$Blsay.opdJONAuixMtQxeefLkO6oDY7m/sfZr6dBfGYK3.k9LVoj2\",\n    \"urlImageProfile\": \"https://app-base-auth-aws.s3.us-east-2.amazonaws.com/images/4075228711.jpg\",\n    \"confirmedAt\": null,\n    \"active\": true,\n    \"deletedAt\": null,\n    \"roleId\": 1,\n    \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n    \"updatedAt\": \"2023-07-04T14:57:58.713Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg4NDc5MDg2LCJleHAiOjE2ODg1NjU0ODZ9.mLIN7I3f1f-OOr7_AcvwfMKvah3x99CCCPA5I6xpxJ0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admin@admin.com\",\r\n  \"firstName\": \"Diego\",\r\n  \"lastName\": \"Motta\",\r\n  \"dateBurn\": \"2023-06-23\",\r\n   \"telephone\" : \"23423423\",\r\n   \"biography\" : \"I have been working with PHP and JavaScript for over 9 years, and for the past 6 years, I have been heavily using the Laravel framework and the React library as primary tools for web application and service development. However, as market and project needs arise, I have also developed products in Java with the Angular framework. I have successfully deployed multiple projects on servers such as Amazon and Digital Ocean.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update profile",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admin@admin.com\",\r\n  \"firstName\": \"Diego\",\r\n  \"lastName\": \"Motta\",\r\n  \"dateBurn\": \"2023-06-23\",\r\n   \"telephone\" : \"23423423\",\r\n   \"biography\" : \"I have been working with PHP and JavaScript for over 9 years, and for the past 6 years, I have been heavily using the Laravel framework and the React library as primary tools for web application and service development. However, as market and project needs arise, I have also developed products in Java with the Angular framework. I have successfully deployed multiple projects on servers such as Amazon and Digital Ocean.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "787"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"313-9gt4eYaAYln/8QRfIeWcvMuWZ/w\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 15:02:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User profile with name [Admin] has been successfully updated.\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Admin\",\n        \"email\": \"admin@admin.com\",\n        \"password\": \"$2b$10$Blsay.opdJONAuixMtQxeefLkO6oDY7m/sfZr6dBfGYK3.k9LVoj2\",\n        \"urlImageProfile\": \"https://app-base-auth-aws.s3.us-east-2.amazonaws.com/images/4075228711.jpg\",\n        \"confirmedAt\": null,\n        \"active\": true,\n        \"deletedAt\": null,\n        \"roleId\": 1,\n        \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n        \"updatedAt\": \"2023-07-04T14:57:58.000Z\",\n        \"person\": {\n            \"id\": 1,\n            \"firstName\": \"Admin\",\n            \"lastName\": \"\",\n            \"telephone\": \"\",\n            \"dateBurn\": null,\n            \"biography\": \"\",\n            \"deletedAt\": null,\n            \"userId\": 1,\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\"\n        },\n        \"role\": {\n            \"id\": 1,\n            \"name\": \"ADMIN\",\n            \"createdAt\": \"2023-07-03T16:51:55.000Z\",\n            \"updatedAt\": \"2023-07-03T16:51:55.000Z\",\n            \"deletedAt\": null,\n            \"permissions\": []\n        }\n    }\n}"
+						}
+					]
 				}
 			]
 		}
