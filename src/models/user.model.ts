@@ -3,7 +3,7 @@ import {
   Model,
   Column,
   DataType,
-  Unique,
+  // Unique,
   ForeignKey,
   BelongsTo,
   HasOne,
@@ -24,7 +24,7 @@ export class User extends Model {
   })
   name!: string;
 
-  @Unique({ name: 'uniqueEmail', msg: "Email already exists" })
+  // @Unique({ name: 'uniqueEmail', msg: "Email already exists" })
   @Column({
     type: DataType.STRING,
     allowNull: false,
@@ -37,12 +37,12 @@ export class User extends Model {
         args: true,
         msg: "Valid email is required",
       },
-      isUnique: async (value: string): Promise<void> => {
-        const user = await User.findOne({ where: { email: value }, attributes: ['id'] });
-        if (user) {
-          throw new Error("Email already exists");
-        }
-      },
+      // isUnique: async (value: string): Promise<void> => {
+      //   const user = await User.findOne({ where: { email: value }, attributes: ['id'] });
+      //   if (user) {
+      //     throw new Error("Email already exists");
+      //   }
+      // },
     },
   } as any)
   email!: string;

@@ -2,7 +2,7 @@ import { Permission } from "../../../models/permission.model";
 import { Person } from "../../../models/person.model";
 import { Role } from "../../../models/role.model";
 import { User } from "../../../models/user.model"
-import { Op } from 'sequelize';
+import { FindOptions, Op } from 'sequelize';
 
 /*
  
@@ -46,13 +46,24 @@ export const create = async (user: { name: string; email: string; roleId: number
 
 */
 
-export const all = (): Promise<User[]> => {
-  return User.findAll({
+export const all = async (page: number, pageSize: number, where: any): Promise<{ rows: User[]; count: number }> => {
+  const options: FindOptions<User> = {
+    where: where,
     include: [Role],
-    where: {
-      id: { [Op.not]: null },
-    },
-  });
+  };
+
+  if (page && pageSize) {
+    options.offset = (page - 1) * pageSize;
+    options.limit = pageSize;
+    options.order = [['id', 'ASC']];
+  }
+
+  const { rows } = await User.findAndCountAll(options);
+
+  const userCount = await User.count({ where });
+
+
+  return { rows, count: userCount };
 };
 
 
@@ -125,28 +136,40 @@ export const userExist = ({ email }: { email: string }): Promise<boolean> => {
 
 */
 
-export const edit = (id: number, user: { name: string; email: string }): Promise<User | null> => {
-  return new Promise<User | null>((resolve, reject) => {
-    User.update(
+export const edit = async (id: number, user: { name: string; email: string, roleId: number }): Promise<User | null> => {
+  try {
+    // Check if the email is unique
+    const existingUser = await User.findOne({ where: { email: user.email } });
+    if (existingUser && existingUser.id !== id) {
+      throw new Error("Email already exists for another user");
+    }
+
+    // Perform the update if the email is unique
+    const [updatedRowsCount] = await User.update(
       {
         name: user.name,
         email: user.email,
+        roleId: user.roleId
       },
       {
         where: {
           id: id,
         },
       }
-    )
-      .then(() => {
-        let response = find(id);
-        resolve(response);
-      })
-      .catch((error) => {
-        reject(error);
-      });
-  });
+    );
+
+    // If the update was successful, return the updated user
+    if (updatedRowsCount > 0) {
+      const updatedUser = await find(id);
+      return updatedUser;
+    } else {
+      return null; // Return null if the user was not found or not updated
+    }
+  } catch (error) {
+    throw error;
+  }
 };
+
 
 /*
 

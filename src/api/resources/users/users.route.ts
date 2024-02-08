@@ -19,6 +19,7 @@ import { InfoUserInUse, UserNotExist } from './users.error';
 import { procesarErrores } from '../../libs/errorHandler';
 import  { validationUser } from './users.validation';
 import  { checkUserRolePermission } from './../helpers/checkRolePermision.helper';
+import { Op } from 'sequelize';
 const jwtAuthenticate = passport.authenticate('jwt', { session: false });
 
 const usersRouter = express.Router();
@@ -65,15 +66,29 @@ usersRouter.post('/', [jwtAuthenticate,checkUserRolePermission('Create'),validat
 */
 usersRouter.get('/', [jwtAuthenticate, checkUserRolePermission('List')], procesarErrores(async (_req: Request, res: Response) => {
   try {
-    const users = await userController.all();
-    log.info(`Successfully retrieved all users.`);
-    res.json({ data: users });
+    const { page = 1, pageSize = 10, name } = _req.query;
+    let where: any = {
+      id: { [Op.not]: null },
+    };
+
+    if (name) {
+      where.name = { [Op.like]: `%${name}%` };
+    }
+
+    const result = await userController.all(page as number, pageSize as number, where);
+    
+    // Ensure that result is an object with rows and count properties
+    if ('rows' in result && 'count' in result) {
+      res.json({ data: result.rows, count: result.count });
+    } else {
+      console.error('Unexpected result format:', result);
+      res.status(500).json({ message: 'Unexpected result format.' });
+    }
   } catch (error) {
-    log.error(`Error retrieving all users.`);
-    res.status(500).json({ message: 'Error retrieving all users.' });
+    console.error('Error al obtener todos los roles:', error);
+    res.status(500).json({ message: 'Error al obtener todos los roles.' });
   }
 }));
-
 /*
 
   -Retrieves a specific user by ID. Requires authentication and "Read" permission. 
