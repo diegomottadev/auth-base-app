@@ -20,6 +20,9 @@ import { procesarErrores } from '../../libs/errorHandler';
 import  { validationUser } from './users.validation';
 import  { checkUserRolePermission } from './../helpers/checkRolePermision.helper';
 import { Op } from 'sequelize';
+import ExcelJS from 'exceljs';
+import fs from 'fs';
+
 const jwtAuthenticate = passport.authenticate('jwt', { session: false });
 
 const usersRouter = express.Router();
@@ -88,6 +91,53 @@ usersRouter.get('/', [jwtAuthenticate, checkUserRolePermission('List')], procesa
     console.error('Error al obtener todos los roles:', error);
     res.status(500).json({ message: 'Error al obtener todos los roles.' });
   }
+}));
+
+
+usersRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req: Request, res: Response) => {
+  const { page = 1, pageSize = Number.MAX_SAFE_INTEGER, name } = req.query as { page?: number; pageSize?: number; name?: string };
+
+  let where: any = { };
+
+  if (name) {
+      where = {
+          name: { [Op.like]: `%${name}%` }
+      };
+  }
+
+  const users = await userController.all(page, pageSize, where);
+
+  const workbook = new ExcelJS.Workbook();
+  const worksheet = workbook.addWorksheet('Usuarios');
+
+  worksheet.columns = [
+      { header: 'ID', key: 'id', width: 10 },
+      { header: 'Nombre', key: 'name', width: 30 },
+      { header: 'Email', key: 'email', width: 50 },
+      { header: 'Rol', key: 'role', width: 50 },
+  ];
+
+  users.rows.forEach((user: any) => {
+      worksheet.addRow({
+          id: user.id,
+          name: user.name,
+          email: user.email,
+          role: user.role.name,
+      });
+  });
+
+  const filename = 'users.xlsx';
+  const filepath = `./${filename}`;
+  await workbook.xlsx.writeFile(filepath);
+
+  const filestream = fs.createReadStream(filepath);
+  res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+  res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+  filestream.pipe(res);
+
+  filestream.on('close', () => {
+      fs.unlinkSync(filepath);
+  });
 }));
 /*
 

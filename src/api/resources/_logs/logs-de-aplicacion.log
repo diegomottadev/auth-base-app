@@ -16315,3 +16315,41 @@ info: 2024-02-08T21:15:44.341Z ::1 - POST /auth/login HTTP/1.1 200 149 - 76.965 
 info: 2024-02-08T21:15:52.332Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
 info: 2024-02-08T21:15:52.333Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
 info: 2024-02-08T21:15:52.334Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T14:15:46.825Z User undefined successfully completed authentication
+info: 2024-02-09T14:15:46.830Z ::1 - POST /auth/login HTTP/1.1 200 149 - 116.066 ms
+info: 2024-02-09T14:35:13.810Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:35:13.843Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 46.547 ms
+info: 2024-02-09T14:35:13.859Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:35:13.883Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 28.319 ms
+info: 2024-02-09T14:35:14.005Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:35:14.027Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 26.116 ms
+error: 2024-02-09T14:37:39.872Z uncaughtException: ⨯ Unable to compile TypeScript:
+src/api/resources/users/users.route.ts(23,1): error TS6133: 'ExcelJS' is declared but its value is never read.
+src/api/resources/users/users.route.ts(24,1): error TS6133: 'fs' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/api/resources/users/users.route.ts(23,1): error TS6133: 'ExcelJS' is declared but its value is never read.
+src/api/resources/users/users.route.ts(24,1): error TS6133: 'fs' is declared but its value is never read.
+
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\src\api\resources\users\users.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-5987626487545952.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-5987626487545952.js:114:20)
+    at require.extensions.<computed> (C:\Users\dmotta\AppData\Local\Temp\ts-node-dev-hook-5987626487545952.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\dmotta\Documents\01 DESARROLLO\04 auth-base\auth-base-app\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12) {"date":"Fri Feb 09 2024 11:37:39 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":856827},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","src/index.ts"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":583666,"external":5991095,"heapTotal":55758848,"heapUsed":28961760,"rss":69586944},"pid":23564,"uid":null,"version":"v16.20.2"},"stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/api/resources/users/users.route.ts(23,1): error TS6133: 'ExcelJS' is declared but its value is never read.\r\nsrc/api/resources/users/users.route.ts(24,1): error TS6133: 'fs' is declared but its value is never read.\r\n\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\users\\users.route.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-5987626487545952.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-5987626487545952.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-5987626487545952.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)","trace":[{"column":7,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\src\\api\\resources\\users\\users.route.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-5987626487545952.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-5987626487545952.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\dmotta\\AppData\\Local\\Temp\\ts-node-dev-hook-5987626487545952.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\04 auth-base\\auth-base-app\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false}]}
+info: 2024-02-09T14:40:11.652Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:40:11.706Z ::ffff:127.0.0.1 - GET /users?page=1 HTTP/1.1 304 - - 123.754 ms
+info: 2024-02-09T14:40:11.722Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:40:11.755Z ::ffff:127.0.0.1 - GET /users?page=1 HTTP/1.1 304 - - 39.284 ms
+info: 2024-02-09T14:40:11.772Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:40:11.797Z ::ffff:127.0.0.1 - GET /users?page=1 HTTP/1.1 304 - - 30.701 ms
+info: 2024-02-09T14:40:11.861Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:40:11.881Z ::ffff:127.0.0.1 - GET /users?page=1 HTTP/1.1 304 - - 24.867 ms
+info: 2024-02-09T14:40:43.387Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:40:43.406Z ::ffff:127.0.0.1 - GET /users?page=1 HTTP/1.1 304 - - 31.835 ms
+info: 2024-02-09T14:41:06.130Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:41:06.246Z ::1 - GET /users/export HTTP/1.1 200 - - 123.320 ms
