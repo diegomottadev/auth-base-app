@@ -195,7 +195,6 @@ rolesRouter.post('/:id/permissions', [jwtAuthenticate,checkUserRolePermission('C
 rolesRouter.put('/:id/permissions', [jwtAuthenticate,checkUserRolePermission('Update')], procesarErrores(async (req: Request, res: Response) => {
   const roleId = parseInt(req.params.id);
   const permissionIds: number[] = req.body.permissionIds;
-
   try {
     const role = await roleController.editRolePermissions(permissionIds, roleId);
     res.json({ message: `Permissions updated for role with ID ${roleId}`, data: role });

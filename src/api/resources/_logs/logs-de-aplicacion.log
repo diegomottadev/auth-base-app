@@ -16353,3 +16353,766 @@ info: 2024-02-09T14:40:43.387Z User Admin provided a valid token. Authentication
 info: 2024-02-09T14:40:43.406Z ::ffff:127.0.0.1 - GET /users?page=1 HTTP/1.1 304 - - 31.835 ms
 info: 2024-02-09T14:41:06.130Z User Admin provided a valid token. Authentication completed
 info: 2024-02-09T14:41:06.246Z ::1 - GET /users/export HTTP/1.1 200 - - 123.320 ms
+info: 2024-02-09T14:42:44.153Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:42:44.187Z ::1 - GET /users?page=1&name=A HTTP/1.1 200 933 - 56.335 ms
+info: 2024-02-09T14:42:44.332Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:42:44.351Z ::1 - GET /users?page=1&name=Ad HTTP/1.1 200 503 - 23.283 ms
+info: 2024-02-09T14:42:47.573Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:42:47.681Z ::1 - GET /users/export?name=Ad HTTP/1.1 200 - - 110.469 ms
+info: 2024-02-09T14:44:16.215Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:44:16.238Z ::1 - GET /roles HTTP/1.1 304 - - 32.734 ms
+info: 2024-02-09T14:44:16.255Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T14:44:16.283Z ::1 - GET /roles HTTP/1.1 304 - - 33.291 ms
+info: 2024-02-09T15:14:11.808Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:11.829Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 31.639 ms
+info: 2024-02-09T15:14:11.842Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:11.861Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 22.905 ms
+info: 2024-02-09T15:14:11.909Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:11.923Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 19.448 ms
+info: 2024-02-09T15:14:14.666Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:14.681Z ::1 - GET /roles HTTP/1.1 304 - - 22.122 ms
+info: 2024-02-09T15:14:14.694Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:14.717Z ::1 - GET /roles HTTP/1.1 304 - - 26.890 ms
+info: 2024-02-09T15:14:16.325Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:16.341Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 19.168 ms
+info: 2024-02-09T15:14:16.353Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:16.373Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 23.988 ms
+info: 2024-02-09T15:14:16.417Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:16.434Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 20.271 ms
+info: 2024-02-09T15:14:26.515Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:26.566Z User with ID [10] has been deleted.
+info: 2024-02-09T15:14:26.568Z ::1 - DELETE /users/10 HTTP/1.1 200 500 - 56.169 ms
+info: 2024-02-09T15:14:26.617Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:26.633Z ::1 - GET /users?page=1 HTTP/1.1 200 916 - 20.010 ms
+info: 2024-02-09T15:14:39.504Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:39.523Z ::1 - GET /roles HTTP/1.1 304 - - 28.387 ms
+info: 2024-02-09T15:14:39.534Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T15:14:39.552Z ::1 - GET /roles HTTP/1.1 304 - - 21.174 ms
+info: 2024-02-09T16:36:00.229Z ::1 - GET / HTTP/1.1 - - - - ms
+info: 2024-02-09T16:36:09.636Z User undefined successfully completed authentication
+info: 2024-02-09T16:36:09.639Z ::1 - POST /auth/login HTTP/1.1 200 149 - 109.426 ms
+info: 2024-02-09T16:36:13.631Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T16:36:13.653Z ::1 - GET /roles HTTP/1.1 304 - - 26.060 ms
+info: 2024-02-09T16:36:13.666Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T16:36:13.686Z ::1 - GET /roles HTTP/1.1 304 - - 23.411 ms
+info: 2024-02-09T16:37:18.755Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T16:37:18.776Z ::1 - GET /roles HTTP/1.1 304 - - 28.700 ms
+info: 2024-02-09T16:37:18.787Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T16:37:18.806Z ::1 - GET /roles HTTP/1.1 304 - - 22.317 ms
+info: 2024-02-09T18:37:26.324Z User undefined successfully completed authentication
+info: 2024-02-09T18:37:26.334Z ::1 - POST /auth/login HTTP/1.1 200 149 - 222.265 ms
+info: 2024-02-09T18:38:29.628Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:38:29.631Z ::1 - GET /assets/layout/images/pesitos-footer-black.png HTTP/1.1 - - - - ms
+info: 2024-02-09T18:38:29.633Z ::1 - GET /assets/layout/fonts/cabin-v12-latin-700.woff2 HTTP/1.1 - - - - ms
+info: 2024-02-09T18:38:29.635Z ::1 - GET /assets/layout/images/pesitos-sidebar.png HTTP/1.1 - - - - ms
+info: 2024-02-09T18:38:29.637Z ::1 - GET /assets/layout/images/icon-users.png HTTP/1.1 - - - - ms
+info: 2024-02-09T18:38:29.638Z ::1 - GET /main.34c4ed1f89dbfee6fc18.hot-update.json HTTP/1.1 - - - - ms
+info: 2024-02-09T18:38:29.656Z ::1 - GET /roles HTTP/1.1 - - - - ms
+info: 2024-02-09T18:38:29.662Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:38:29.715Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:38:29.748Z ::1 - GET /roles HTTP/1.1 200 2911 - 48.537 ms
+info: 2024-02-09T18:38:29.771Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:38:29.791Z ::1 - GET /roles HTTP/1.1 304 - - 25.506 ms
+info: 2024-02-09T18:42:38.998Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:42:39.020Z ::1 - GET /roles HTTP/1.1 304 - - 35.306 ms
+info: 2024-02-09T18:42:39.035Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:42:39.061Z ::1 - GET /roles HTTP/1.1 304 - - 31.930 ms
+info: 2024-02-09T18:43:25.305Z ::1 - GET / HTTP/1.1 - - - - ms
+info: 2024-02-09T18:43:27.684Z ::1 - GET /assets/layout/images/pesitos-footer-black.png HTTP/1.1 - - - - ms
+info: 2024-02-09T18:43:27.686Z ::1 - GET /assets/layout/fonts/cabin-v12-latin-700.woff HTTP/1.1 - - - - ms
+info: 2024-02-09T18:43:27.689Z ::1 - GET /assets/layout/images/pesitos-sidebar.png HTTP/1.1 - - - - ms
+info: 2024-02-09T18:43:27.691Z ::1 - GET /assets/layout/images/icon-users.png HTTP/1.1 - - - - ms
+info: 2024-02-09T18:45:14.278Z User undefined successfully completed authentication
+info: 2024-02-09T18:45:14.280Z ::1 - POST /auth/login HTTP/1.1 200 149 - 94.782 ms
+info: 2024-02-09T18:45:29.190Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:45:29.216Z ::1 - GET /roles HTTP/1.1 304 - - 38.608 ms
+info: 2024-02-09T18:45:29.233Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:45:29.255Z ::1 - GET /roles HTTP/1.1 304 - - 27.144 ms
+info: 2024-02-09T18:45:30.936Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:45:30.948Z ::1 - GET /roles/1 HTTP/1.1 304 - - 18.010 ms
+info: 2024-02-09T18:45:30.963Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:45:30.976Z ::1 - GET /roles/1 HTTP/1.1 304 - - 18.172 ms
+info: 2024-02-09T18:47:42.936Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:47:42.941Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:47:42.959Z ::1 - GET /roles/1 HTTP/1.1 304 - - 36.762 ms
+info: 2024-02-09T18:47:42.962Z ::1 - GET /permissions HTTP/1.1 200 843 - 33.706 ms
+info: 2024-02-09T18:47:42.976Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:47:42.986Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:47:42.997Z ::1 - GET /roles/1 HTTP/1.1 304 - - 27.664 ms
+info: 2024-02-09T18:47:43.001Z ::1 - GET /permissions HTTP/1.1 304 - - 20.447 ms
+info: 2024-02-09T18:47:48.909Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:47:50.035Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:47:50.055Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:47:50.073Z ::1 - GET /roles/1 HTTP/1.1 304 - - 43.342 ms
+info: 2024-02-09T18:47:50.080Z ::1 - GET /permissions HTTP/1.1 304 - - 39.784 ms
+info: 2024-02-09T18:47:50.091Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:47:50.104Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:47:50.119Z ::1 - GET /roles/1 HTTP/1.1 304 - - 34.485 ms
+info: 2024-02-09T18:47:50.124Z ::1 - GET /permissions HTTP/1.1 304 - - 27.543 ms
+info: 2024-02-09T18:52:19.470Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:52:19.471Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:52:35.827Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:52:35.839Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:52:35.914Z ::1 - GET /roles/1 HTTP/1.1 304 - - 108.700 ms
+info: 2024-02-09T18:52:35.917Z ::1 - GET /permissions HTTP/1.1 304 - - 95.189 ms
+info: 2024-02-09T18:52:35.936Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:52:35.951Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:52:35.969Z ::1 - GET /roles/1 HTTP/1.1 304 - - 41.027 ms
+info: 2024-02-09T18:52:35.977Z ::1 - GET /permissions HTTP/1.1 304 - - 35.160 ms
+info: 2024-02-09T18:53:21.607Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:53:21.613Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:53:21.630Z ::1 - GET /permissions HTTP/1.1 304 - - 43.674 ms
+info: 2024-02-09T18:53:21.633Z ::1 - GET /roles/1 HTTP/1.1 304 - - 41.389 ms
+info: 2024-02-09T18:53:21.648Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:53:21.652Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:53:21.672Z ::1 - GET /permissions HTTP/1.1 304 - - 33.223 ms
+info: 2024-02-09T18:53:21.674Z ::1 - GET /roles/1 HTTP/1.1 304 - - 29.872 ms
+info: 2024-02-09T18:53:23.912Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:53:23.914Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:53:23.915Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:53:23.916Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:53:25.061Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:53:25.066Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:53:25.089Z ::1 - GET /roles/1 HTTP/1.1 304 - - 39.183 ms
+info: 2024-02-09T18:53:25.092Z ::1 - GET /permissions HTTP/1.1 304 - - 37.052 ms
+info: 2024-02-09T18:53:25.111Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:53:25.115Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:53:25.129Z ::1 - GET /roles/1 HTTP/1.1 304 - - 28.208 ms
+info: 2024-02-09T18:53:25.132Z ::1 - GET /permissions HTTP/1.1 304 - - 26.048 ms
+info: 2024-02-09T18:54:01.735Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:54:01.748Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:54:01.761Z ::1 - GET /roles/1 HTTP/1.1 304 - - 47.782 ms
+info: 2024-02-09T18:54:01.768Z ::1 - GET /permissions HTTP/1.1 304 - - 47.650 ms
+info: 2024-02-09T18:54:01.781Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:54:01.793Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:54:01.806Z ::1 - GET /roles/1 HTTP/1.1 304 - - 34.257 ms
+info: 2024-02-09T18:54:01.816Z ::1 - GET /permissions HTTP/1.1 304 - - 29.959 ms
+info: 2024-02-09T18:54:33.812Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:54:33.813Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:54:33.815Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:54:33.816Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:54:35.014Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:54:35.025Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:54:35.055Z ::1 - GET /roles/1 HTTP/1.1 304 - - 61.810 ms
+info: 2024-02-09T18:54:35.065Z ::1 - GET /permissions HTTP/1.1 304 - - 63.640 ms
+info: 2024-02-09T18:54:35.077Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:54:35.094Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:54:35.105Z ::1 - GET /roles/1 HTTP/1.1 304 - - 33.606 ms
+info: 2024-02-09T18:54:35.111Z ::1 - GET /permissions HTTP/1.1 304 - - 22.674 ms
+info: 2024-02-09T18:55:29.774Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:55:29.778Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:55:29.792Z ::1 - GET /roles/1 HTTP/1.1 304 - - 28.103 ms
+info: 2024-02-09T18:55:29.794Z ::1 - GET /permissions HTTP/1.1 304 - - 27.137 ms
+info: 2024-02-09T18:55:31.970Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:55:31.974Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:55:31.986Z ::1 - GET /roles/1 HTTP/1.1 304 - - 22.544 ms
+info: 2024-02-09T18:55:31.989Z ::1 - GET /permissions HTTP/1.1 304 - - 22.694 ms
+info: 2024-02-09T18:55:41.522Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:55:41.524Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:55:42.642Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:55:42.649Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:55:42.671Z ::1 - GET /roles/1 HTTP/1.1 304 - - 36.868 ms
+info: 2024-02-09T18:55:42.674Z ::1 - GET /permissions HTTP/1.1 304 - - 34.473 ms
+info: 2024-02-09T18:55:42.689Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:55:42.693Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:55:42.708Z ::1 - GET /roles/1 HTTP/1.1 304 - - 27.140 ms
+info: 2024-02-09T18:55:42.711Z ::1 - GET /permissions HTTP/1.1 304 - - 25.585 ms
+info: 2024-02-09T18:56:12.449Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:56:12.454Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:56:12.469Z ::1 - GET /roles/1 HTTP/1.1 304 - - 34.546 ms
+info: 2024-02-09T18:56:12.471Z ::1 - GET /permissions HTTP/1.1 304 - - 33.401 ms
+info: 2024-02-09T18:56:14.358Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:56:14.359Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T18:56:15.422Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:56:15.431Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:56:15.458Z ::1 - GET /roles/1 HTTP/1.1 304 - - 44.275 ms
+info: 2024-02-09T18:56:15.462Z ::1 - GET /permissions HTTP/1.1 304 - - 44.168 ms
+info: 2024-02-09T18:56:15.482Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:56:15.490Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:56:15.509Z ::1 - GET /roles/1 HTTP/1.1 304 - - 40.526 ms
+info: 2024-02-09T18:56:15.512Z ::1 - GET /permissions HTTP/1.1 304 - - 37.399 ms
+info: 2024-02-09T18:56:44.269Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:56:44.274Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:56:44.292Z ::1 - GET /roles/1 HTTP/1.1 304 - - 35.195 ms
+info: 2024-02-09T18:56:44.294Z ::1 - GET /permissions HTTP/1.1 304 - - 34.406 ms
+info: 2024-02-09T18:57:46.603Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:57:46.612Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:57:46.648Z ::1 - GET /roles/1 HTTP/1.1 304 - - 65.165 ms
+info: 2024-02-09T18:57:46.656Z ::1 - GET /permissions HTTP/1.1 304 - - 65.292 ms
+info: 2024-02-09T18:57:56.208Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:57:56.213Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:57:56.234Z ::1 - GET /roles/1 HTTP/1.1 304 - - 31.988 ms
+info: 2024-02-09T18:57:56.237Z ::1 - GET /permissions HTTP/1.1 304 - - 31.498 ms
+info: 2024-02-09T18:58:33.844Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:58:33.847Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T18:58:33.857Z ::1 - GET /permissions HTTP/1.1 304 - - 23.512 ms
+info: 2024-02-09T18:58:33.859Z ::1 - GET /roles/1 HTTP/1.1 304 - - 21.533 ms
+info: 2024-02-09T19:04:09.582Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:04:09.588Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:04:09.608Z ::1 - GET /roles/1 HTTP/1.1 304 - - 41.949 ms
+info: 2024-02-09T19:04:09.611Z ::1 - GET /permissions HTTP/1.1 304 - - 39.540 ms
+info: 2024-02-09T19:04:13.428Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:04:13.430Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:07:06.074Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:07:06.078Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:07:06.124Z ::1 - GET /roles HTTP/1.1 200 2911 - 70.483 ms
+info: 2024-02-09T19:07:06.128Z ::1 - GET /roles HTTP/1.1 200 2911 - 68.959 ms
+info: 2024-02-09T19:10:51.614Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:10:51.619Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:10:51.632Z ::1 - GET /roles/1 HTTP/1.1 304 - - 38.982 ms
+info: 2024-02-09T19:10:51.634Z ::1 - GET /permissions HTTP/1.1 304 - - 34.100 ms
+info: 2024-02-09T19:10:51.649Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:10:51.652Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:10:51.668Z ::1 - GET /permissions HTTP/1.1 304 - - 25.258 ms
+info: 2024-02-09T19:10:51.670Z ::1 - GET /roles/1 HTTP/1.1 304 - - 23.392 ms
+info: 2024-02-09T19:11:31.744Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:11:31.749Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:11:31.766Z ::1 - GET /roles/1 HTTP/1.1 304 - - 34.486 ms
+info: 2024-02-09T19:11:31.768Z ::1 - GET /permissions HTTP/1.1 304 - - 33.480 ms
+info: 2024-02-09T19:23:33.655Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:23:33.660Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:23:33.676Z ::1 - GET /roles/1 HTTP/1.1 304 - - 33.079 ms
+info: 2024-02-09T19:23:33.678Z ::1 - GET /permissions HTTP/1.1 304 - - 30.652 ms
+info: 2024-02-09T19:24:04.573Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:24:04.594Z ::1 - GET /roles/1 HTTP/1.1 304 - - 30.574 ms
+info: 2024-02-09T19:24:04.595Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:24:04.609Z ::1 - GET /permissions HTTP/1.1 304 - - 19.984 ms
+info: 2024-02-09T19:24:04.624Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:24:04.629Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:24:04.641Z ::1 - GET /roles/1 HTTP/1.1 304 - - 22.299 ms
+info: 2024-02-09T19:24:04.643Z ::1 - GET /permissions HTTP/1.1 304 - - 20.822 ms
+info: 2024-02-09T19:24:19.567Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:24:19.572Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:24:19.590Z ::1 - GET /roles/1 HTTP/1.1 304 - - 32.789 ms
+info: 2024-02-09T19:24:19.592Z ::1 - GET /permissions HTTP/1.1 304 - - 32.395 ms
+info: 2024-02-09T19:24:45.396Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:24:45.398Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:24:45.416Z ::1 - GET /permissions HTTP/1.1 304 - - 32.179 ms
+info: 2024-02-09T19:24:45.419Z ::1 - GET /roles/1 HTTP/1.1 304 - - 30.574 ms
+info: 2024-02-09T19:26:55.965Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:26:55.971Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:26:55.989Z ::1 - GET /roles/1 HTTP/1.1 304 - - 38.201 ms
+info: 2024-02-09T19:26:55.991Z ::1 - GET /permissions HTTP/1.1 304 - - 35.332 ms
+info: 2024-02-09T19:26:57.253Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:26:57.254Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:26:57.256Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:26:57.257Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:26:58.359Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:26:58.364Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:26:58.386Z ::1 - GET /roles/1 HTTP/1.1 304 - - 38.713 ms
+info: 2024-02-09T19:26:58.391Z ::1 - GET /permissions HTTP/1.1 304 - - 38.017 ms
+info: 2024-02-09T19:26:58.424Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:26:58.451Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:26:58.461Z ::1 - GET /roles/1 HTTP/1.1 304 - - 44.911 ms
+info: 2024-02-09T19:26:58.469Z ::1 - GET /permissions HTTP/1.1 304 - - 47.533 ms
+info: 2024-02-09T19:27:24.296Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:27:24.303Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:27:24.324Z ::1 - GET /permissions HTTP/1.1 304 - - 42.638 ms
+info: 2024-02-09T19:27:24.327Z ::1 - GET /roles/1 HTTP/1.1 304 - - 50.809 ms
+info: 2024-02-09T19:27:48.390Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:27:48.408Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:27:48.436Z ::1 - GET /roles/1 HTTP/1.1 304 - - 55.509 ms
+info: 2024-02-09T19:27:48.445Z ::1 - GET /permissions HTTP/1.1 304 - - 49.729 ms
+info: 2024-02-09T19:28:39.584Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:28:39.588Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:28:39.608Z ::1 - GET /roles/1 HTTP/1.1 304 - - 42.068 ms
+info: 2024-02-09T19:28:39.610Z ::1 - GET /permissions HTTP/1.1 304 - - 39.563 ms
+info: 2024-02-09T19:28:50.684Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:28:50.692Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:28:50.712Z ::1 - GET /roles/1 HTTP/1.1 304 - - 38.537 ms
+info: 2024-02-09T19:28:50.715Z ::1 - GET /permissions HTTP/1.1 304 - - 38.596 ms
+info: 2024-02-09T19:28:57.799Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:28:57.802Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:28:57.813Z ::1 - GET /permissions HTTP/1.1 304 - - 16.476 ms
+info: 2024-02-09T19:28:57.814Z ::1 - GET /roles/1 HTTP/1.1 304 - - 21.956 ms
+info: 2024-02-09T19:31:03.882Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:31:03.907Z ::1 - GET /roles HTTP/1.1 200 2911 - 36.329 ms
+info: 2024-02-09T19:31:03.936Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:31:03.954Z ::1 - GET /roles HTTP/1.1 304 - - 28.015 ms
+info: 2024-02-09T19:31:06.700Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:31:06.711Z ::1 - GET /roles/2 HTTP/1.1 200 469 - 12.130 ms
+info: 2024-02-09T19:31:06.729Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:31:06.740Z ::1 - GET /roles/2 HTTP/1.1 304 - - 14.934 ms
+info: 2024-02-09T19:31:08.905Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:31:08.923Z ::1 - GET /roles HTTP/1.1 304 - - 22.467 ms
+info: 2024-02-09T19:31:08.936Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:31:08.952Z ::1 - GET /roles HTTP/1.1 304 - - 19.830 ms
+info: 2024-02-09T19:31:20.339Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:31:20.340Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:32:19.433Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:32:19.455Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:32:19.481Z ::1 - GET /permissions HTTP/1.1 304 - - 40.607 ms
+info: 2024-02-09T19:32:19.488Z ::1 - GET /roles/2 HTTP/1.1 304 - - 64.892 ms
+info: 2024-02-09T19:32:19.503Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:32:19.515Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:32:19.525Z ::1 - GET /permissions HTTP/1.1 304 - - 28.220 ms
+info: 2024-02-09T19:32:19.537Z ::1 - GET /roles/2 HTTP/1.1 304 - - 27.498 ms
+info: 2024-02-09T19:32:29.577Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:32:29.578Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:32:30.707Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:32:30.715Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:32:30.769Z ::1 - GET /roles/2 HTTP/1.1 304 - - 72.067 ms
+info: 2024-02-09T19:32:30.771Z ::1 - GET /permissions HTTP/1.1 304 - - 78.281 ms
+info: 2024-02-09T19:32:30.796Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:32:30.800Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:32:30.815Z ::1 - GET /roles/2 HTTP/1.1 304 - - 22.741 ms
+info: 2024-02-09T19:32:30.817Z ::1 - GET /permissions HTTP/1.1 304 - - 28.811 ms
+info: 2024-02-09T19:39:34.194Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:39:34.204Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:39:34.227Z ::1 - GET /roles/2 HTTP/1.1 304 - - 48.257 ms
+info: 2024-02-09T19:39:34.233Z ::1 - GET /permissions HTTP/1.1 304 - - 35.929 ms
+info: 2024-02-09T19:39:34.240Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:39:34.252Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:39:34.263Z ::1 - GET /roles/2 HTTP/1.1 304 - - 26.690 ms
+info: 2024-02-09T19:39:34.267Z ::1 - GET /permissions HTTP/1.1 304 - - 20.373 ms
+info: 2024-02-09T19:40:07.399Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:40:07.400Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:40:07.402Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:40:07.403Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:40:08.514Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:08.520Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:08.552Z ::1 - GET /roles/2 HTTP/1.1 304 - - 55.462 ms
+info: 2024-02-09T19:40:08.561Z ::1 - GET /permissions HTTP/1.1 304 - - 59.320 ms
+info: 2024-02-09T19:40:08.570Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:08.581Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:08.594Z ::1 - GET /roles/2 HTTP/1.1 304 - - 30.049 ms
+info: 2024-02-09T19:40:08.599Z ::1 - GET /permissions HTTP/1.1 304 - - 23.520 ms
+info: 2024-02-09T19:40:24.679Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:24.685Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:24.710Z ::1 - GET /roles/2 HTTP/1.1 304 - - 47.652 ms
+info: 2024-02-09T19:40:24.713Z ::1 - GET /permissions HTTP/1.1 304 - - 46.200 ms
+info: 2024-02-09T19:40:37.505Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:37.521Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:37.546Z ::1 - GET /roles/2 HTTP/1.1 304 - - 55.186 ms
+info: 2024-02-09T19:40:37.553Z ::1 - GET /permissions HTTP/1.1 304 - - 58.655 ms
+info: 2024-02-09T19:40:59.967Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:59.972Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:40:59.993Z ::1 - GET /permissions HTTP/1.1 304 - - 43.288 ms
+info: 2024-02-09T19:40:59.996Z ::1 - GET /roles/2 HTTP/1.1 304 - - 42.642 ms
+info: 2024-02-09T19:41:05.094Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:05.097Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:05.114Z ::1 - GET /roles/2 HTTP/1.1 304 - - 25.849 ms
+info: 2024-02-09T19:41:05.169Z ::1 - GET /permissions HTTP/1.1 304 - - 77.406 ms
+info: 2024-02-09T19:41:07.079Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:41:07.082Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:41:08.283Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:08.287Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:08.306Z ::1 - GET /permissions HTTP/1.1 304 - - 32.262 ms
+info: 2024-02-09T19:41:08.313Z ::1 - GET /roles/2 HTTP/1.1 304 - - 33.674 ms
+info: 2024-02-09T19:41:08.325Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:08.336Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:08.352Z ::1 - GET /permissions HTTP/1.1 304 - - 28.550 ms
+info: 2024-02-09T19:41:08.358Z ::1 - GET /roles/2 HTTP/1.1 304 - - 28.880 ms
+info: 2024-02-09T19:41:32.181Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:32.186Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:32.201Z ::1 - GET /permissions HTTP/1.1 304 - - 37.151 ms
+info: 2024-02-09T19:41:32.204Z ::1 - GET /roles/2 HTTP/1.1 304 - - 34.362 ms
+info: 2024-02-09T19:41:32.222Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:32.227Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:32.242Z ::1 - GET /permissions HTTP/1.1 304 - - 27.599 ms
+info: 2024-02-09T19:41:32.245Z ::1 - GET /roles/2 HTTP/1.1 304 - - 25.416 ms
+info: 2024-02-09T19:41:37.875Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:41:37.877Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:41:37.879Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:41:37.880Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:41:39.162Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:39.195Z ::1 - GET /roles/2 HTTP/1.1 304 - - 37.657 ms
+info: 2024-02-09T19:41:39.214Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:39.227Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:39.239Z ::1 - GET /permissions HTTP/1.1 304 - - 29.471 ms
+info: 2024-02-09T19:41:39.252Z ::1 - GET /roles/2 HTTP/1.1 304 - - 32.004 ms
+info: 2024-02-09T19:41:39.258Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:41:39.270Z ::1 - GET /permissions HTTP/1.1 304 - - 15.643 ms
+info: 2024-02-09T19:42:21.667Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:42:21.671Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:42:21.700Z ::1 - GET /roles/2 HTTP/1.1 304 - - 49.745 ms
+info: 2024-02-09T19:42:21.703Z ::1 - GET /permissions HTTP/1.1 304 - - 48.940 ms
+info: 2024-02-09T19:42:53.516Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:42:53.521Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:42:53.537Z ::1 - GET /permissions HTTP/1.1 304 - - 37.837 ms
+info: 2024-02-09T19:42:53.539Z ::1 - GET /roles/2 HTTP/1.1 304 - - 34.987 ms
+info: 2024-02-09T19:46:25.719Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:46:25.720Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:46:27.036Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:46:27.045Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:46:27.077Z ::1 - GET /roles/2 HTTP/1.1 304 - - 56.376 ms
+info: 2024-02-09T19:46:27.084Z ::1 - GET /permissions HTTP/1.1 304 - - 52.625 ms
+info: 2024-02-09T19:46:27.110Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:46:27.122Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:46:27.135Z ::1 - GET /roles/2 HTTP/1.1 304 - - 43.000 ms
+info: 2024-02-09T19:46:27.139Z ::1 - GET /permissions HTTP/1.1 304 - - 23.210 ms
+info: 2024-02-09T19:48:11.585Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:11.587Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:11.603Z ::1 - GET /roles/2 HTTP/1.1 304 - - 39.668 ms
+info: 2024-02-09T19:48:11.605Z ::1 - GET /permissions HTTP/1.1 304 - - 37.674 ms
+info: 2024-02-09T19:48:15.617Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:48:15.619Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:48:16.964Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:16.967Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:16.998Z ::1 - GET /permissions HTTP/1.1 304 - - 36.478 ms
+info: 2024-02-09T19:48:17.000Z ::1 - GET /roles/2 HTTP/1.1 304 - - 42.730 ms
+info: 2024-02-09T19:48:17.014Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:17.044Z ::1 - GET /permissions HTTP/1.1 304 - - 33.895 ms
+info: 2024-02-09T19:48:17.058Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:17.075Z ::1 - GET /roles/2 HTTP/1.1 304 - - 22.402 ms
+info: 2024-02-09T19:48:34.604Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:34.613Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:34.644Z ::1 - GET /roles/2 HTTP/1.1 304 - - 53.038 ms
+info: 2024-02-09T19:48:34.648Z ::1 - GET /permissions HTTP/1.1 304 - - 48.926 ms
+info: 2024-02-09T19:48:39.640Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:48:39.642Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T19:48:40.763Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:40.767Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:40.782Z ::1 - GET /permissions HTTP/1.1 304 - - 25.880 ms
+info: 2024-02-09T19:48:40.785Z ::1 - GET /roles/2 HTTP/1.1 304 - - 25.606 ms
+info: 2024-02-09T19:48:40.796Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:40.817Z ::1 - GET /permissions HTTP/1.1 304 - - 24.918 ms
+info: 2024-02-09T19:48:40.819Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T19:48:40.832Z ::1 - GET /roles/2 HTTP/1.1 304 - - 23.938 ms
+info: 2024-02-09T20:09:48.505Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:48.532Z ::1 - GET /roles HTTP/1.1 304 - - 35.388 ms
+info: 2024-02-09T20:09:48.549Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:48.570Z ::1 - GET /roles HTTP/1.1 304 - - 25.637 ms
+info: 2024-02-09T20:09:50.370Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:50.378Z ::1 - GET /roles/2 HTTP/1.1 304 - - 13.188 ms
+info: 2024-02-09T20:09:50.391Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:50.399Z ::1 - GET /roles/2 HTTP/1.1 304 - - 12.731 ms
+info: 2024-02-09T20:09:52.662Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:52.679Z ::1 - GET /roles HTTP/1.1 304 - - 22.075 ms
+info: 2024-02-09T20:09:52.694Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:52.713Z ::1 - GET /roles HTTP/1.1 304 - - 23.634 ms
+info: 2024-02-09T20:09:54.388Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:54.391Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:54.400Z ::1 - GET /roles/1 HTTP/1.1 304 - - 19.286 ms
+info: 2024-02-09T20:09:54.402Z ::1 - GET /permissions HTTP/1.1 304 - - 16.698 ms
+info: 2024-02-09T20:09:54.417Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:54.421Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:09:54.434Z ::1 - GET /roles/1 HTTP/1.1 304 - - 24.422 ms
+info: 2024-02-09T20:09:54.437Z ::1 - GET /permissions HTTP/1.1 304 - - 22.377 ms
+info: 2024-02-09T20:10:04.442Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:10:04.444Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:10:05.452Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:05.458Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:05.512Z ::1 - GET /permissions HTTP/1.1 304 - - 81.126 ms
+info: 2024-02-09T20:10:05.516Z ::1 - GET /roles/1 HTTP/1.1 304 - - 76.803 ms
+info: 2024-02-09T20:10:05.538Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:05.542Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:05.560Z ::1 - GET /permissions HTTP/1.1 304 - - 28.800 ms
+info: 2024-02-09T20:10:05.563Z ::1 - GET /roles/1 HTTP/1.1 304 - - 28.338 ms
+info: 2024-02-09T20:10:06.711Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:06.730Z ::1 - GET /roles HTTP/1.1 304 - - 20.718 ms
+info: 2024-02-09T20:10:06.742Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:06.757Z ::1 - GET /roles HTTP/1.1 304 - - 18.923 ms
+info: 2024-02-09T20:10:09.460Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:09.464Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:09.474Z ::1 - GET /roles/2 HTTP/1.1 304 - - 20.560 ms
+info: 2024-02-09T20:10:09.475Z ::1 - GET /permissions HTTP/1.1 304 - - 17.352 ms
+info: 2024-02-09T20:10:09.488Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:09.492Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:09.509Z ::1 - GET /roles/2 HTTP/1.1 304 - - 26.587 ms
+info: 2024-02-09T20:10:09.512Z ::1 - GET /permissions HTTP/1.1 304 - - 25.890 ms
+info: 2024-02-09T20:10:11.038Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:11.052Z ::1 - GET /roles HTTP/1.1 304 - - 16.104 ms
+info: 2024-02-09T20:10:11.063Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:11.079Z ::1 - GET /roles HTTP/1.1 304 - - 19.330 ms
+info: 2024-02-09T20:10:13.738Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:13.741Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:13.751Z ::1 - GET /roles/2 HTTP/1.1 304 - - 18.382 ms
+info: 2024-02-09T20:10:13.752Z ::1 - GET /permissions HTTP/1.1 304 - - 16.957 ms
+info: 2024-02-09T20:10:13.764Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:13.771Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:10:13.779Z ::1 - GET /roles/2 HTTP/1.1 304 - - 20.114 ms
+info: 2024-02-09T20:10:13.782Z ::1 - GET /permissions HTTP/1.1 304 - - 14.741 ms
+info: 2024-02-09T20:14:32.285Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:32.313Z Permissions updated for the role with ID 2
+info: 2024-02-09T20:14:32.313Z ::1 - PUT /roles/2/permissions HTTP/1.1 200 197 - 37.733 ms
+info: 2024-02-09T20:14:35.716Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:35.740Z ::1 - GET /roles HTTP/1.1 200 2579 - 31.452 ms
+info: 2024-02-09T20:14:35.763Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:35.779Z ::1 - GET /roles HTTP/1.1 304 - - 20.851 ms
+info: 2024-02-09T20:14:37.933Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:37.937Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:37.949Z ::1 - GET /permissions HTTP/1.1 304 - - 23.148 ms
+info: 2024-02-09T20:14:37.951Z ::1 - GET /roles/2 HTTP/1.1 200 137 - 21.281 ms
+info: 2024-02-09T20:14:37.962Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:37.977Z ::1 - GET /permissions HTTP/1.1 304 - - 19.406 ms
+info: 2024-02-09T20:14:37.979Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:37.989Z ::1 - GET /roles/2 HTTP/1.1 304 - - 16.476 ms
+info: 2024-02-09T20:14:40.830Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:14:40.832Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:14:41.443Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:41.454Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:41.493Z ::1 - GET /roles/2 HTTP/1.1 304 - - 55.293 ms
+info: 2024-02-09T20:14:41.517Z ::1 - GET /permissions HTTP/1.1 304 - - 69.000 ms
+info: 2024-02-09T20:14:41.533Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:41.550Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:14:41.553Z ::1 - GET /roles/2 HTTP/1.1 304 - - 44.624 ms
+info: 2024-02-09T20:14:41.561Z ::1 - GET /permissions HTTP/1.1 304 - - 18.364 ms
+info: 2024-02-09T20:15:14.721Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:14.735Z Permissions updated for the role with ID 2
+info: 2024-02-09T20:15:14.737Z ::1 - PUT /roles/2/permissions HTTP/1.1 200 197 - 22.480 ms
+info: 2024-02-09T20:15:18.197Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:18.218Z ::1 - GET /roles HTTP/1.1 304 - - 25.429 ms
+info: 2024-02-09T20:15:18.237Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:18.256Z ::1 - GET /roles HTTP/1.1 304 - - 23.734 ms
+info: 2024-02-09T20:15:31.674Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:31.678Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:31.688Z ::1 - GET /roles/2 HTTP/1.1 304 - - 29.493 ms
+info: 2024-02-09T20:15:31.690Z ::1 - GET /permissions HTTP/1.1 304 - - 26.231 ms
+info: 2024-02-09T20:15:31.705Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:31.709Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:31.720Z ::1 - GET /roles/2 HTTP/1.1 304 - - 22.409 ms
+info: 2024-02-09T20:15:31.722Z ::1 - GET /permissions HTTP/1.1 304 - - 18.823 ms
+info: 2024-02-09T20:15:35.990Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:15:35.992Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:15:37.023Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:37.039Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:37.044Z ::1 - GET /permissions HTTP/1.1 304 - - 25.966 ms
+info: 2024-02-09T20:15:37.073Z ::1 - GET /roles/2 HTTP/1.1 304 - - 41.696 ms
+info: 2024-02-09T20:15:37.074Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:37.089Z ::1 - GET /permissions HTTP/1.1 304 - - 21.463 ms
+info: 2024-02-09T20:15:37.091Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:37.103Z ::1 - GET /roles/2 HTTP/1.1 304 - - 18.926 ms
+info: 2024-02-09T20:15:48.134Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:15:48.135Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:15:49.086Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:49.098Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:49.165Z ::1 - GET /permissions HTTP/1.1 304 - - 91.390 ms
+info: 2024-02-09T20:15:49.168Z ::1 - GET /roles/2 HTTP/1.1 304 - - 96.848 ms
+info: 2024-02-09T20:15:49.186Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:49.188Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:49.205Z ::1 - GET /roles/2 HTTP/1.1 304 - - 26.518 ms
+info: 2024-02-09T20:15:49.208Z ::1 - GET /permissions HTTP/1.1 304 - - 26.053 ms
+info: 2024-02-09T20:15:52.508Z ::1 - GET /roles/2 HTTP/1.1 401 - - 1.563 ms
+info: 2024-02-09T20:15:58.066Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:58.072Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:58.086Z ::1 - GET /roles/2 HTTP/1.1 304 - - 28.587 ms
+info: 2024-02-09T20:15:58.088Z ::1 - GET /permissions HTTP/1.1 304 - - 24.921 ms
+info: 2024-02-09T20:15:58.104Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:58.107Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:15:58.122Z ::1 - GET /roles/2 HTTP/1.1 304 - - 25.468 ms
+info: 2024-02-09T20:15:58.124Z ::1 - GET /permissions HTTP/1.1 304 - - 24.049 ms
+info: 2024-02-09T20:16:09.784Z User undefined successfully completed authentication
+info: 2024-02-09T20:16:09.785Z ::1 - POST /auth/login HTTP/1.1 200 149 - 101.249 ms
+info: 2024-02-09T20:16:14.428Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:14.446Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 22.073 ms
+info: 2024-02-09T20:16:14.461Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:14.474Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 16.610 ms
+info: 2024-02-09T20:16:14.576Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:14.589Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 15.609 ms
+info: 2024-02-09T20:16:15.452Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:15.467Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 19.058 ms
+info: 2024-02-09T20:16:15.479Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:15.494Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 17.296 ms
+info: 2024-02-09T20:16:15.592Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:15.606Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 16.202 ms
+info: 2024-02-09T20:16:16.895Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:16.937Z ::1 - GET /roles HTTP/1.1 304 - - 45.918 ms
+info: 2024-02-09T20:16:16.995Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:17.029Z ::1 - GET /roles HTTP/1.1 304 - - 37.288 ms
+info: 2024-02-09T20:16:18.334Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:18.338Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:18.348Z ::1 - GET /roles/1 HTTP/1.1 304 - - 21.311 ms
+info: 2024-02-09T20:16:18.351Z ::1 - GET /permissions HTTP/1.1 304 - - 20.072 ms
+info: 2024-02-09T20:16:18.363Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:18.372Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:18.382Z ::1 - GET /roles/1 HTTP/1.1 304 - - 22.024 ms
+info: 2024-02-09T20:16:18.387Z ::1 - GET /permissions HTTP/1.1 304 - - 19.559 ms
+info: 2024-02-09T20:16:20.732Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:20.750Z ::1 - GET /roles HTTP/1.1 304 - - 21.171 ms
+info: 2024-02-09T20:16:20.781Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:20.802Z ::1 - GET /roles HTTP/1.1 304 - - 24.623 ms
+info: 2024-02-09T20:16:22.134Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:22.143Z ::1 - GET /roles/2 HTTP/1.1 304 - - 11.226 ms
+info: 2024-02-09T20:16:22.157Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:22.165Z ::1 - GET /roles/2 HTTP/1.1 304 - - 11.342 ms
+info: 2024-02-09T20:16:24.239Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:24.257Z ::1 - GET /roles HTTP/1.1 304 - - 22.235 ms
+info: 2024-02-09T20:16:24.270Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:24.284Z ::1 - GET /roles HTTP/1.1 304 - - 17.661 ms
+info: 2024-02-09T20:16:26.033Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:26.036Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:26.056Z ::1 - GET /roles/2 HTTP/1.1 304 - - 30.790 ms
+info: 2024-02-09T20:16:26.059Z ::1 - GET /permissions HTTP/1.1 304 - - 28.578 ms
+info: 2024-02-09T20:16:26.075Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:26.081Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:26.095Z ::1 - GET /roles/2 HTTP/1.1 304 - - 28.104 ms
+info: 2024-02-09T20:16:26.097Z ::1 - GET /permissions HTTP/1.1 304 - - 25.629 ms
+info: 2024-02-09T20:16:39.191Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:16:39.193Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:16:39.194Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:16:40.249Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:40.255Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:40.282Z ::1 - GET /roles/2 HTTP/1.1 304 - - 53.876 ms
+info: 2024-02-09T20:16:40.287Z ::1 - GET /permissions HTTP/1.1 304 - - 54.782 ms
+info: 2024-02-09T20:16:40.301Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:40.304Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:40.316Z ::1 - GET /roles/2 HTTP/1.1 304 - - 22.858 ms
+info: 2024-02-09T20:16:40.318Z ::1 - GET /permissions HTTP/1.1 304 - - 19.100 ms
+info: 2024-02-09T20:16:56.162Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:16:56.164Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:16:57.188Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:57.193Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:57.206Z ::1 - GET /roles/2 HTTP/1.1 304 - - 33.718 ms
+info: 2024-02-09T20:16:57.208Z ::1 - GET /permissions HTTP/1.1 304 - - 31.246 ms
+info: 2024-02-09T20:16:57.224Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:57.227Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:16:57.240Z ::1 - GET /roles/2 HTTP/1.1 304 - - 23.795 ms
+info: 2024-02-09T20:16:57.243Z ::1 - GET /permissions HTTP/1.1 304 - - 20.736 ms
+info: 2024-02-09T20:17:00.894Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:00.897Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:00.909Z ::1 - GET /roles/2 HTTP/1.1 304 - - 22.238 ms
+info: 2024-02-09T20:17:00.912Z ::1 - GET /permissions HTTP/1.1 304 - - 19.844 ms
+info: 2024-02-09T20:17:00.925Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:00.929Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:00.949Z ::1 - GET /roles/2 HTTP/1.1 304 - - 30.883 ms
+info: 2024-02-09T20:17:00.953Z ::1 - GET /permissions HTTP/1.1 304 - - 30.628 ms
+info: 2024-02-09T20:17:03.005Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:17:03.007Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:17:14.805Z User undefined successfully completed authentication
+info: 2024-02-09T20:17:14.806Z ::1 - POST /auth/login HTTP/1.1 200 149 - 90.485 ms
+info: 2024-02-09T20:17:21.589Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:21.606Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 19.614 ms
+info: 2024-02-09T20:17:21.620Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:21.632Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 15.701 ms
+info: 2024-02-09T20:17:21.725Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:21.738Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 15.777 ms
+info: 2024-02-09T20:17:22.813Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:22.826Z ::1 - GET /roles HTTP/1.1 304 - - 16.078 ms
+info: 2024-02-09T20:17:22.838Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:22.850Z ::1 - GET /roles HTTP/1.1 304 - - 14.882 ms
+info: 2024-02-09T20:17:23.753Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:23.794Z ::1 - GET /roles HTTP/1.1 304 - - 53.877 ms
+info: 2024-02-09T20:17:23.818Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:23.836Z ::1 - GET /roles HTTP/1.1 304 - - 22.718 ms
+info: 2024-02-09T20:17:25.029Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:25.044Z ::1 - GET /roles HTTP/1.1 304 - - 18.651 ms
+info: 2024-02-09T20:17:25.056Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:25.074Z ::1 - GET /roles HTTP/1.1 304 - - 21.260 ms
+info: 2024-02-09T20:17:33.308Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:33.314Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:33.323Z ::1 - GET /roles/2 HTTP/1.1 304 - - 18.883 ms
+info: 2024-02-09T20:17:33.327Z ::1 - GET /permissions HTTP/1.1 304 - - 16.346 ms
+info: 2024-02-09T20:17:33.338Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:33.351Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:33.359Z ::1 - GET /roles/2 HTTP/1.1 304 - - 25.495 ms
+info: 2024-02-09T20:17:33.363Z ::1 - GET /permissions HTTP/1.1 304 - - 19.597 ms
+info: 2024-02-09T20:17:50.489Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:50.493Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:17:50.503Z ::1 - GET /roles/2 HTTP/1.1 304 - - 25.431 ms
+info: 2024-02-09T20:17:50.504Z ::1 - GET /permissions HTTP/1.1 304 - - 23.912 ms
+info: 2024-02-09T20:18:08.824Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2024-02-09T20:18:10.029Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:18:10.033Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:18:10.051Z ::1 - GET /permissions HTTP/1.1 304 - - 36.545 ms
+info: 2024-02-09T20:18:10.059Z ::1 - GET /roles/2 HTTP/1.1 304 - - 34.527 ms
+info: 2024-02-09T20:18:10.075Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:18:10.079Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:18:10.094Z ::1 - GET /roles/2 HTTP/1.1 304 - - 27.248 ms
+info: 2024-02-09T20:18:10.096Z ::1 - GET /permissions HTTP/1.1 304 - - 25.896 ms
+info: 2024-02-09T20:18:46.991Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:18:47.006Z Permissions updated for the role with ID 2
+info: 2024-02-09T20:18:47.006Z ::1 - PUT /roles/2/permissions HTTP/1.1 200 197 - 24.857 ms
+info: 2024-02-09T20:18:50.485Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:18:50.505Z ::1 - GET /roles HTTP/1.1 304 - - 26.532 ms
+info: 2024-02-09T20:18:50.519Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:18:50.536Z ::1 - GET /roles HTTP/1.1 304 - - 21.546 ms
+info: 2024-02-09T20:20:17.121Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:17.181Z ::1 - GET /roles HTTP/1.1 304 - - 100.684 ms
+info: 2024-02-09T20:20:17.202Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:17.239Z ::1 - GET /roles HTTP/1.1 304 - - 47.008 ms
+info: 2024-02-09T20:20:17.567Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:17.588Z ::1 - GET /roles HTTP/1.1 304 - - 24.089 ms
+info: 2024-02-09T20:20:17.600Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:17.620Z ::1 - GET /roles HTTP/1.1 304 - - 22.656 ms
+info: 2024-02-09T20:20:21.212Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:21.220Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:21.244Z ::1 - GET /permissions HTTP/1.1 304 - - 41.051 ms
+info: 2024-02-09T20:20:21.248Z ::1 - GET /roles/2 HTTP/1.1 304 - - 39.681 ms
+info: 2024-02-09T20:20:21.263Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:21.268Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:21.287Z ::1 - GET /permissions HTTP/1.1 304 - - 33.429 ms
+info: 2024-02-09T20:20:21.291Z ::1 - GET /roles/2 HTTP/1.1 304 - - 32.152 ms
+info: 2024-02-09T20:20:29.803Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:29.827Z Permissions updated for the role with ID 2
+info: 2024-02-09T20:20:29.828Z ::1 - PUT /roles/2/permissions HTTP/1.1 200 197 - 52.142 ms
+info: 2024-02-09T20:20:33.227Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:33.257Z ::1 - GET /roles HTTP/1.1 304 - - 38.314 ms
+info: 2024-02-09T20:20:33.270Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:20:33.294Z ::1 - GET /roles HTTP/1.1 304 - - 26.885 ms
+info: 2024-02-09T20:21:26.129Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:26.190Z ::1 - GET /roles HTTP/1.1 304 - - 108.575 ms
+info: 2024-02-09T20:21:26.211Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:26.244Z ::1 - GET /roles HTTP/1.1 304 - - 42.278 ms
+info: 2024-02-09T20:21:29.081Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:29.085Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:29.101Z ::1 - GET /permissions HTTP/1.1 304 - - 23.192 ms
+info: 2024-02-09T20:21:29.104Z ::ffff:127.0.0.1 - GET /roles/2 HTTP/1.1 304 - - 31.236 ms
+info: 2024-02-09T20:21:29.121Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:29.125Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:29.145Z ::1 - GET /permissions HTTP/1.1 304 - - 33.412 ms
+info: 2024-02-09T20:21:29.147Z ::ffff:127.0.0.1 - GET /roles/2 HTTP/1.1 304 - - 30.957 ms
+info: 2024-02-09T20:21:31.562Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:31.588Z Permissions updated for the role with ID 2
+info: 2024-02-09T20:21:31.590Z ::ffff:127.0.0.1 - PUT /roles/2/permissions HTTP/1.1 200 197 - 50.832 ms
+info: 2024-02-09T20:21:34.986Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:35.011Z ::1 - GET /roles HTTP/1.1 304 - - 31.407 ms
+info: 2024-02-09T20:21:35.025Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:21:35.045Z ::1 - GET /roles HTTP/1.1 304 - - 24.062 ms
+info: 2024-02-09T20:22:29.614Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:29.633Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:29.654Z ::1 - GET /roles/2 HTTP/1.1 304 - - 58.421 ms
+info: 2024-02-09T20:22:29.664Z ::1 - GET /permissions HTTP/1.1 304 - - 42.460 ms
+info: 2024-02-09T20:22:29.670Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:29.682Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:29.695Z ::1 - GET /roles/2 HTTP/1.1 304 - - 28.338 ms
+info: 2024-02-09T20:22:29.701Z ::1 - GET /permissions HTTP/1.1 304 - - 25.679 ms
+info: 2024-02-09T20:22:34.731Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:34.780Z Permissions updated for the role with ID 2
+info: 2024-02-09T20:22:34.781Z ::1 - PUT /roles/2/permissions HTTP/1.1 200 528 - 55.944 ms
+info: 2024-02-09T20:22:38.181Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:38.202Z ::1 - GET /roles HTTP/1.1 200 2910 - 24.764 ms
+info: 2024-02-09T20:22:38.225Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:38.247Z ::1 - GET /roles HTTP/1.1 304 - - 27.827 ms
+info: 2024-02-09T20:22:41.129Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:41.135Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:41.155Z ::1 - GET /roles/2 HTTP/1.1 200 468 - 37.935 ms
+info: 2024-02-09T20:22:41.156Z ::1 - GET /permissions HTTP/1.1 304 - - 31.449 ms
+info: 2024-02-09T20:22:41.172Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:41.188Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:22:41.193Z ::1 - GET /permissions HTTP/1.1 304 - - 26.623 ms
+info: 2024-02-09T20:22:41.203Z ::1 - GET /roles/2 HTTP/1.1 304 - - 25.681 ms
+info: 2024-02-09T20:24:34.653Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:34.701Z ::1 - GET /roles HTTP/1.1 304 - - 74.884 ms
+info: 2024-02-09T20:24:34.717Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:34.743Z ::1 - GET /roles HTTP/1.1 304 - - 33.049 ms
+info: 2024-02-09T20:24:44.271Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:44.289Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 21.262 ms
+info: 2024-02-09T20:24:44.303Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:44.318Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 20.830 ms
+info: 2024-02-09T20:24:44.358Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:44.379Z ::1 - GET /users?page=1 HTTP/1.1 304 - - 23.055 ms
+info: 2024-02-09T20:24:47.141Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:47.163Z ::1 - GET /roles HTTP/1.1 304 - - 25.112 ms
+info: 2024-02-09T20:24:47.175Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:47.195Z ::1 - GET /roles HTTP/1.1 304 - - 23.778 ms
+info: 2024-02-09T20:24:50.002Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:50.015Z ::1 - GET /roles/1 HTTP/1.1 304 - - 18.002 ms
+info: 2024-02-09T20:24:50.031Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:50.043Z ::1 - GET /roles/1 HTTP/1.1 304 - - 17.667 ms
+info: 2024-02-09T20:24:53.237Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:53.256Z ::1 - GET /roles HTTP/1.1 304 - - 23.325 ms
+info: 2024-02-09T20:24:53.268Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:53.289Z ::1 - GET /roles HTTP/1.1 304 - - 25.031 ms
+info: 2024-02-09T20:24:56.642Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:56.661Z ::1 - GET /roles HTTP/1.1 304 - - 23.082 ms
+info: 2024-02-09T20:24:56.674Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:24:56.695Z ::1 - GET /roles HTTP/1.1 304 - - 23.043 ms
+info: 2024-02-09T20:25:06.289Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:25:06.306Z ::1 - GET /roles/5 HTTP/1.1 200 964 - 18.241 ms
+info: 2024-02-09T20:25:06.326Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:25:06.336Z ::1 - GET /roles/5 HTTP/1.1 304 - - 14.627 ms
+info: 2024-02-09T20:25:08.359Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:25:08.378Z ::1 - GET /roles HTTP/1.1 304 - - 23.989 ms
+info: 2024-02-09T20:25:08.396Z User Admin provided a valid token. Authentication completed
+info: 2024-02-09T20:25:08.413Z ::1 - GET /roles HTTP/1.1 304 - - 26.807 ms
